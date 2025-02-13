@@ -6,36 +6,41 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DD4BFCDB2D5D989F003A8045 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DD4BFCDA2D5D989F003A8045 /* CombineMoya */; };
+		DD4BFCDD2D5D989F003A8045 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = DD4BFCDC2D5D989F003A8045 /* Moya */; };
+		DD4BFCE62D5D98FF003A8045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BFCDE2D5D98FF003A8045 /* AppDelegate.swift */; };
+		DD4BFCE72D5D98FF003A8045 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BFCE32D5D98FF003A8045 /* SceneDelegate.swift */; };
+		DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BFCE42D5D98FF003A8045 /* ViewController.swift */; };
+		DD4BFCE92D5D98FF003A8045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4BFCDF2D5D98FF003A8045 /* Assets.xcassets */; };
+		DD4BFCEB2D5D98FF003A8045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4BFCE22D5D98FF003A8045 /* LaunchScreen.storyboard */; };
+		DD6BD9C32D5D9B7000736D51 /* Conbine+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C22D5D9B6C00736D51 /* Conbine+.swift */; };
+		DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */; };
+		DD6BD9C72D5D9B9900736D51 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C62D5D9B9600736D51 /* Mapper.swift */; };
+		DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C82D5D9BA500736D51 /* empty.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DD4BFCAC2D5D93AD003A8045 /* Wable-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wable-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4BFCDE2D5D98FF003A8045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD4BFCDF2D5D98FF003A8045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD4BFCE02D5D98FF003A8045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD4BFCE12D5D98FF003A8045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD4BFCE32D5D98FF003A8045 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD4BFCE42D5D98FF003A8045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD6BD9C22D5D9B6C00736D51 /* Conbine+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conbine+.swift"; sourceTree = "<group>"; };
+		DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		DD6BD9C62D5D9B9600736D51 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		DD6BD9C82D5D9BA500736D51 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		DD4BFCBE2D5D93AD003A8045 /* Exceptions for "Wable-iOS" folder in "Wable-iOS" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = DD4BFCAB2D5D93AD003A8045 /* Wable-iOS */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		DD4BFCAE2D5D93AD003A8045 /* Wable-iOS */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				DD4BFCBE2D5D93AD003A8045 /* Exceptions for "Wable-iOS" folder in "Wable-iOS" target */,
-			);
-			path = "Wable-iOS";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DD4BFCA92D5D93AD003A8045 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4BFCDD2D5D989F003A8045 /* Moya in Frameworks */,
+				DD4BFCDB2D5D989F003A8045 /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +50,7 @@
 		DD4BFCA32D5D93AD003A8045 = {
 			isa = PBXGroup;
 			children = (
-				DD4BFCAE2D5D93AD003A8045 /* Wable-iOS */,
+				DD4BFCE52D5D98FF003A8045 /* Wable-iOS */,
 				DD4BFCAD2D5D93AD003A8045 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +61,79 @@
 				DD4BFCAC2D5D93AD003A8045 /* Wable-iOS.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DD4BFCE52D5D98FF003A8045 /* Wable-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DD6BD9B92D5D9AD100736D51 /* Resource */,
+				DD4BFCEC2D5D9A2B003A8045 /* App */,
+				DD6BD9BA2D5D9B1A00736D51 /* Core */,
+				DD6BD9BB2D5D9B1E00736D51 /* Infra */,
+				DD6BD9BE2D5D9B2500736D51 /* Data */,
+				DD6BD9C02D5D9B4900736D51 /* Domain */,
+			);
+			path = "Wable-iOS";
+			sourceTree = "<group>";
+		};
+		DD4BFCEC2D5D9A2B003A8045 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DD4BFCDE2D5D98FF003A8045 /* AppDelegate.swift */,
+				DD4BFCE32D5D98FF003A8045 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DD6BD9B92D5D9AD100736D51 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DD4BFCDF2D5D98FF003A8045 /* Assets.xcassets */,
+				DD4BFCE02D5D98FF003A8045 /* Info.plist */,
+				DD4BFCE22D5D98FF003A8045 /* LaunchScreen.storyboard */,
+				DD4BFCE42D5D98FF003A8045 /* ViewController.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DD6BD9BA2D5D9B1A00736D51 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DD6BD9C22D5D9B6C00736D51 /* Conbine+.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DD6BD9BB2D5D9B1E00736D51 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				DD6BD9CA2D5D9BB000736D51 /* TargetTyoe */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		DD6BD9BE2D5D9B2500736D51 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DD6BD9C62D5D9B9600736D51 /* Mapper.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DD6BD9C02D5D9B4900736D51 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DD6BD9C82D5D9BA500736D51 /* empty.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DD6BD9CA2D5D9BB000736D51 /* TargetTyoe */ = {
+			isa = PBXGroup;
+			children = (
+				DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */,
+			);
+			path = TargetTyoe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,11 +151,10 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				DD4BFCAE2D5D93AD003A8045 /* Wable-iOS */,
-			);
 			name = "Wable-iOS";
 			packageProductDependencies = (
+				DD4BFCDA2D5D989F003A8045 /* CombineMoya */,
+				DD4BFCDC2D5D989F003A8045 /* Moya */,
 			);
 			productName = "Wable-iOS";
 			productReference = DD4BFCAC2D5D93AD003A8045 /* Wable-iOS.app */;
@@ -107,6 +184,9 @@
 			);
 			mainGroup = DD4BFCA32D5D93AD003A8045;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DD4BFCD92D5D989F003A8045 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DD4BFCAD2D5D93AD003A8045 /* Products */;
 			projectDirPath = "";
@@ -122,6 +202,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4BFCE92D5D98FF003A8045 /* Assets.xcassets in Resources */,
+				DD4BFCEB2D5D98FF003A8045 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +214,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */,
+				DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */,
+				DD4BFCE62D5D98FF003A8045 /* AppDelegate.swift in Sources */,
+				DD4BFCE72D5D98FF003A8045 /* SceneDelegate.swift in Sources */,
+				DD6BD9C32D5D9B7000736D51 /* Conbine+.swift in Sources */,
+				DD6BD9C72D5D9B9900736D51 /* Mapper.swift in Sources */,
+				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD4BFCE22D5D98FF003A8045 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD4BFCE12D5D98FF003A8045 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DD4BFCC02D5D93AD003A8045 /* Debug */ = {
@@ -147,12 +247,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2DF5SKQK2R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Wable-iOS/Info.plist";
+				INFOPLIST_FILE = "Wable-iOS/Resource/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "와블";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -175,12 +275,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2DF5SKQK2R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Wable-iOS/Info.plist";
+				INFOPLIST_FILE = "Wable-iOS/Resource/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "와블";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +435,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD4BFCD92D5D989F003A8045 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD4BFCDA2D5D989F003A8045 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD4BFCD92D5D989F003A8045 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		DD4BFCDC2D5D989F003A8045 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD4BFCD92D5D989F003A8045 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD4BFCA42D5D93AD003A8045 /* Project object */;
 }
