@@ -21,6 +21,8 @@
 		DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */; };
 		DED2EE0B2D5DBEFD00A9434B /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */; };
 		DED2EE0D2D5DBF6500A9434B /* Publisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE0C2D5DBF6500A9434B /* Publisher+.swift */; };
+		DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */; };
+		DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE042D5DB41A00A9434B /* WableLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+.swift"; sourceTree = "<group>"; };
 		DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 		DED2EE0C2D5DBF6500A9434B /* Publisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+.swift"; sourceTree = "<group>"; };
+		DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableNetworkError.swift; sourceTree = "<group>"; };
+		DED2EE042D5DB41A00A9434B /* WableLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				DED2EE072D5DBE8100A9434B /* Combine+ */,
+				DED2EE032D5DB41100A9434B /* Logger */,
 				DD6BD9C22D5D9B6C00736D51 /* Conbine+.swift */,
 			);
 			path = Core;
@@ -114,7 +119,7 @@
 		DD6BD9BB2D5D9B1E00736D51 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
-				DD6BD9CA2D5D9BB000736D51 /* TargetTyoe */,
+				DED2EE002D5DAF9700A9434B /* Network */,
 			);
 			path = Infra;
 			sourceTree = "<group>";
@@ -135,12 +140,29 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		DD6BD9CA2D5D9BB000736D51 /* TargetTyoe */ = {
+		DD6BD9CA2D5D9BB000736D51 /* TargetType */ = {
 			isa = PBXGroup;
 			children = (
 				DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */,
 			);
-			path = TargetTyoe;
+			path = TargetType;
+			sourceTree = "<group>";
+		};
+		DED2EE002D5DAF9700A9434B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */,
+				DD6BD9CA2D5D9BB000736D51 /* TargetType */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DED2EE032D5DB41100A9434B /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				DED2EE042D5DB41A00A9434B /* WableLogger.swift */,
+			);
+			path = Logger;
 			sourceTree = "<group>";
 		};
 		DED2EE072D5DBE8100A9434B /* Combine+ */ = {
@@ -232,7 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DED2EE0D2D5DBF6500A9434B /* Publisher+.swift in Sources */,
+				DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */,
 				DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */,
+				DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */,
 				DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */,
 				DD4BFCE62D5D98FF003A8045 /* AppDelegate.swift in Sources */,
 				DD4BFCE72D5D98FF003A8045 /* SceneDelegate.swift in Sources */,
@@ -265,7 +289,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2DF5SKQK2R;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wable-iOS/Resource/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "와블";
@@ -293,7 +317,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2DF5SKQK2R;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wable-iOS/Resource/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "와블";
