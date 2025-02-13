@@ -110,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				DED2EE002D5DAF9700A9434B /* Network */,
-				DD6BD9CA2D5D9BB000736D51 /* TargetTyoe */,
 			);
 			path = Infra;
 			sourceTree = "<group>";
@@ -131,18 +130,19 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		DD6BD9CA2D5D9BB000736D51 /* TargetTyoe */ = {
+		DD6BD9CA2D5D9BB000736D51 /* TargetType */ = {
 			isa = PBXGroup;
 			children = (
 				DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */,
 			);
-			path = TargetTyoe;
+			path = TargetType;
 			sourceTree = "<group>";
 		};
 		DED2EE002D5DAF9700A9434B /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */,
+				DD6BD9CA2D5D9BB000736D51 /* TargetType */,
 			);
 			path = Network;
 			sourceTree = "<group>";
