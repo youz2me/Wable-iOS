@@ -19,6 +19,7 @@
 		DD6BD9C72D5D9B9900736D51 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C62D5D9B9600736D51 /* Mapper.swift */; };
 		DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C82D5D9BA500736D51 /* empty.swift */; };
 		DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */; };
+		DED2EE0B2D5DBEFD00A9434B /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DD6BD9C62D5D9B9600736D51 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		DD6BD9C82D5D9BA500736D51 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
 		DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+.swift"; sourceTree = "<group>"; };
+		DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */,
+				DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */,
 			);
 			path = "Combine+";
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				DD4BFCE62D5D98FF003A8045 /* AppDelegate.swift in Sources */,
 				DD4BFCE72D5D98FF003A8045 /* SceneDelegate.swift in Sources */,
 				DD6BD9C32D5D9B7000736D51 /* Conbine+.swift in Sources */,
+				DED2EE0B2D5DBEFD00A9434B /* CancelBag.swift in Sources */,
 				DD6BD9C72D5D9B9900736D51 /* Mapper.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */,
