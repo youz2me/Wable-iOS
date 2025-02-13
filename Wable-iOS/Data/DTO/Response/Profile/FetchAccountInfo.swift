@@ -5,6 +5,9 @@
 //  Created by YOUJIM on 2/13/25.
 //
 
+
+import Foundation
+
 // MARK: - 계정 정보 조회
 
 extension DTO.Response {

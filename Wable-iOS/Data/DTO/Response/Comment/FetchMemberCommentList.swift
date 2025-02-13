@@ -5,6 +5,9 @@
 //  Created by YOUJIM on 2/13/25.
 //
 
+
+import Foundation
+
 // MARK: - 멤버에 해당하는 답글 리스트 조회
 
 extension DTO.Response {

@@ -5,17 +5,18 @@
 //  Created by YOUJIM on 2/13/25.
 //
 
-// MARK: - 유저 프로필 수정
 
 import Foundation
 
+// MARK: - 유저 프로필 수정
+
 extension DTO.Request {
-    struct UpdateUserProfile: Codable {
+    struct UpdateUserProfile: Encodable {
         let info: ProfileInfo?
         let file: Data?
     }
     
-    struct ProfileInfo: Codable {
+    struct ProfileInfo: Encodable {
         let nickname: String?
         let isAlarmAllowed: Bool?
         let memberIntro: String?
