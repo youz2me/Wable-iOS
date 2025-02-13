@@ -18,6 +18,7 @@
 		DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */; };
 		DD6BD9C72D5D9B9900736D51 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C62D5D9B9600736D51 /* Mapper.swift */; };
 		DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C82D5D9BA500736D51 /* empty.swift */; };
+		DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		DD6BD9C62D5D9B9600736D51 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		DD6BD9C82D5D9BA500736D51 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
+		DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		DD6BD9BA2D5D9B1A00736D51 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				DED2EE072D5DBE8100A9434B /* Combine+ */,
 				DD6BD9C22D5D9B6C00736D51 /* Conbine+.swift */,
 			);
 			path = Core;
@@ -134,6 +137,14 @@
 				DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */,
 			);
 			path = TargetTyoe;
+			sourceTree = "<group>";
+		};
+		DED2EE072D5DBE8100A9434B /* Combine+ */ = {
+			isa = PBXGroup;
+			children = (
+				DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */,
+			);
+			path = "Combine+";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +232,7 @@
 				DD6BD9C32D5D9B7000736D51 /* Conbine+.swift in Sources */,
 				DD6BD9C72D5D9B9900736D51 /* Mapper.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
+				DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
