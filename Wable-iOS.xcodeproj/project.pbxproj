@@ -15,13 +15,30 @@
 		DD4BFCE92D5D98FF003A8045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4BFCDF2D5D98FF003A8045 /* Assets.xcassets */; };
 		DD4BFCEB2D5D98FF003A8045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4BFCE22D5D98FF003A8045 /* LaunchScreen.storyboard */; };
 		DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */; };
-		DD6BD9C72D5D9B9900736D51 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C62D5D9B9600736D51 /* Mapper.swift */; };
 		DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C82D5D9BA500736D51 /* empty.swift */; };
 		DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */; };
 		DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE042D5DB41A00A9434B /* WableLogger.swift */; };
 		DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */; };
 		DED2EE0B2D5DBEFD00A9434B /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */; };
 		DED2EE0D2D5DBF6500A9434B /* Publisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE0C2D5DBF6500A9434B /* Publisher+.swift */; };
+		DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72E2822D5DA7F70059D55D /* UpdateToken.swift */; };
+		DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12392D5DB3BB00422B1F /* DeleteAccount.swift */; };
+		DD9B123C2D5DB4D000422B1F /* UpdateUserBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B123B2D5DB4D000422B1F /* UpdateUserBadge.swift */; };
+		DD9B123E2D5DB5C700422B1F /* FetchAccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B123D2D5DB5BD00422B1F /* FetchAccountInfo.swift */; };
+		DD9B12402D5DB6EB00422B1F /* FetchUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B123F2D5DB6EB00422B1F /* FetchUserProfile.swift */; };
+		DD9B12422D5DB8B300422B1F /* UpdateUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12412D5DB88700422B1F /* UpdateUserProfile.swift */; };
+		DD9B12442D5DBA4100422B1F /* FetchMemberCommentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12432D5DBA2D00422B1F /* FetchMemberCommentList.swift */; };
+		DD9B12462D5DBBDD00422B1F /* FetchContentCommentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12452D5DBBDD00422B1F /* FetchContentCommentList.swift */; };
+		DD9B12482D5DBCAE00422B1F /* CreateComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12472D5DBC9A00422B1F /* CreateComment.swift */; };
+		DD9B124A2D5DBDFB00422B1F /* UpdateCommentLiked.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12492D5DBDB300422B1F /* UpdateCommentLiked.swift */; };
+		DD9B124C2D5DBF6300422B1F /* CreateContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B124B2D5DBF4100422B1F /* CreateContent.swift */; };
+		DD9B124E2D5DC3AF00422B1F /* FetchContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B124D2D5DC39000422B1F /* FetchContent.swift */; };
+		DD9B12522D5DC9C000422B1F /* UpdateContentLiked.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12512D5DC99C00422B1F /* UpdateContentLiked.swift */; };
+		DD9B12542D5DCA0300422B1F /* UpdateGhost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12532D5DC9FB00422B1F /* UpdateGhost.swift */; };
+		DD9B125B2D5DD18000422B1F /* CreateAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE46F5B2D5DAD660020B050 /* CreateAccountRequest.swift */; };
+		DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */; };
+		DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */; };
+		DDF38BF92D5DA1CC005FF627 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF82D5DA1C9005FF627 /* DTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +50,30 @@
 		DD4BFCE32D5D98FF003A8045 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DD4BFCE42D5D98FF003A8045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
-		DD6BD9C62D5D9B9600736D51 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		DD6BD9C82D5D9BA500736D51 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
 		DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableNetworkError.swift; sourceTree = "<group>"; };
 		DED2EE042D5DB41A00A9434B /* WableLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableLogger.swift; sourceTree = "<group>"; };
 		DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+.swift"; sourceTree = "<group>"; };
 		DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 		DED2EE0C2D5DBF6500A9434B /* Publisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+.swift"; sourceTree = "<group>"; };
+		DD72E2822D5DA7F70059D55D /* UpdateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToken.swift; sourceTree = "<group>"; };
+		DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountResponse.swift; sourceTree = "<group>"; };
+		DD9B12392D5DB3BB00422B1F /* DeleteAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccount.swift; sourceTree = "<group>"; };
+		DD9B123B2D5DB4D000422B1F /* UpdateUserBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserBadge.swift; sourceTree = "<group>"; };
+		DD9B123D2D5DB5BD00422B1F /* FetchAccountInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAccountInfo.swift; sourceTree = "<group>"; };
+		DD9B123F2D5DB6EB00422B1F /* FetchUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserProfile.swift; sourceTree = "<group>"; };
+		DD9B12412D5DB88700422B1F /* UpdateUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserProfile.swift; sourceTree = "<group>"; };
+		DD9B12432D5DBA2D00422B1F /* FetchMemberCommentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMemberCommentList.swift; sourceTree = "<group>"; };
+		DD9B12452D5DBBDD00422B1F /* FetchContentCommentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchContentCommentList.swift; sourceTree = "<group>"; };
+		DD9B12472D5DBC9A00422B1F /* CreateComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateComment.swift; sourceTree = "<group>"; };
+		DD9B12492D5DBDB300422B1F /* UpdateCommentLiked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCommentLiked.swift; sourceTree = "<group>"; };
+		DD9B124B2D5DBF4100422B1F /* CreateContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContent.swift; sourceTree = "<group>"; };
+		DD9B124D2D5DC39000422B1F /* FetchContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchContent.swift; sourceTree = "<group>"; };
+		DD9B12512D5DC99C00422B1F /* UpdateContentLiked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateContentLiked.swift; sourceTree = "<group>"; };
+		DD9B12532D5DC9FB00422B1F /* UpdateGhost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateGhost.swift; sourceTree = "<group>"; };
+		DDE46F5B2D5DAD660020B050 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
+		DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		DDF38BF82D5DA1C9005FF627 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +158,7 @@
 		DD6BD9BE2D5D9B2500736D51 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				DD6BD9C62D5D9B9600736D51 /* Mapper.swift */,
+				DDF38BF52D5DA1B2005FF627 /* DTO */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -170,6 +204,151 @@
 				DED2EE0C2D5DBF6500A9434B /* Publisher+.swift */,
 			);
 			path = "Combine+";
+			sourceTree = "<group>";
+		};
+		DD72E26D2D5DA6980059D55D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DD72E26E2D5DA70B0059D55D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */,
+				DD72E2822D5DA7F70059D55D /* UpdateToken.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DD72E2702D5DA7220059D55D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B123D2D5DB5BD00422B1F /* FetchAccountInfo.swift */,
+				DD9B123F2D5DB6EB00422B1F /* FetchUserProfile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DD72E2712D5DA72E0059D55D /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B12432D5DBA2D00422B1F /* FetchMemberCommentList.swift */,
+				DD9B12452D5DBBDD00422B1F /* FetchContentCommentList.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		DD72E2732D5DA7410059D55D /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B124D2D5DC39000422B1F /* FetchContent.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		DD72E2782D5DA7950059D55D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DDE46F5B2D5DAD660020B050 /* CreateAccountRequest.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DD72E2792D5DA7950059D55D /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B12392D5DB3BB00422B1F /* DeleteAccount.swift */,
+				DD9B123B2D5DB4D000422B1F /* UpdateUserBadge.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		DD72E27A2D5DA7950059D55D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B12412D5DB88700422B1F /* UpdateUserProfile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DD72E27B2D5DA7950059D55D /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B12472D5DBC9A00422B1F /* CreateComment.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		DD72E27C2D5DA7950059D55D /* CommentLiked */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B12492D5DBDB300422B1F /* UpdateCommentLiked.swift */,
+			);
+			path = CommentLiked;
+			sourceTree = "<group>";
+		};
+		DD72E27D2D5DA7950059D55D /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B124B2D5DBF4100422B1F /* CreateContent.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		DD72E27E2D5DA7950059D55D /* ContentLiked */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B12512D5DC99C00422B1F /* UpdateContentLiked.swift */,
+			);
+			path = ContentLiked;
+			sourceTree = "<group>";
+		};
+		DD72E27F2D5DA7950059D55D /* Ghost */ = {
+			isa = PBXGroup;
+			children = (
+				DD9B12532D5DC9FB00422B1F /* UpdateGhost.swift */,
+			);
+			path = Ghost;
+			sourceTree = "<group>";
+		};
+		DDF38BF52D5DA1B2005FF627 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				DDF38BF82D5DA1C9005FF627 /* DTO.swift */,
+				DD72E26D2D5DA6980059D55D /* Base */,
+				DDF38BF62D5DA1B7005FF627 /* Request */,
+				DDF38BF72D5DA1BC005FF627 /* Response */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		DDF38BF62D5DA1B7005FF627 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DD72E2782D5DA7950059D55D /* Login */,
+				DD72E2792D5DA7950059D55D /* Account */,
+				DD72E27A2D5DA7950059D55D /* Profile */,
+				DD72E27B2D5DA7950059D55D /* Comment */,
+				DD72E27C2D5DA7950059D55D /* CommentLiked */,
+				DD72E27D2D5DA7950059D55D /* Content */,
+				DD72E27E2D5DA7950059D55D /* ContentLiked */,
+				DD72E27F2D5DA7950059D55D /* Ghost */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		DDF38BF72D5DA1BC005FF627 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				DD72E26E2D5DA70B0059D55D /* Login */,
+				DD72E2702D5DA7220059D55D /* Profile */,
+				DD72E2712D5DA72E0059D55D /* Comment */,
+				DD72E2732D5DA7410059D55D /* Content */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,13 +433,33 @@
 				DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */,
 				DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */,
 				DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */,
+				DD9B125B2D5DD18000422B1F /* CreateAccountRequest.swift in Sources */,
+				DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */,
+				DD9B12422D5DB8B300422B1F /* UpdateUserProfile.swift in Sources */,
+				DD9B12442D5DBA4100422B1F /* FetchMemberCommentList.swift in Sources */,
+				DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */,
 				DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */,
 				DD4BFCE62D5D98FF003A8045 /* AppDelegate.swift in Sources */,
+				DD9B124A2D5DBDFB00422B1F /* UpdateCommentLiked.swift in Sources */,
+				DD9B124C2D5DBF6300422B1F /* CreateContent.swift in Sources */,
+				DD9B123C2D5DB4D000422B1F /* UpdateUserBadge.swift in Sources */,
+				DD9B12482D5DBCAE00422B1F /* CreateComment.swift in Sources */,
+				DD9B12542D5DCA0300422B1F /* UpdateGhost.swift in Sources */,
+				DDF38BF92D5DA1CC005FF627 /* DTO.swift in Sources */,
+				DD9B12402D5DB6EB00422B1F /* FetchUserProfile.swift in Sources */,
 				DD4BFCE72D5D98FF003A8045 /* SceneDelegate.swift in Sources */,
 				DED2EE0B2D5DBEFD00A9434B /* CancelBag.swift in Sources */,
 				DD6BD9C72D5D9B9900736D51 /* Mapper.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */,
+				DD9B123E2D5DB5C700422B1F /* FetchAccountInfo.swift in Sources */,
+				DD6BD9C32D5D9B7000736D51 /* Conbine+.swift in Sources */,
+				DD9B124E2D5DC3AF00422B1F /* FetchContent.swift in Sources */,
+				DD9B12522D5DC9C000422B1F /* UpdateContentLiked.swift in Sources */,
+				DD9B12462D5DBBDD00422B1F /* FetchContentCommentList.swift in Sources */,
+				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
+				DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */,
+				DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
