@@ -18,6 +18,7 @@
 		DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */; };
 		DD6BD9C72D5D9B9900736D51 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C62D5D9B9600736D51 /* Mapper.swift */; };
 		DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C82D5D9BA500736D51 /* empty.swift */; };
+		DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		DD6BD9C62D5D9B9600736D51 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		DD6BD9C82D5D9BA500736D51 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
+		DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableNetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		DD6BD9BB2D5D9B1E00736D51 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				DED2EE002D5DAF9700A9434B /* Network */,
 				DD6BD9CA2D5D9BB000736D51 /* TargetTyoe */,
 			);
 			path = Infra;
@@ -134,6 +137,14 @@
 				DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */,
 			);
 			path = TargetTyoe;
+			sourceTree = "<group>";
+		};
+		DED2EE002D5DAF9700A9434B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */,
+				DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */,
 				DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */,
 				DD4BFCE62D5D98FF003A8045 /* AppDelegate.swift in Sources */,
 				DD4BFCE72D5D98FF003A8045 /* SceneDelegate.swift in Sources */,
