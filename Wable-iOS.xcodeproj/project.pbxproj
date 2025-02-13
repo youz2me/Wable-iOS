@@ -19,6 +19,7 @@
 		DD6BD9C72D5D9B9900736D51 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C62D5D9B9600736D51 /* Mapper.swift */; };
 		DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C82D5D9BA500736D51 /* empty.swift */; };
 		DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */; };
+		DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE042D5DB41A00A9434B /* WableLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DD6BD9C62D5D9B9600736D51 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		DD6BD9C82D5D9BA500736D51 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
 		DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableNetworkError.swift; sourceTree = "<group>"; };
+		DED2EE042D5DB41A00A9434B /* WableLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		DD6BD9BA2D5D9B1A00736D51 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				DED2EE032D5DB41100A9434B /* Logger */,
 				DD6BD9C22D5D9B6C00736D51 /* Conbine+.swift */,
 			);
 			path = Core;
@@ -145,6 +148,14 @@
 				DD6BD9CA2D5D9BB000736D51 /* TargetType */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		DED2EE032D5DB41100A9434B /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				DED2EE042D5DB41A00A9434B /* WableLogger.swift */,
+			);
+			path = Logger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */,
 				DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */,
 				DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */,
 				DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */,
@@ -257,7 +269,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2DF5SKQK2R;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wable-iOS/Resource/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "와블";
@@ -285,7 +297,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2DF5SKQK2R;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wable-iOS/Resource/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "와블";
