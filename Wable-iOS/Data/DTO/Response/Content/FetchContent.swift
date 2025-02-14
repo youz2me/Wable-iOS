@@ -22,20 +22,19 @@ extension DTO.Response {
         let memberGhost: Int
         let isLiked: Bool
         let time: String
-        let likedNumber, commnetNumber: Int
+        let likedNumber, commentNumber: Int
         let message: String
         let contentImageURL: String
         let memberFanTeam: String
         let isBlind: Bool?
-    }
-    
-    enum CodingKeys: String, CodingKey {
-        case memberID = "memberId"
-        case memberProfileURL = "memberProfileUrl"
-        case memberNickname
-        case contentID = "contentId"
-        case contentTitle, contentText, time, isGhost, memberGhost, isLiked, likedNumber, commentNumber, isDeleted
-        case contentImageURL = "contentImageUrl"
-        case memberFanTeam, isBlind
+        
+        enum CodingKeys: String, CodingKey {
+            case memberID = "memberId"
+            case memberProfileURL = "memberProfileUrl"
+            case memberNickname
+            case time, isGhost, memberGhost, isLiked, likedNumber, commentNumber, message
+            case contentImageURL = "contentImageUrl"
+            case memberFanTeam, isBlind
+        }
     }
 }
