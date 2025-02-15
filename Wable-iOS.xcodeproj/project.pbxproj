@@ -14,7 +14,6 @@
 		DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BFCE42D5D98FF003A8045 /* ViewController.swift */; };
 		DD4BFCE92D5D98FF003A8045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4BFCDF2D5D98FF003A8045 /* Assets.xcassets */; };
 		DD4BFCEB2D5D98FF003A8045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4BFCE22D5D98FF003A8045 /* LaunchScreen.storyboard */; };
-		DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */; };
 		DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C82D5D9BA500736D51 /* empty.swift */; };
 		DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72E2822D5DA7F70059D55D /* UpdateToken.swift */; };
 		DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12392D5DB3BB00422B1F /* DeleteAccount.swift */; };
@@ -34,6 +33,10 @@
 		DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */; };
 		DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */; };
 		DDF38BF92D5DA1CC005FF627 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF82D5DA1C9005FF627 /* DTO.swift */; };
+		DEA4E21F2D607FB000909437 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E21E2D607FB000909437 /* BaseTargetType.swift */; };
+		DEA4E2222D60813300909437 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E2212D60813300909437 /* Empty.swift */; };
+		DEA4E2242D6081B400909437 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E2232D6081B400909437 /* MoyaLoggingPlugin.swift */; };
+		DEBEDFD82D5F846F00086E5A /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEDFD72D5F846F00086E5A /* APIProvider.swift */; };
 		DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */; };
 		DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE042D5DB41A00A9434B /* WableLogger.swift */; };
 		DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */; };
@@ -49,7 +52,6 @@
 		DD4BFCE12D5D98FF003A8045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD4BFCE32D5D98FF003A8045 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DD4BFCE42D5D98FF003A8045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		DD6BD9C82D5D9BA500736D51 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
 		DD72E2822D5DA7F70059D55D /* UpdateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToken.swift; sourceTree = "<group>"; };
 		DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountResponse.swift; sourceTree = "<group>"; };
@@ -69,6 +71,10 @@
 		DDE46F5B2D5DAD660020B050 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
 		DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		DDF38BF82D5DA1C9005FF627 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
+		DEA4E21E2D607FB000909437 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		DEA4E2212D60813300909437 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		DEA4E2232D6081B400909437 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
+		DEBEDFD72D5F846F00086E5A /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableNetworkError.swift; sourceTree = "<group>"; };
 		DED2EE042D5DB41A00A9434B /* WableLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableLogger.swift; sourceTree = "<group>"; };
 		DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+.swift"; sourceTree = "<group>"; };
@@ -174,7 +180,7 @@
 		DD6BD9CA2D5D9BB000736D51 /* TargetType */ = {
 			isa = PBXGroup;
 			children = (
-				DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */,
+				DEA4E21E2D607FB000909437 /* BaseTargetType.swift */,
 			);
 			path = TargetType;
 			sourceTree = "<group>";
@@ -316,6 +322,7 @@
 		DDF38BF72D5DA1BC005FF627 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				DEA4E2202D60812A00909437 /* Empty */,
 				DD72E26E2D5DA70B0059D55D /* Login */,
 				DD72E2702D5DA7220059D55D /* Profile */,
 				DD72E2712D5DA72E0059D55D /* Comment */,
@@ -324,10 +331,20 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		DEA4E2202D60812A00909437 /* Empty */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4E2212D60813300909437 /* Empty.swift */,
+			);
+			path = Empty;
+			sourceTree = "<group>";
+		};
 		DED2EE002D5DAF9700A9434B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				DEBEDFD72D5F846F00086E5A /* APIProvider.swift */,
 				DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */,
+				DEA4E2232D6081B400909437 /* MoyaLoggingPlugin.swift */,
 				DD6BD9CA2D5D9BB000736D51 /* TargetType */,
 			);
 			path = Network;
@@ -431,8 +448,8 @@
 			files = (
 				DED2EE0D2D5DBF6500A9434B /* Publisher+.swift in Sources */,
 				DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */,
-				DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */,
 				DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */,
+				DEA4E21F2D607FB000909437 /* BaseTargetType.swift in Sources */,
 				DD9B125B2D5DD18000422B1F /* CreateAccountRequest.swift in Sources */,
 				DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */,
 				DD9B12422D5DB8B300422B1F /* UpdateUserProfile.swift in Sources */,
@@ -446,9 +463,11 @@
 				DD9B12482D5DBCAE00422B1F /* CreateComment.swift in Sources */,
 				DD9B12542D5DCA0300422B1F /* UpdateGhost.swift in Sources */,
 				DDF38BF92D5DA1CC005FF627 /* DTO.swift in Sources */,
+				DEBEDFD82D5F846F00086E5A /* APIProvider.swift in Sources */,
 				DD9B12402D5DB6EB00422B1F /* FetchUserProfile.swift in Sources */,
 				DD4BFCE72D5D98FF003A8045 /* SceneDelegate.swift in Sources */,
 				DED2EE0B2D5DBEFD00A9434B /* CancelBag.swift in Sources */,
+				DEA4E2222D60813300909437 /* Empty.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */,
 				DD9B123E2D5DB5C700422B1F /* FetchAccountInfo.swift in Sources */,
@@ -457,6 +476,7 @@
 				DD9B12462D5DBBDD00422B1F /* FetchContentCommentList.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */,
+				DEA4E2242D6081B400909437 /* MoyaLoggingPlugin.swift in Sources */,
 				DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
