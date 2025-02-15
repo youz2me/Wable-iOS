@@ -17,6 +17,7 @@ enum WableNetworkError: Error, CustomStringConvertible {
     case notFound(message: String)
     /// 500
     case internalServerError
+    case missingData
     case unknown(Error)
     
     var description: String {
@@ -27,6 +28,8 @@ enum WableNetworkError: Error, CustomStringConvertible {
             "\(message)"
         case .internalServerError:
             "서버 내부 오류입니다."
+        case .missingData:
+            "데이터 필드가 nil 입니다."
         case .unknown(let error):
             "알 수 없는 오류입니다: \(error.localizedDescription)"
         }
