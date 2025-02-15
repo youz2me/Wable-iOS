@@ -25,7 +25,7 @@
 		DD9B123E2D5DB5C700422B1F /* FetchAccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B123D2D5DB5BD00422B1F /* FetchAccountInfo.swift */; };
 		DD9B12402D5DB6EB00422B1F /* FetchUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B123F2D5DB6EB00422B1F /* FetchUserProfile.swift */; };
 		DD9B12422D5DB8B300422B1F /* UpdateUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12412D5DB88700422B1F /* UpdateUserProfile.swift */; };
-		DD9B12442D5DBA4100422B1F /* FetchMemberCommentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12432D5DBA2D00422B1F /* FetchMemberCommentList.swift */; };
+		DD9B12442D5DBA4100422B1F /* FetchMemberComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12432D5DBA2D00422B1F /* FetchMemberComment.swift */; };
 		DD9B12462D5DBBDD00422B1F /* FetchContentCommentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12452D5DBBDD00422B1F /* FetchContentCommentList.swift */; };
 		DD9B12482D5DBCAE00422B1F /* CreateComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12472D5DBC9A00422B1F /* CreateComment.swift */; };
 		DD9B124A2D5DBDFB00422B1F /* UpdateCommentLiked.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12492D5DBDB300422B1F /* UpdateCommentLiked.swift */; };
@@ -37,6 +37,12 @@
 		DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */; };
 		DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */; };
 		DDF38BF92D5DA1CC005FF627 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF82D5DA1C9005FF627 /* DTO.swift */; };
+		DEA4E21F2D607FB000909437 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E21E2D607FB000909437 /* BaseTargetType.swift */; };
+		DEA4E2222D60813300909437 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E2212D60813300909437 /* Empty.swift */; };
+		DEA4E2242D6081B400909437 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E2232D6081B400909437 /* MoyaLoggingPlugin.swift */; };
+		DEA4E2272D60BEDD00909437 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E2262D60BEDD00909437 /* DIContainer.swift */; };
+		DEA4E2292D60BF0C00909437 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E2282D60BF0C00909437 /* Injected.swift */; };
+		DEBEDFD82D5F846F00086E5A /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEDFD72D5F846F00086E5A /* APIProvider.swift */; };
 		DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */; };
 		DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE042D5DB41A00A9434B /* WableLogger.swift */; };
 		DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */; };
@@ -64,7 +70,7 @@
 		DD9B123D2D5DB5BD00422B1F /* FetchAccountInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAccountInfo.swift; sourceTree = "<group>"; };
 		DD9B123F2D5DB6EB00422B1F /* FetchUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserProfile.swift; sourceTree = "<group>"; };
 		DD9B12412D5DB88700422B1F /* UpdateUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserProfile.swift; sourceTree = "<group>"; };
-		DD9B12432D5DBA2D00422B1F /* FetchMemberCommentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMemberCommentList.swift; sourceTree = "<group>"; };
+		DD9B12432D5DBA2D00422B1F /* FetchMemberComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMemberComment.swift; sourceTree = "<group>"; };
 		DD9B12452D5DBBDD00422B1F /* FetchContentCommentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchContentCommentList.swift; sourceTree = "<group>"; };
 		DD9B12472D5DBC9A00422B1F /* CreateComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateComment.swift; sourceTree = "<group>"; };
 		DD9B12492D5DBDB300422B1F /* UpdateCommentLiked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCommentLiked.swift; sourceTree = "<group>"; };
@@ -75,6 +81,12 @@
 		DDE46F5B2D5DAD660020B050 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
 		DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		DDF38BF82D5DA1C9005FF627 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
+		DEA4E21E2D607FB000909437 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		DEA4E2212D60813300909437 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		DEA4E2232D6081B400909437 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
+		DEA4E2262D60BEDD00909437 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		DEA4E2282D60BF0C00909437 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		DEBEDFD72D5F846F00086E5A /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableNetworkError.swift; sourceTree = "<group>"; };
 		DED2EE042D5DB41A00A9434B /* WableLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableLogger.swift; sourceTree = "<group>"; };
 		DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+.swift"; sourceTree = "<group>"; };
@@ -157,6 +169,7 @@
 		DD6BD9BA2D5D9B1A00736D51 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				DEA4E2252D60BED600909437 /* DI */,
 				DED2EE072D5DBE8100A9434B /* Combine+ */,
 				DED2EE032D5DB41100A9434B /* Logger */,
 			);
@@ -191,7 +204,7 @@
 		DD6BD9CA2D5D9BB000736D51 /* TargetType */ = {
 			isa = PBXGroup;
 			children = (
-				DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */,
+				DEA4E21E2D607FB000909437 /* BaseTargetType.swift */,
 			);
 			path = TargetType;
 			sourceTree = "<group>";
@@ -225,7 +238,7 @@
 		DD72E2712D5DA72E0059D55D /* Comment */ = {
 			isa = PBXGroup;
 			children = (
-				DD9B12432D5DBA2D00422B1F /* FetchMemberCommentList.swift */,
+				DD9B12432D5DBA2D00422B1F /* FetchMemberComment.swift */,
 				DD9B12452D5DBBDD00422B1F /* FetchContentCommentList.swift */,
 			);
 			path = Comment;
@@ -333,6 +346,7 @@
 		DDF38BF72D5DA1BC005FF627 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				DEA4E2202D60812A00909437 /* Empty */,
 				DD72E26E2D5DA70B0059D55D /* Login */,
 				DD72E2702D5DA7220059D55D /* Profile */,
 				DD72E2712D5DA72E0059D55D /* Comment */,
@@ -341,10 +355,29 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		DEA4E2202D60812A00909437 /* Empty */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4E2212D60813300909437 /* Empty.swift */,
+			);
+			path = Empty;
+			sourceTree = "<group>";
+		};
+		DEA4E2252D60BED600909437 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4E2262D60BEDD00909437 /* DIContainer.swift */,
+				DEA4E2282D60BF0C00909437 /* Injected.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		DED2EE002D5DAF9700A9434B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				DEBEDFD72D5F846F00086E5A /* APIProvider.swift */,
 				DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */,
+				DEA4E2232D6081B400909437 /* MoyaLoggingPlugin.swift */,
 				DD6BD9CA2D5D9BB000736D51 /* TargetType */,
 			);
 			path = Network;
@@ -447,14 +480,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DED2EE0D2D5DBF6500A9434B /* Publisher+.swift in Sources */,
+				DEA4E2272D60BEDD00909437 /* DIContainer.swift in Sources */,
 				DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */,
-				DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */,
+				DEA4E2292D60BF0C00909437 /* Injected.swift in Sources */,
 				DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */,
+				DEA4E21F2D607FB000909437 /* BaseTargetType.swift in Sources */,
 				DD5917C82D60C2A7006E82F9 /* KeychainError.swift in Sources */,
 				DD9B125B2D5DD18000422B1F /* CreateAccountRequest.swift in Sources */,
 				DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */,
 				DD9B12422D5DB8B300422B1F /* UpdateUserProfile.swift in Sources */,
-				DD9B12442D5DBA4100422B1F /* FetchMemberCommentList.swift in Sources */,
+				DD9B12442D5DBA4100422B1F /* FetchMemberComment.swift in Sources */,
 				DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */,
 				DD5917C42D60B965006E82F9 /* KeychainWrapper.swift in Sources */,
 				DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */,
@@ -465,9 +500,11 @@
 				DD9B12482D5DBCAE00422B1F /* CreateComment.swift in Sources */,
 				DD9B12542D5DCA0300422B1F /* UpdateGhost.swift in Sources */,
 				DDF38BF92D5DA1CC005FF627 /* DTO.swift in Sources */,
+				DEBEDFD82D5F846F00086E5A /* APIProvider.swift in Sources */,
 				DD9B12402D5DB6EB00422B1F /* FetchUserProfile.swift in Sources */,
 				DD4BFCE72D5D98FF003A8045 /* SceneDelegate.swift in Sources */,
 				DED2EE0B2D5DBEFD00A9434B /* CancelBag.swift in Sources */,
+				DEA4E2222D60813300909437 /* Empty.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */,
 				DD9B123E2D5DB5C700422B1F /* FetchAccountInfo.swift in Sources */,
@@ -476,6 +513,7 @@
 				DD9B12462D5DBBDD00422B1F /* FetchContentCommentList.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */,
+				DEA4E2242D6081B400909437 /* MoyaLoggingPlugin.swift in Sources */,
 				DD5917C62D60BF4C006E82F9 /* KeychainService.swift in Sources */,
 				DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */,
 			);
