@@ -14,13 +14,11 @@
 		DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BFCE42D5D98FF003A8045 /* ViewController.swift */; };
 		DD4BFCE92D5D98FF003A8045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4BFCDF2D5D98FF003A8045 /* Assets.xcassets */; };
 		DD4BFCEB2D5D98FF003A8045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4BFCE22D5D98FF003A8045 /* LaunchScreen.storyboard */; };
+		DD5917C42D60B965006E82F9 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C32D60B95A006E82F9 /* KeychainWrapper.swift */; };
+		DD5917C62D60BF4C006E82F9 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C52D60BF44006E82F9 /* KeychainService.swift */; };
+		DD5917C82D60C2A7006E82F9 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C72D60C2A1006E82F9 /* KeychainError.swift */; };
 		DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */; };
 		DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C82D5D9BA500736D51 /* empty.swift */; };
-		DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */; };
-		DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE042D5DB41A00A9434B /* WableLogger.swift */; };
-		DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */; };
-		DED2EE0B2D5DBEFD00A9434B /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */; };
-		DED2EE0D2D5DBF6500A9434B /* Publisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE0C2D5DBF6500A9434B /* Publisher+.swift */; };
 		DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72E2822D5DA7F70059D55D /* UpdateToken.swift */; };
 		DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12392D5DB3BB00422B1F /* DeleteAccount.swift */; };
 		DD9B123C2D5DB4D000422B1F /* UpdateUserBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B123B2D5DB4D000422B1F /* UpdateUserBadge.swift */; };
@@ -39,6 +37,11 @@
 		DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */; };
 		DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */; };
 		DDF38BF92D5DA1CC005FF627 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF82D5DA1C9005FF627 /* DTO.swift */; };
+		DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */; };
+		DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE042D5DB41A00A9434B /* WableLogger.swift */; };
+		DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */; };
+		DED2EE0B2D5DBEFD00A9434B /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */; };
+		DED2EE0D2D5DBF6500A9434B /* Publisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE0C2D5DBF6500A9434B /* Publisher+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,13 +52,11 @@
 		DD4BFCE12D5D98FF003A8045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD4BFCE32D5D98FF003A8045 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DD4BFCE42D5D98FF003A8045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD5917C32D60B95A006E82F9 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		DD5917C52D60BF44006E82F9 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		DD5917C72D60C2A1006E82F9 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
 		DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		DD6BD9C82D5D9BA500736D51 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
-		DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableNetworkError.swift; sourceTree = "<group>"; };
-		DED2EE042D5DB41A00A9434B /* WableLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableLogger.swift; sourceTree = "<group>"; };
-		DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+.swift"; sourceTree = "<group>"; };
-		DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
-		DED2EE0C2D5DBF6500A9434B /* Publisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+.swift"; sourceTree = "<group>"; };
 		DD72E2822D5DA7F70059D55D /* UpdateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToken.swift; sourceTree = "<group>"; };
 		DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountResponse.swift; sourceTree = "<group>"; };
 		DD9B12392D5DB3BB00422B1F /* DeleteAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccount.swift; sourceTree = "<group>"; };
@@ -74,6 +75,11 @@
 		DDE46F5B2D5DAD660020B050 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
 		DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		DDF38BF82D5DA1C9005FF627 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
+		DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableNetworkError.swift; sourceTree = "<group>"; };
+		DED2EE042D5DB41A00A9434B /* WableLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableLogger.swift; sourceTree = "<group>"; };
+		DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+.swift"; sourceTree = "<group>"; };
+		DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
+		DED2EE0C2D5DBF6500A9434B /* Publisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,16 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		DD5917C22D60B932006E82F9 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				DD5917C32D60B95A006E82F9 /* KeychainWrapper.swift */,
+				DD5917C52D60BF44006E82F9 /* KeychainService.swift */,
+				DD5917C72D60C2A1006E82F9 /* KeychainError.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
 		DD6BD9B92D5D9AD100736D51 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +166,7 @@
 		DD6BD9BB2D5D9B1E00736D51 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				DD5917C22D60B932006E82F9 /* Keychain */,
 				DED2EE002D5DAF9700A9434B /* Network */,
 			);
 			path = Infra;
@@ -177,33 +194,6 @@
 				DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */,
 			);
 			path = TargetType;
-			sourceTree = "<group>";
-		};
-		DED2EE002D5DAF9700A9434B /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */,
-				DD6BD9CA2D5D9BB000736D51 /* TargetType */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		DED2EE032D5DB41100A9434B /* Logger */ = {
-			isa = PBXGroup;
-			children = (
-				DED2EE042D5DB41A00A9434B /* WableLogger.swift */,
-			);
-			path = Logger;
-			sourceTree = "<group>";
-		};
-		DED2EE072D5DBE8100A9434B /* Combine+ */ = {
-			isa = PBXGroup;
-			children = (
-				DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */,
-				DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */,
-				DED2EE0C2D5DBF6500A9434B /* Publisher+.swift */,
-			);
-			path = "Combine+";
 			sourceTree = "<group>";
 		};
 		DD72E26D2D5DA6980059D55D /* Base */ = {
@@ -351,6 +341,33 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		DED2EE002D5DAF9700A9434B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */,
+				DD6BD9CA2D5D9BB000736D51 /* TargetType */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DED2EE032D5DB41100A9434B /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				DED2EE042D5DB41A00A9434B /* WableLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		DED2EE072D5DBE8100A9434B /* Combine+ */ = {
+			isa = PBXGroup;
+			children = (
+				DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */,
+				DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */,
+				DED2EE0C2D5DBF6500A9434B /* Publisher+.swift */,
+			);
+			path = "Combine+";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -433,11 +450,13 @@
 				DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */,
 				DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */,
 				DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */,
+				DD5917C82D60C2A7006E82F9 /* KeychainError.swift in Sources */,
 				DD9B125B2D5DD18000422B1F /* CreateAccountRequest.swift in Sources */,
 				DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */,
 				DD9B12422D5DB8B300422B1F /* UpdateUserProfile.swift in Sources */,
 				DD9B12442D5DBA4100422B1F /* FetchMemberCommentList.swift in Sources */,
 				DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */,
+				DD5917C42D60B965006E82F9 /* KeychainWrapper.swift in Sources */,
 				DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */,
 				DD4BFCE62D5D98FF003A8045 /* AppDelegate.swift in Sources */,
 				DD9B124A2D5DBDFB00422B1F /* UpdateCommentLiked.swift in Sources */,
@@ -449,16 +468,15 @@
 				DD9B12402D5DB6EB00422B1F /* FetchUserProfile.swift in Sources */,
 				DD4BFCE72D5D98FF003A8045 /* SceneDelegate.swift in Sources */,
 				DED2EE0B2D5DBEFD00A9434B /* CancelBag.swift in Sources */,
-				DD6BD9C72D5D9B9900736D51 /* Mapper.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */,
 				DD9B123E2D5DB5C700422B1F /* FetchAccountInfo.swift in Sources */,
-				DD6BD9C32D5D9B7000736D51 /* Conbine+.swift in Sources */,
 				DD9B124E2D5DC3AF00422B1F /* FetchContent.swift in Sources */,
 				DD9B12522D5DC9C000422B1F /* UpdateContentLiked.swift in Sources */,
 				DD9B12462D5DBBDD00422B1F /* FetchContentCommentList.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */,
+				DD5917C62D60BF4C006E82F9 /* KeychainService.swift in Sources */,
 				DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
