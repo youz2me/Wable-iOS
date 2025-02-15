@@ -34,8 +34,9 @@ final class APIProvider<Target: BaseTargetType>: MoyaProvider<Target> {
             throw mapError(statusCode: baseResponse.status, message: baseResponse.message)
         }
         
-        if D.self == DTO.Response.Empty.self {
-            return DTO.Response.Empty() as! D
+        if D.self == DTO.Response.Empty.self,
+           let emptyInstance = DTO.Response.Empty() as? D {
+            return emptyInstance
         }
         
         guard let data = baseResponse.data else {
