@@ -36,6 +36,7 @@
 		DEA4E21F2D607FB000909437 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E21E2D607FB000909437 /* BaseTargetType.swift */; };
 		DEA4E2222D60813300909437 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E2212D60813300909437 /* Empty.swift */; };
 		DEA4E2242D6081B400909437 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E2232D6081B400909437 /* MoyaLoggingPlugin.swift */; };
+		DEA4E2272D60BEDD00909437 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E2262D60BEDD00909437 /* DIContainer.swift */; };
 		DEBEDFD82D5F846F00086E5A /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEDFD72D5F846F00086E5A /* APIProvider.swift */; };
 		DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */; };
 		DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE042D5DB41A00A9434B /* WableLogger.swift */; };
@@ -74,6 +75,7 @@
 		DEA4E21E2D607FB000909437 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
 		DEA4E2212D60813300909437 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		DEA4E2232D6081B400909437 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
+		DEA4E2262D60BEDD00909437 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		DEBEDFD72D5F846F00086E5A /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableNetworkError.swift; sourceTree = "<group>"; };
 		DED2EE042D5DB41A00A9434B /* WableLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableLogger.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		DD6BD9BA2D5D9B1A00736D51 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				DEA4E2252D60BED600909437 /* DI */,
 				DED2EE072D5DBE8100A9434B /* Combine+ */,
 				DED2EE032D5DB41100A9434B /* Logger */,
 			);
@@ -339,6 +342,14 @@
 			path = Empty;
 			sourceTree = "<group>";
 		};
+		DEA4E2252D60BED600909437 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4E2262D60BEDD00909437 /* DIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		DED2EE002D5DAF9700A9434B /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DED2EE0D2D5DBF6500A9434B /* Publisher+.swift in Sources */,
+				DEA4E2272D60BEDD00909437 /* DIContainer.swift in Sources */,
 				DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */,
 				DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */,
 				DEA4E21F2D607FB000909437 /* BaseTargetType.swift in Sources */,
