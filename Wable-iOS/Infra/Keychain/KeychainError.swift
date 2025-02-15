@@ -14,13 +14,13 @@ enum KeychainError: Error {
     case deleteFailed(OSStatus)
     
     var localizedDescription: String {
-            switch self {
-            case .saveFailed(let status):
-                return "Keychain 저장에 실패했습니다. (OSStatus: \(status))"
-            case .dataNotFound(let status):
-                return "Keychain에서 항목을 찾을 수 없습니다. (OSStatus: \(status))"
-            case .deleteFailed(let status):
-                return "Keychain 삭제에 실패했습니다. (OSStatus: \(status))"
-            }
+        switch self {
+        case .saveFailed(let status):
+            return "Keychain 저장에 실패했습니다. (OSStatus: \(status))"
+        case .dataNotFound(let status):
+            return "Keychain에서 항목을 찾을 수 없습니다. (OSStatus: \(status))"
+        case .deleteFailed(let status):
+            return "Keychain 삭제에 실패했습니다. (OSStatus: \(status))"
         }
+    }
 }
