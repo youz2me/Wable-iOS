@@ -8,7 +8,7 @@
 import Foundation
 import OSLog
 
-final class WableLogger {
+enum WableLogger {
     private static let logger = Logger(subsystem: "com.app.wable", category: "general")
     
     static func log(
