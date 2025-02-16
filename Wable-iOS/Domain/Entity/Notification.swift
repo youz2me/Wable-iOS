@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 // MARK: - 활동 푸쉬 알림
 
 struct ActivityNotification {

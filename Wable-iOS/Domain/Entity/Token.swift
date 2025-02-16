@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - 토큰
+
 struct Token {
     let accessToken: String
     let refreshToken: String

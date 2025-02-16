@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - 계정
+
 struct Account {
     let user: User
     let token: Token

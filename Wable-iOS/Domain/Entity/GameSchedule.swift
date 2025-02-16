@@ -18,15 +18,17 @@ struct GameSchedule {
 
 struct Game {
     let date: Date?
-    let homeTeam: LCKTeam
+    let homeTeam: LCKTeam?
     let homeScore: Int
-    let awayTeam: LCKTeam
+    let awayTeam: LCKTeam?
     let awayScore: Int
-    let status: Status
+    let status: Self.Status?
 }
 
 extension Game {
-    enum Status {
-        
+    enum Status: String {
+        case scheduled = "SCHEUDLED"
+        case progress = "PROGRESS"
+        case termination = "TERMINATION"
     }
 }

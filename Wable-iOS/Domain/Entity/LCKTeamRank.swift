@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - LCK 팀 랭크
+
 struct LCKTeamRank {
     let team: LCKTeam?
     let rankNumber: Int
