@@ -37,6 +37,12 @@
 		DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */; };
 		DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */; };
 		DDF38BF92D5DA1CC005FF627 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF82D5DA1C9005FF627 /* DTO.swift */; };
+		DE7223592D61DDE3003B8145 /* FetchGameSchedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7223582D61DDE3003B8145 /* FetchGameSchedules.swift */; };
+		DE72235B2D61DE82003B8145 /* FetchGameCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72235A2D61DE82003B8145 /* FetchGameCategory.swift */; };
+		DE72235D2D61DF16003B8145 /* FetchLCKTeamRankings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72235C2D61DF16003B8145 /* FetchLCKTeamRankings.swift */; };
+		DE72235F2D61DF5E003B8145 /* FetchNewsNoticeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72235E2D61DF5E003B8145 /* FetchNewsNoticeCount.swift */; };
+		DE7223612D61DFEE003B8145 /* FetchNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7223602D61DFEE003B8145 /* FetchNews.swift */; };
+		DE7223632D61E08D003B8145 /* FetchNotices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7223622D61E08D003B8145 /* FetchNotices.swift */; };
 		DEA4E21F2D607FB000909437 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E21E2D607FB000909437 /* BaseTargetType.swift */; };
 		DEA4E2222D60813300909437 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E2212D60813300909437 /* Empty.swift */; };
 		DEA4E2242D6081B400909437 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E2232D6081B400909437 /* MoyaLoggingPlugin.swift */; };
@@ -81,6 +87,12 @@
 		DDE46F5B2D5DAD660020B050 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
 		DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		DDF38BF82D5DA1C9005FF627 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
+		DE7223582D61DDE3003B8145 /* FetchGameSchedules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGameSchedules.swift; sourceTree = "<group>"; };
+		DE72235A2D61DE82003B8145 /* FetchGameCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGameCategory.swift; sourceTree = "<group>"; };
+		DE72235C2D61DF16003B8145 /* FetchLCKTeamRankings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchLCKTeamRankings.swift; sourceTree = "<group>"; };
+		DE72235E2D61DF5E003B8145 /* FetchNewsNoticeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchNewsNoticeCount.swift; sourceTree = "<group>"; };
+		DE7223602D61DFEE003B8145 /* FetchNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchNews.swift; sourceTree = "<group>"; };
+		DE7223622D61E08D003B8145 /* FetchNotices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchNotices.swift; sourceTree = "<group>"; };
 		DEA4E21E2D607FB000909437 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
 		DEA4E2212D60813300909437 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		DEA4E2232D6081B400909437 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
@@ -360,8 +372,22 @@
 				DD72E2702D5DA7220059D55D /* Profile */,
 				DD72E2712D5DA72E0059D55D /* Comment */,
 				DD72E2732D5DA7410059D55D /* Content */,
+				DE7223572D61DD6B003B8145 /* Information */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		DE7223572D61DD6B003B8145 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				DE7223582D61DDE3003B8145 /* FetchGameSchedules.swift */,
+				DE72235A2D61DE82003B8145 /* FetchGameCategory.swift */,
+				DE72235C2D61DF16003B8145 /* FetchLCKTeamRankings.swift */,
+				DE72235E2D61DF5E003B8145 /* FetchNewsNoticeCount.swift */,
+				DE7223602D61DFEE003B8145 /* FetchNews.swift */,
+				DE7223622D61E08D003B8145 /* FetchNotices.swift */,
+			);
+			path = Information;
 			sourceTree = "<group>";
 		};
 		DEA4E2202D60812A00909437 /* Empty */ = {
@@ -493,12 +519,14 @@
 				DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */,
 				DEA4E2292D60BF0C00909437 /* Injected.swift in Sources */,
 				DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */,
+				DE72235F2D61DF5E003B8145 /* FetchNewsNoticeCount.swift in Sources */,
 				DEA4E21F2D607FB000909437 /* BaseTargetType.swift in Sources */,
 				DD5917C82D60C2A7006E82F9 /* KeychainError.swift in Sources */,
 				DD9B125B2D5DD18000422B1F /* CreateAccountRequest.swift in Sources */,
 				DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */,
 				DD9B12422D5DB8B300422B1F /* UpdateUserProfile.swift in Sources */,
 				DD9B12442D5DBA4100422B1F /* FetchMemberComment.swift in Sources */,
+				DE7223632D61E08D003B8145 /* FetchNotices.swift in Sources */,
 				DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */,
 				DD5917C42D60B965006E82F9 /* KeychainWrapper.swift in Sources */,
 				DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */,
@@ -508,12 +536,15 @@
 				DD9B123C2D5DB4D000422B1F /* UpdateUserBadge.swift in Sources */,
 				DD9B12482D5DBCAE00422B1F /* CreateComment.swift in Sources */,
 				DD9B12542D5DCA0300422B1F /* UpdateGhost.swift in Sources */,
+				DE72235B2D61DE82003B8145 /* FetchGameCategory.swift in Sources */,
 				DDF38BF92D5DA1CC005FF627 /* DTO.swift in Sources */,
 				DEBEDFD82D5F846F00086E5A /* APIProvider.swift in Sources */,
 				DD9B12402D5DB6EB00422B1F /* FetchUserProfile.swift in Sources */,
 				DD4BFCE72D5D98FF003A8045 /* SceneDelegate.swift in Sources */,
+				DE72235D2D61DF16003B8145 /* FetchLCKTeamRankings.swift in Sources */,
 				DED2EE0B2D5DBEFD00A9434B /* CancelBag.swift in Sources */,
 				DD7184842D61C4700063A65A /* TokenStorage.swift in Sources */,
+				DE7223592D61DDE3003B8145 /* FetchGameSchedules.swift in Sources */,
 				DEA4E2222D60813300909437 /* Empty.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */,
@@ -526,6 +557,7 @@
 				DEA4E2242D6081B400909437 /* MoyaLoggingPlugin.swift in Sources */,
 				DD5917C62D60BF4C006E82F9 /* KeychainService.swift in Sources */,
 				DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */,
+				DE7223612D61DFEE003B8145 /* FetchNews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
