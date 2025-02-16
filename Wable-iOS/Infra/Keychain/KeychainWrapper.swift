@@ -10,9 +10,7 @@ import Foundation
 import Security
 
 enum KeychainWrapper {
-    static func save(_ data: String, for service: KeychainService, account: String) throws {
-        guard let dataValue = data.data(using: .utf8) else { return }
-                
+    static func save(_ data: Data, for service: KeychainService, account: Data) throws {
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrAccount as String: account,
@@ -29,7 +27,7 @@ enum KeychainWrapper {
         }
     }
     
-    static func load(for service: KeychainService, account: String) throws -> Data {
+    static func load(for service: KeychainService, account: Data) throws -> Data {
         var item: AnyObject?
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
@@ -50,7 +48,7 @@ enum KeychainWrapper {
         return data
     }
     
-    static func delete(for service: KeychainService, account: String) throws {
+    static func delete(for service: KeychainService, account: Data) throws {
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrAccount as String: account,
