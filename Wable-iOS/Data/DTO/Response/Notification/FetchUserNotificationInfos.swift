@@ -1,5 +1,5 @@
 //
-//  FetchUserNotificationInfo.swift
+//  FetchUserNotificationInfos.swift
 //  Wable-iOS
 //
 //  Created by YOUJIM on 2/16/25.
@@ -10,7 +10,7 @@ import Foundation
 // MARK: - 유저에 해당하는 노티 리스트 조회
 
 extension DTO.Response {
-    struct FetchUserNotificationInfo: Decodable {
+    struct FetchUserNotificationInfos: Decodable {
         let memberId: Int
         let memberNickname: String
         let triggerMemberNickname: String

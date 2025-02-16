@@ -14,7 +14,7 @@ import Foundation
 ///
 
 extension DTO.Response {
-    struct FetchMemberComment: Decodable {
+    struct FetchMemberComments: Decodable {
         let memberID: Int
         let memberProfileURL, memberNickname: String
         let isLiked, isGhost: Bool
