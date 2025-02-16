@@ -17,8 +17,8 @@
 		DD5917C42D60B965006E82F9 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C32D60B95A006E82F9 /* KeychainWrapper.swift */; };
 		DD5917C62D60BF4C006E82F9 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C52D60BF44006E82F9 /* KeychainService.swift */; };
 		DD5917C82D60C2A7006E82F9 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C72D60C2A1006E82F9 /* KeychainError.swift */; };
-		DD6BD9C52D5D9B8100736D51 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */; };
 		DD6BD9C92D5D9BA800736D51 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BD9C82D5D9BA500736D51 /* empty.swift */; };
+		DD7184842D61C4700063A65A /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7184832D61C46C0063A65A /* TokenStorage.swift */; };
 		DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72E2822D5DA7F70059D55D /* UpdateToken.swift */; };
 		DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12392D5DB3BB00422B1F /* DeleteAccount.swift */; };
 		DD9B123C2D5DB4D000422B1F /* UpdateUserBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B123B2D5DB4D000422B1F /* UpdateUserBadge.swift */; };
@@ -61,8 +61,8 @@
 		DD5917C32D60B95A006E82F9 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		DD5917C52D60BF44006E82F9 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		DD5917C72D60C2A1006E82F9 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
-		DD6BD9C42D5D9B7A00736D51 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		DD6BD9C82D5D9BA500736D51 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
+		DD7184832D61C46C0063A65A /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
 		DD72E2822D5DA7F70059D55D /* UpdateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToken.swift; sourceTree = "<group>"; };
 		DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountResponse.swift; sourceTree = "<group>"; };
 		DD9B12392D5DB3BB00422B1F /* DeleteAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccount.swift; sourceTree = "<group>"; };
@@ -179,6 +179,7 @@
 		DD6BD9BB2D5D9B1E00736D51 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				DD7184822D61C4650063A65A /* Token */,
 				DD5917C22D60B932006E82F9 /* Keychain */,
 				DED2EE002D5DAF9700A9434B /* Network */,
 			);
@@ -207,6 +208,14 @@
 				DEA4E21E2D607FB000909437 /* BaseTargetType.swift */,
 			);
 			path = TargetType;
+			sourceTree = "<group>";
+		};
+		DD7184822D61C4650063A65A /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				DD7184832D61C46C0063A65A /* TokenStorage.swift */,
+			);
+			path = Token;
 			sourceTree = "<group>";
 		};
 		DD72E26D2D5DA6980059D55D /* Base */ = {
@@ -504,6 +513,7 @@
 				DD9B12402D5DB6EB00422B1F /* FetchUserProfile.swift in Sources */,
 				DD4BFCE72D5D98FF003A8045 /* SceneDelegate.swift in Sources */,
 				DED2EE0B2D5DBEFD00A9434B /* CancelBag.swift in Sources */,
+				DD7184842D61C4700063A65A /* TokenStorage.swift in Sources */,
 				DEA4E2222D60813300909437 /* Empty.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */,
