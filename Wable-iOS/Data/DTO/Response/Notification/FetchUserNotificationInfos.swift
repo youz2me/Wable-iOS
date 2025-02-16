@@ -11,28 +11,28 @@ import Foundation
 
 extension DTO.Response {
     struct FetchUserNotificationInfos: Decodable {
-        let memberId: Int
+        let memberID: Int
         let memberNickname: String
         let triggerMemberNickname: String
-        let triggerMemberProfileUrl: String
+        let triggerMemberProfileURL: String
         let notificationTriggerType: String
         let time: String
-        let notificationTriggerId: Int
+        let notificationTriggerID: Int
         let notificationText: String
         let isNotificationChecked: Bool
         let isDeleted: Bool?
-        let notificationId: Int?
-        let triggerMemberId: Int?
+        let notificationID: Int?
+        let triggerMemberID: Int?
         
         enum CodingKeys: String, CodingKey {
-            case memberId = "memberID"
+            case memberID = "memberId"
             case memberNickname, triggerMemberNickname
-            case triggerMemberProfileUrl = "triggerMemberProfileURL"
+            case triggerMemberProfileURL = "triggerMemberProfileUrl"
             case notificationTriggerType, time
-            case notificationTriggerId = "notificationTriggerID"
+            case notificationTriggerID = "notificationTriggerId"
             case notificationText, isNotificationChecked, isDeleted
-            case notificationId = "notificationID"
-            case triggerMemberId = "triggerMemberID"
+            case notificationID = "notificationId"
+            case triggerMemberID = "triggerMemberId"
         }
     }
 }
