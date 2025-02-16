@@ -10,11 +10,10 @@ import Foundation
 import Security
 
 enum KeychainWrapper {
-    static func save(_ data: Data, for service: KeychainService, account: Data) throws {
+    static func save(_ data: Data, for service: String) throws {
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
-            kSecAttrAccount as String: account,
-            kSecAttrService as String: service.rawValue,
+            kSecAttrService as String: service,
             kSecValueData as String: data
         ]
         
@@ -27,12 +26,11 @@ enum KeychainWrapper {
         }
     }
     
-    static func load(for service: KeychainService, account: Data) throws -> Data {
+    static func load(for service: String) throws -> Data {
         var item: AnyObject?
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
-            kSecAttrAccount as String: account,
-            kSecAttrService as String: service.rawValue,
+            kSecAttrService as String: service,
             kSecReturnData as String: kCFBooleanTrue!,
             kSecMatchLimit as String: kSecMatchLimitOne
         ]
@@ -48,11 +46,10 @@ enum KeychainWrapper {
         return data
     }
     
-    static func delete(for service: KeychainService, account: Data) throws {
+    static func delete(for service: String) throws {
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
-            kSecAttrAccount as String: account,
-            kSecAttrService as String: service.rawValue
+            kSecAttrService as String: service
         ]
         
         let status = SecItemDelete(query as CFDictionary)
