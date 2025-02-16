@@ -15,7 +15,6 @@
 		DD4BFCE92D5D98FF003A8045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4BFCDF2D5D98FF003A8045 /* Assets.xcassets */; };
 		DD4BFCEB2D5D98FF003A8045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4BFCE22D5D98FF003A8045 /* LaunchScreen.storyboard */; };
 		DD5917C42D60B965006E82F9 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C32D60B95A006E82F9 /* KeychainWrapper.swift */; };
-		DD5917C62D60BF4C006E82F9 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C52D60BF44006E82F9 /* KeychainService.swift */; };
 		DD5917C82D60C2A7006E82F9 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C72D60C2A1006E82F9 /* KeychainError.swift */; };
 		DD7184842D61C4700063A65A /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7184832D61C46C0063A65A /* TokenStorage.swift */; };
 		DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72E2822D5DA7F70059D55D /* UpdateToken.swift */; };
@@ -81,7 +80,6 @@
 		DD4BFCE32D5D98FF003A8045 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DD4BFCE42D5D98FF003A8045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD5917C32D60B95A006E82F9 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
-		DD5917C52D60BF44006E82F9 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		DD5917C72D60C2A1006E82F9 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
 		DD7184832D61C46C0063A65A /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
 		DD72E2822D5DA7F70059D55D /* UpdateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToken.swift; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				DD5917C32D60B95A006E82F9 /* KeychainWrapper.swift */,
-				DD5917C52D60BF44006E82F9 /* KeychainService.swift */,
 				DD5917C72D60C2A1006E82F9 /* KeychainError.swift */,
 			);
 			path = Keychain;
@@ -634,7 +631,6 @@
 				DE72236E2D61EDD1003B8145 /* Account.swift in Sources */,
 				DEA4E2242D6081B400909437 /* MoyaLoggingPlugin.swift in Sources */,
 				DE7223802D61FE97003B8145 /* TriggerType.swift in Sources */,
-				DD5917C62D60BF4C006E82F9 /* KeychainService.swift in Sources */,
 				DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */,
 				DE7223612D61DFEE003B8145 /* FetchNews.swift in Sources */,
 			);
