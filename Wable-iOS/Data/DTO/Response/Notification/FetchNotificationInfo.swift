@@ -1,0 +1,24 @@
+//
+//  FetchNotificationInfo.swift
+//  Wable-iOS
+//
+//  Created by YOUJIM on 2/16/25.
+//
+
+import Foundation
+
+// MARK: - 정보 노티 조회
+
+extension DTO.Response {
+    struct FetchNotificationInfo: Decodable {
+        let infoNotificationID: Int
+        let infoNotificationType, time, imageURL: String
+
+        enum CodingKeys: String, CodingKey {
+            case infoNotificationID = "infoNotificationId"
+            case infoNotificationType, time
+            case imageURL = "imageUrl"
+        }
+    }
+}
+
