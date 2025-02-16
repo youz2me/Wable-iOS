@@ -15,5 +15,11 @@ extension DTO.Request {
         let notificationTriggerType: String
         let targerMemberID: Int
         let alarmText: String
+        
+        enum CodingKeys: String, CodingKey {
+            case notificationTriggerType
+            case targerMemberID = "targerMemberId"
+            case alarmText
+        }
     }
 }
