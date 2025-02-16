@@ -1,5 +1,5 @@
 //
-//  FetchContent.swift
+//  FetchContents.swift
 //  Wable-iOS
 //
 //  Created by YOUJIM on 2/13/25.
@@ -15,7 +15,7 @@ import Foundation
 ///
 
 extension DTO.Response {
-    struct FetchContent: Decodable {
+    struct FetchContents: Decodable {
         let memberID: Int
         let memberProfileURL, memberNickname: String
         let isGhost: Bool

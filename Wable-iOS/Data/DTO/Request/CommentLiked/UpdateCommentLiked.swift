@@ -13,7 +13,13 @@ import Foundation
 extension DTO.Request {
     struct UpdateCommentLiked: Encodable {
         let notificationTriggerType: String
-        let targerMemberID: Int
+        let targetMemberID: Int
         let alarmText: String
+        
+        enum CodingKeys: String, CodingKey {
+            case notificationTriggerType
+            case targetMemberID = "targetMemberId"
+            case alarmText
+        }
     }
 }
