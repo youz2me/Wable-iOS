@@ -15,14 +15,14 @@ extension DTO.Response {
         let noticeID: Int
         let noticeTitle: String
         let noticeText: String
-        let noticeImage: String
+        let noticeImageURL: String
         let time: String
         
         enum CodingKeys: String, CodingKey {
             case noticeID = "noticeId"
             case noticeTitle
             case noticeText
-            case noticeImage
+            case noticeImageURL = "noticeImage"
             case time
         }
     }
