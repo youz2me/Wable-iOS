@@ -22,7 +22,18 @@ extension DTO.Request {
         let memberIntro: String?
         let isPushAlarmAllowed: Bool?
         let fcmToken: String?
-        let memberLckYears: Int?
+        let memberLCKYears: Int?
         let memberFanTeam, memberDefaultProfileImage: String?
+        
+        enum CodingKeys: String, CodingKey {
+            case nickname
+            case isAlarmAllowed
+            case memberIntro
+            case isPushAlarmAllowed
+            case fcmToken
+            case memberLCKYears = "memberLckYears"
+            case memberFanTeam
+            case memberDefaultProfileImage
+        }
     }
 }

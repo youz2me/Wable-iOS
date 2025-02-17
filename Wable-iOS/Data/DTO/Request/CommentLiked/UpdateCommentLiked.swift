@@ -14,12 +14,12 @@ extension DTO.Request {
     struct UpdateCommentLiked: Encodable {
         let notificationTriggerType: String
         let targetMemberID: Int
-        let alarmText: String
+        let notificationText: String
         
         enum CodingKeys: String, CodingKey {
             case notificationTriggerType
             case targetMemberID = "targetMemberId"
-            case alarmText
+            case notificationText
         }
     }
 }

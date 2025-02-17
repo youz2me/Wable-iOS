@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD389B502D625369004351F5 /* FetchContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD389B4F2D625363004351F5 /* FetchContent.swift */; };
 		DD4BFCDB2D5D989F003A8045 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DD4BFCDA2D5D989F003A8045 /* CombineMoya */; };
 		DD4BFCDD2D5D989F003A8045 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = DD4BFCDC2D5D989F003A8045 /* Moya */; };
 		DD4BFCE62D5D98FF003A8045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4BFCDE2D5D98FF003A8045 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 		DD5917C82D60C2A7006E82F9 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C72D60C2A1006E82F9 /* KeychainError.swift */; };
 		DD7184842D61C4700063A65A /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7184832D61C46C0063A65A /* TokenStorage.swift */; };
 		DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72E2822D5DA7F70059D55D /* UpdateToken.swift */; };
+		DD87ECB12D632B45002FBE66 /* FetchMemberContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87ECB02D632B3E002FBE66 /* FetchMemberContents.swift */; };
 		DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12392D5DB3BB00422B1F /* DeleteAccount.swift */; };
 		DD9B123C2D5DB4D000422B1F /* UpdateUserBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B123B2D5DB4D000422B1F /* UpdateUserBadge.swift */; };
 		DD9B123E2D5DB5C700422B1F /* FetchAccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B123D2D5DB5BD00422B1F /* FetchAccountInfo.swift */; };
@@ -72,6 +74,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD389B4F2D625363004351F5 /* FetchContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchContent.swift; sourceTree = "<group>"; };
 		DD4BFCAC2D5D93AD003A8045 /* Wable-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wable-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4BFCDE2D5D98FF003A8045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD4BFCDF2D5D98FF003A8045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 		DD5917C72D60C2A1006E82F9 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
 		DD7184832D61C46C0063A65A /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
 		DD72E2822D5DA7F70059D55D /* UpdateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToken.swift; sourceTree = "<group>"; };
+		DD87ECB02D632B3E002FBE66 /* FetchMemberContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMemberContents.swift; sourceTree = "<group>"; };
 		DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountResponse.swift; sourceTree = "<group>"; };
 		DD9B12392D5DB3BB00422B1F /* DeleteAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccount.swift; sourceTree = "<group>"; };
 		DD9B123B2D5DB4D000422B1F /* UpdateUserBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserBadge.swift; sourceTree = "<group>"; };
@@ -297,7 +301,9 @@
 		DD72E2732D5DA7410059D55D /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				DD389B4F2D625363004351F5 /* FetchContent.swift */,
 				DD9B124D2D5DC39000422B1F /* FetchContents.swift */,
+				DD87ECB02D632B3E002FBE66 /* FetchMemberContents.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -410,8 +416,8 @@
 		DDF80E662D61DDEF0048E9CC /* Notification */ = {
 			isa = PBXGroup;
 			children = (
-				DDF80E6B2D61E0430048E9CC /* FetchNotificationNumber.swift */,
 				DDF80E692D61DEC30048E9CC /* FetchUserNotificationInfos.swift */,
+				DDF80E6B2D61E0430048E9CC /* FetchNotificationNumber.swift */,
 				DDF80E672D61DDF90048E9CC /* FetchNotificationInfo.swift */,
 			);
 			path = Notification;
@@ -586,6 +592,7 @@
 				DEA4E21F2D607FB000909437 /* BaseTargetType.swift in Sources */,
 				DD5917C82D60C2A7006E82F9 /* KeychainError.swift in Sources */,
 				DE7223742D61EFA5003B8145 /* Comment.swift in Sources */,
+				DD389B502D625369004351F5 /* FetchContent.swift in Sources */,
 				DDF80E6A2D61DECC0048E9CC /* FetchUserNotificationInfos.swift in Sources */,
 				DD9B125B2D5DD18000422B1F /* CreateAccountRequest.swift in Sources */,
 				DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */,
@@ -622,6 +629,7 @@
 				DE72237E2D61FD47003B8145 /* Announcement.swift in Sources */,
 				DD9B124E2D5DC3AF00422B1F /* FetchContents.swift in Sources */,
 				DE72237A2D61FAC9003B8145 /* GameSchedule.swift in Sources */,
+				DD87ECB12D632B45002FBE66 /* FetchMemberContents.swift in Sources */,
 				DE72236A2D61ECCA003B8145 /* Token.swift in Sources */,
 				DE72236C2D61ECF4003B8145 /* SocialPlatform.swift in Sources */,
 				DD9B12522D5DC9C000422B1F /* UpdateContentLiked.swift in Sources */,

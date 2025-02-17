@@ -13,7 +13,8 @@ import Foundation
 extension DTO.Response {
     struct FetchAccountInfo: Decodable {
         let memberID: Int
-        let joinDate, showMemberID, socialPlatform, versionInformation: String
+        let joinDate: Date
+        let showMemberID, socialPlatform, versionInformation: String
         
         enum CodingKeys: String, CodingKey {
             case memberID = "memberId"
