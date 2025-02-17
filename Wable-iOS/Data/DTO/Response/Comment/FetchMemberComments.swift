@@ -10,9 +10,6 @@ import Foundation
 
 // MARK: - 멤버에 해당하는 답글 리스트 조회
 
-/// data: [FetchMemberComment]와 같이 사용해야 합니다.
-///
-
 extension DTO.Response {
     struct FetchMemberComments: Decodable {
         let memberID: Int

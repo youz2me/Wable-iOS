@@ -19,7 +19,7 @@ extension DTO.Response {
         let isNewUser: Bool
         let isPushAlarmAllowed: Bool?
         let memberFanTeam: String
-        let memberLckYears, memberLevel: Int
+        let memberLCKYears, memberLevel: Int
         let isAdmin: Bool
         
         enum CodingKeys: String, CodingKey {
@@ -27,7 +27,9 @@ extension DTO.Response {
             case memberID = "memberId"
             case accessToken, refreshToken
             case memberProfileURL = "memberProfileUrl"
-            case isNewUser, isPushAlarmAllowed, memberFanTeam, memberLckYears, memberLevel, isAdmin
+            case isNewUser, isPushAlarmAllowed, memberFanTeam
+            case memberLCKYears = "memberLckYears"
+            case memberLevel, isAdmin
         }
     }
 }

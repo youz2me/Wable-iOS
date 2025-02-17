@@ -11,8 +11,8 @@ import Foundation
 
 extension DTO.Response {
     struct FetchNotificationInfo: Decodable {
-        let infoNotificationID: Int
         let infoNotificationType, time, imageURL: String
+        let infoNotificationID: Int
 
         enum CodingKeys: String, CodingKey {
             case infoNotificationID = "infoNotificationId"
