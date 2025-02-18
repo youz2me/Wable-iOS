@@ -9,15 +9,6 @@ import Foundation
 
 import Moya
 
-enum FeaturePath: String {
-    case login, comment, content = ""
-    case account, profile, ghost = "/v1"
-    case commentLiked = "/v1/comment"
-    case contentLiked = "v1/content"
-    case notification = "v1/notification"
-    case information = "v1/information"
-}
-
 protocol BaseTargetType: TargetType {
     var feature: FeaturePath { get }
     var endPoint: String? { get }
