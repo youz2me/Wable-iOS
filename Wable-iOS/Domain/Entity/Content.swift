@@ -10,9 +10,13 @@ import Foundation
 // MARK: - 게시물 리스트
 
 struct Content {
+    let content: UserContent
+    let isDeleted: Bool
+}
+
+struct UserContent {
     let id: Int
     let contentInfo: ContentInfo
-    let isDeleted: Bool
 }
 
 // MARK: - 게시물 상세 정보
