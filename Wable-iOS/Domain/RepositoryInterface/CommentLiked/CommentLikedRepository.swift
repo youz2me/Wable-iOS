@@ -10,6 +10,6 @@ import Combine
 import Foundation
 
 protocol CommentLikedRepository {
-    func fetchCommentLiked(contentID: Int, triggerType: String) -> AnyPublisher<Bool, Error>
+    func createCommentLiked(contentID: Int, triggerType: String) -> AnyPublisher<Bool, Error>
     func deleteCommentLiked(commentID: Int) -> AnyPublisher<Void, Error>
 }

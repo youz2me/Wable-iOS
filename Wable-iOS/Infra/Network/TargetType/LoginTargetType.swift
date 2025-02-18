@@ -7,32 +7,48 @@
 
 
 import Combine
+import Foundation
 
 import Moya
 
-enum LoginTargetType {}
+enum LoginTargetType {
+    case fetchTokenStatus
+    case fetchUserAuth(request: DTO.Request.CreateAccount)
+}
 
-extension LoginTargetType: TargetType {
-    var baseURL: URL {
-        return Bundle.BaseURL.debug
+extension LoginTargetType: BaseTargetType {
+    var feature: FeaturePath {
+        return .login
     }
     
-    var path: String {
-        <#code#>
+    var query: [String : Any]? {
+        return .none
+    }
+    
+    var requestBody: (any Encodable)? {
+        switch self {
+        case .fetchUserAuth(request: let request):
+            return request
+        default:
+            return .none
+        }
+    }
+    
+    var endPoint: String? {
+        switch self {
+        case .fetchTokenStatus:
+            return "/v1/auth/token"
+        case .fetchUserAuth(request: let request):
+            return "/v2/auth"
+        }
     }
     
     var method: Moya.Method {
-        <#code#>
+        switch self {
+        case .fetchTokenStatus:
+            return .get
+        case .fetchUserAuth(request: let request):
+            return .post
+        }
     }
-    
-    var task: Moya.Task {
-        <#code#>
-    }
-    
-    var headers: [String : String]? {
-        <#code#>
-    }
-    
-    
 }
-

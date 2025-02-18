@@ -11,8 +11,8 @@ import Foundation
 
 protocol ContentRepository {
     func createContent(title: String, text: String, image: Data?) -> AnyPublisher<Void, Error>
-    func deleteContent(contentID: String) -> AnyPublisher<Void, Error>
-    func fetchContentInfo(contentID: String) -> AnyPublisher<ContentInfo, Error>
+    func deleteContent(contentID: Int) -> AnyPublisher<Void, Error>
+    func fetchContentInfo(contentID: Int) -> AnyPublisher<ContentInfo, Error>
     func fetchContentList(cursor: Int) -> AnyPublisher<[Content], Error>
-    func fetchUserContentList(cursor: Int) -> AnyPublisher<[UserContent], Error>
+    func fetchUserContentList(memberID: Int, cursor: Int) -> AnyPublisher<[UserContent], Error>
 }

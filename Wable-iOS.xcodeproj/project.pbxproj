@@ -12,7 +12,6 @@
 		DD216C262D6388D70077C57D /* notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C252D6388D30077C57D /* notification.swift */; };
 		DD216C282D6388E10077C57D /* information.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C272D6388DB0077C57D /* information.swift */; };
 		DD216C3E2D6389040077C57D /* commentImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C2F2D6389040077C57D /* commentImpl.swift */; };
-		DD216C3F2D6389040077C57D /* loginImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C292D6389040077C57D /* loginImpl.swift */; };
 		DD216C402D6389040077C57D /* contentLikedImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C352D6389040077C57D /* contentLikedImpl.swift */; };
 		DD216C412D6389040077C57D /* informationImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C3B2D6389040077C57D /* informationImpl.swift */; };
 		DD216C422D6389040077C57D /* ghostImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C372D6389040077C57D /* ghostImpl.swift */; };
@@ -58,10 +57,10 @@
 		DD9B12442D5DBA4100422B1F /* FetchMemberComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12432D5DBA2D00422B1F /* FetchMemberComments.swift */; };
 		DD9B12462D5DBBDD00422B1F /* FetchContentCommentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12452D5DBBDD00422B1F /* FetchContentCommentList.swift */; };
 		DD9B12482D5DBCAE00422B1F /* CreateComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12472D5DBC9A00422B1F /* CreateComment.swift */; };
-		DD9B124A2D5DBDFB00422B1F /* UpdateCommentLiked.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12492D5DBDB300422B1F /* UpdateCommentLiked.swift */; };
+		DD9B124A2D5DBDFB00422B1F /* CreateCommentLiked.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12492D5DBDB300422B1F /* CreateCommentLiked.swift */; };
 		DD9B124C2D5DBF6300422B1F /* CreateContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B124B2D5DBF4100422B1F /* CreateContent.swift */; };
 		DD9B124E2D5DC3AF00422B1F /* FetchContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B124D2D5DC39000422B1F /* FetchContents.swift */; };
-		DD9B12522D5DC9C000422B1F /* UpdateContentLiked.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12512D5DC99C00422B1F /* UpdateContentLiked.swift */; };
+		DD9B12522D5DC9C000422B1F /* CreateContentLiked.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12512D5DC99C00422B1F /* CreateContentLiked.swift */; };
 		DD9B12542D5DCA0300422B1F /* UpdateGhost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12532D5DC9FB00422B1F /* UpdateGhost.swift */; };
 		DD9B125B2D5DD18000422B1F /* CreateAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE46F5B2D5DAD660020B050 /* CreateAccountRequest.swift */; };
 		DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */; };
@@ -111,7 +110,6 @@
 		DD216C232D6388CE0077C57D /* ghost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ghost.swift; sourceTree = "<group>"; };
 		DD216C252D6388D30077C57D /* notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notification.swift; sourceTree = "<group>"; };
 		DD216C272D6388DB0077C57D /* information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = information.swift; sourceTree = "<group>"; };
-		DD216C292D6389040077C57D /* loginImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginImpl.swift; sourceTree = "<group>"; };
 		DD216C2B2D6389040077C57D /* accountImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountImpl.swift; sourceTree = "<group>"; };
 		DD216C2D2D6389040077C57D /* profileImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileImpl.swift; sourceTree = "<group>"; };
 		DD216C2F2D6389040077C57D /* commentImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentImpl.swift; sourceTree = "<group>"; };
@@ -162,10 +160,10 @@
 		DD9B12432D5DBA2D00422B1F /* FetchMemberComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMemberComments.swift; sourceTree = "<group>"; };
 		DD9B12452D5DBBDD00422B1F /* FetchContentCommentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchContentCommentList.swift; sourceTree = "<group>"; };
 		DD9B12472D5DBC9A00422B1F /* CreateComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateComment.swift; sourceTree = "<group>"; };
-		DD9B12492D5DBDB300422B1F /* UpdateCommentLiked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCommentLiked.swift; sourceTree = "<group>"; };
+		DD9B12492D5DBDB300422B1F /* CreateCommentLiked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCommentLiked.swift; sourceTree = "<group>"; };
 		DD9B124B2D5DBF4100422B1F /* CreateContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContent.swift; sourceTree = "<group>"; };
 		DD9B124D2D5DC39000422B1F /* FetchContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchContents.swift; sourceTree = "<group>"; };
-		DD9B12512D5DC99C00422B1F /* UpdateContentLiked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateContentLiked.swift; sourceTree = "<group>"; };
+		DD9B12512D5DC99C00422B1F /* CreateContentLiked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContentLiked.swift; sourceTree = "<group>"; };
 		DD9B12532D5DC9FB00422B1F /* UpdateGhost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateGhost.swift; sourceTree = "<group>"; };
 		DDAA64E12D648529008043CA /* ProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepository.swift; sourceTree = "<group>"; };
 		DDE46F5B2D5DAD660020B050 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
@@ -323,7 +321,6 @@
 			isa = PBXGroup;
 			children = (
 				DDF380792D649E22003AFD7B /* LoginRepositoryImpl.swift */,
-				DD216C292D6389040077C57D /* loginImpl.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -640,7 +637,7 @@
 		DD72E27C2D5DA7950059D55D /* CommentLiked */ = {
 			isa = PBXGroup;
 			children = (
-				DD9B12492D5DBDB300422B1F /* UpdateCommentLiked.swift */,
+				DD9B12492D5DBDB300422B1F /* CreateCommentLiked.swift */,
 			);
 			path = CommentLiked;
 			sourceTree = "<group>";
@@ -656,7 +653,7 @@
 		DD72E27E2D5DA7950059D55D /* ContentLiked */ = {
 			isa = PBXGroup;
 			children = (
-				DD9B12512D5DC99C00422B1F /* UpdateContentLiked.swift */,
+				DD9B12512D5DC99C00422B1F /* CreateContentLiked.swift */,
 			);
 			path = ContentLiked;
 			sourceTree = "<group>";
@@ -907,8 +904,7 @@
 				DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */,
 				DD5917C42D60B965006E82F9 /* KeychainWrapper.swift in Sources */,
 				DD4BFCE62D5D98FF003A8045 /* AppDelegate.swift in Sources */,
-				DD9B124A2D5DBDFB00422B1F /* UpdateCommentLiked.swift in Sources */,
-				DD708F312D649F44004F8C56 /* LoginTargetType.swift in Sources */,
+				DD9B124A2D5DBDFB00422B1F /* CreateCommentLiked.swift in Sources */,
 				DD9B124C2D5DBF6300422B1F /* CreateContent.swift in Sources */,
 				DD9B123C2D5DB4D000422B1F /* UpdateUserBadge.swift in Sources */,
 				DD75DE482D64874100DF7B2A /* CommentRepository.swift in Sources */,
@@ -946,7 +942,7 @@
 				DD708F522D64B1E8004F8C56 /* InformationTargetType.swift in Sources */,
 				DE72236A2D61ECCA003B8145 /* Token.swift in Sources */,
 				DE72236C2D61ECF4003B8145 /* SocialPlatform.swift in Sources */,
-				DD9B12522D5DC9C000422B1F /* UpdateContentLiked.swift in Sources */,
+				DD9B12522D5DC9C000422B1F /* CreateContentLiked.swift in Sources */,
 				DD75DE4A2D648C5500DF7B2A /* CommentLikedRepository.swift in Sources */,
 				DDF80E6C2D61E0590048E9CC /* FetchNotificationNumber.swift in Sources */,
 				DD9B12462D5DBBDD00422B1F /* FetchContentCommentList.swift in Sources */,
@@ -961,7 +957,6 @@
 				DD75DE502D64997900DF7B2A /* ContentRepository.swift in Sources */,
 				DD216C3E2D6389040077C57D /* commentImpl.swift in Sources */,
 				DD708F482D64B1B3004F8C56 /* CommentLikedTargetType.swift in Sources */,
-				DD216C3F2D6389040077C57D /* loginImpl.swift in Sources */,
 				DD216C402D6389040077C57D /* contentLikedImpl.swift in Sources */,
 				DD216C412D6389040077C57D /* informationImpl.swift in Sources */,
 				DD708F442D64B19F004F8C56 /* ProfileTargetType.swift in Sources */,
