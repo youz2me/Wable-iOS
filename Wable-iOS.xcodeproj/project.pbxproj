@@ -148,6 +148,7 @@
 		DD708F4D2D64B1D0004F8C56 /* GhostTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostTargetType.swift; sourceTree = "<group>"; };
 		DD708F4F2D64B1D8004F8C56 /* NotificationTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTargetType.swift; sourceTree = "<group>"; };
 		DD708F512D64B1E1004F8C56 /* InformationTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTargetType.swift; sourceTree = "<group>"; };
+		DD708F542D64C3EE004F8C56 /* Share.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Share.xcconfig; sourceTree = "<group>"; };
 		DD7184832D61C46C0063A65A /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
 		DD72E2822D5DA7F70059D55D /* UpdateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToken.swift; sourceTree = "<group>"; };
 		DD87ECB02D632B3E002FBE66 /* FetchMemberContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMemberContents.swift; sourceTree = "<group>"; };
@@ -530,6 +531,7 @@
 		DD708F392D64A768004F8C56 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				DD708F542D64C3EE004F8C56 /* Share.xcconfig */,
 				DD708F382D64A759004F8C56 /* Release.xcconfig */,
 				DD708F372D64A74C004F8C56 /* Development.xcconfig */,
 			);
