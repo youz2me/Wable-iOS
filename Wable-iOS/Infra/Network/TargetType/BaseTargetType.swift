@@ -16,7 +16,7 @@ extension BaseTargetType {
         
         // TODO: 추후 BaseURL 수정 요망
         
-        guard let url = URL(string: "https://wable.example.com") else {
+        guard let url = URL(string: Bundle.baseURL) else {
             fatalError("Base URL must be set.")
         }
         return url

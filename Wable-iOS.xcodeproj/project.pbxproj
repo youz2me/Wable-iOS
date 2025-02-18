@@ -37,6 +37,7 @@
 		DD4BFCEB2D5D98FF003A8045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4BFCE22D5D98FF003A8045 /* LaunchScreen.storyboard */; };
 		DD5917C42D60B965006E82F9 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C32D60B95A006E82F9 /* KeychainWrapper.swift */; };
 		DD5917C82D60C2A7006E82F9 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C72D60C2A1006E82F9 /* KeychainError.swift */; };
+		DD708F3E2D64B031004F8C56 /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F3D2D64B02E004F8C56 /* Bundle+.swift */; };
 		DD7184842D61C4700063A65A /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7184832D61C46C0063A65A /* TokenStorage.swift */; };
 		DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72E2822D5DA7F70059D55D /* UpdateToken.swift */; };
 		DD87ECB12D632B45002FBE66 /* FetchMemberContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87ECB02D632B3E002FBE66 /* FetchMemberContents.swift */; };
@@ -124,6 +125,9 @@
 		DD4BFCE42D5D98FF003A8045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD5917C32D60B95A006E82F9 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		DD5917C72D60C2A1006E82F9 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
+		DD708F372D64A74C004F8C56 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		DD708F382D64A759004F8C56 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		DD708F3D2D64B02E004F8C56 /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
 		DD7184832D61C46C0063A65A /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
 		DD72E2822D5DA7F70059D55D /* UpdateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToken.swift; sourceTree = "<group>"; };
 		DD87ECB02D632B3E002FBE66 /* FetchMemberContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMemberContents.swift; sourceTree = "<group>"; };
@@ -437,8 +441,9 @@
 		DD6BD9B92D5D9AD100736D51 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				DD4BFCDF2D5D98FF003A8045 /* Assets.xcassets */,
+				DD708F392D64A768004F8C56 /* Config */,
 				DD4BFCE02D5D98FF003A8045 /* Info.plist */,
+				DD4BFCDF2D5D98FF003A8045 /* Assets.xcassets */,
 				DD4BFCE22D5D98FF003A8045 /* LaunchScreen.storyboard */,
 				DD4BFCE42D5D98FF003A8045 /* ViewController.swift */,
 			);
@@ -458,6 +463,7 @@
 		DD6BD9BB2D5D9B1E00736D51 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				DD708F3C2D64B026004F8C56 /* Bundle */,
 				DD7184822D61C4650063A65A /* Token */,
 				DD5917C22D60B932006E82F9 /* Keychain */,
 				DED2EE002D5DAF9700A9434B /* Network */,
@@ -489,6 +495,23 @@
 				DEA4E21E2D607FB000909437 /* BaseTargetType.swift */,
 			);
 			path = TargetType;
+			sourceTree = "<group>";
+		};
+		DD708F392D64A768004F8C56 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DD708F382D64A759004F8C56 /* Release.xcconfig */,
+				DD708F372D64A74C004F8C56 /* Development.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		DD708F3C2D64B026004F8C56 /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				DD708F3D2D64B02E004F8C56 /* Bundle+.swift */,
+			);
+			path = Bundle;
 			sourceTree = "<group>";
 		};
 		DD7184822D61C4650063A65A /* Token */ = {
@@ -895,6 +918,7 @@
 				DD216C432D6389040077C57D /* commentLikedImpl.swift in Sources */,
 				DD216C442D6389040077C57D /* notificationImpl.swift in Sources */,
 				DD216C452D6389040077C57D /* contentImpl.swift in Sources */,
+				DD708F3E2D64B031004F8C56 /* Bundle+.swift in Sources */,
 				DD216C462D6389040077C57D /* profileImpl.swift in Sources */,
 				DD216C472D6389040077C57D /* accountImpl.swift in Sources */,
 			);
@@ -916,6 +940,7 @@
 /* Begin XCBuildConfiguration section */
 		DD4BFCC02D5D93AD003A8045 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD708F372D64A74C004F8C56 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -944,6 +969,7 @@
 		};
 		DD4BFCC12D5D93AD003A8045 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD708F382D64A759004F8C56 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
