@@ -67,6 +67,7 @@
 		DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */; };
 		DDAA64E22D648530008043CA /* ProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA64E12D648529008043CA /* ProfileRepository.swift */; };
 		DDF380782D649CF0003AFD7B /* ContentLikedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF380772D649CE9003AFD7B /* ContentLikedRepository.swift */; };
+		DDF3807A2D649E2C003AFD7B /* LoginRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF380792D649E22003AFD7B /* LoginRepositoryImpl.swift */; };
 		DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */; };
 		DDF38BF92D5DA1CC005FF627 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF82D5DA1C9005FF627 /* DTO.swift */; };
 		DDF80E682D61DE080048E9CC /* FetchNotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF80E672D61DDF90048E9CC /* FetchNotificationInfo.swift */; };
@@ -169,6 +170,7 @@
 		DDAA64E12D648529008043CA /* ProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepository.swift; sourceTree = "<group>"; };
 		DDE46F5B2D5DAD660020B050 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
 		DDF380772D649CE9003AFD7B /* ContentLikedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLikedRepository.swift; sourceTree = "<group>"; };
+		DDF380792D649E22003AFD7B /* LoginRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryImpl.swift; sourceTree = "<group>"; };
 		DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		DDF38BF82D5DA1C9005FF627 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
 		DDF80E672D61DDF90048E9CC /* FetchNotificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchNotificationInfo.swift; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 		DD216C2A2D6389040077C57D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				DDF380792D649E22003AFD7B /* LoginRepositoryImpl.swift */,
 				DD216C292D6389040077C57D /* loginImpl.swift */,
 			);
 			path = Login;
@@ -905,6 +908,7 @@
 				DD5917C42D60B965006E82F9 /* KeychainWrapper.swift in Sources */,
 				DD4BFCE62D5D98FF003A8045 /* AppDelegate.swift in Sources */,
 				DD9B124A2D5DBDFB00422B1F /* UpdateCommentLiked.swift in Sources */,
+				DD708F312D649F44004F8C56 /* LoginTargetType.swift in Sources */,
 				DD9B124C2D5DBF6300422B1F /* CreateContent.swift in Sources */,
 				DD9B123C2D5DB4D000422B1F /* UpdateUserBadge.swift in Sources */,
 				DD75DE482D64874100DF7B2A /* CommentRepository.swift in Sources */,
@@ -912,6 +916,7 @@
 				DE7223662D61EC33003B8145 /* User.swift in Sources */,
 				DD9B12542D5DCA0300422B1F /* UpdateGhost.swift in Sources */,
 				DD708F4E2D64B1D5004F8C56 /* GhostTargetType.swift in Sources */,
+				DDF3807A2D649E2C003AFD7B /* LoginRepositoryImpl.swift in Sources */,
 				DDAA64E22D648530008043CA /* ProfileRepository.swift in Sources */,
 				DE72235B2D61DE82003B8145 /* FetchGameCategory.swift in Sources */,
 				DE7223702D61EE6A003B8145 /* AccountDeleteReason.swift in Sources */,
