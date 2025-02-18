@@ -37,6 +37,17 @@
 		DD4BFCEB2D5D98FF003A8045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4BFCE22D5D98FF003A8045 /* LaunchScreen.storyboard */; };
 		DD5917C42D60B965006E82F9 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C32D60B95A006E82F9 /* KeychainWrapper.swift */; };
 		DD5917C82D60C2A7006E82F9 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5917C72D60C2A1006E82F9 /* KeychainError.swift */; };
+		DD708F3E2D64B031004F8C56 /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F3D2D64B02E004F8C56 /* Bundle+.swift */; };
+		DD708F402D64B188004F8C56 /* LoginTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F3F2D64B182004F8C56 /* LoginTargetType.swift */; };
+		DD708F422D64B196004F8C56 /* AccountTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F412D64B18E004F8C56 /* AccountTargetType.swift */; };
+		DD708F442D64B19F004F8C56 /* ProfileTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F432D64B19A004F8C56 /* ProfileTargetType.swift */; };
+		DD708F462D64B1A7004F8C56 /* CommentTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F452D64B1A2004F8C56 /* CommentTargetType.swift */; };
+		DD708F482D64B1B3004F8C56 /* CommentLikedTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F472D64B1AB004F8C56 /* CommentLikedTargetType.swift */; };
+		DD708F4A2D64B1BE004F8C56 /* ContentTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F492D64B1B9004F8C56 /* ContentTargetType.swift */; };
+		DD708F4C2D64B1CB004F8C56 /* ContentLikedTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F4B2D64B1C1004F8C56 /* ContentLikedTargetType.swift */; };
+		DD708F4E2D64B1D5004F8C56 /* GhostTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F4D2D64B1D0004F8C56 /* GhostTargetType.swift */; };
+		DD708F502D64B1DE004F8C56 /* NotificationTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F4F2D64B1D8004F8C56 /* NotificationTargetType.swift */; };
+		DD708F522D64B1E8004F8C56 /* InformationTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F512D64B1E1004F8C56 /* InformationTargetType.swift */; };
 		DD7184842D61C4700063A65A /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7184832D61C46C0063A65A /* TokenStorage.swift */; };
 		DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72E2822D5DA7F70059D55D /* UpdateToken.swift */; };
 		DD87ECB12D632B45002FBE66 /* FetchMemberContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87ECB02D632B3E002FBE66 /* FetchMemberContents.swift */; };
@@ -124,6 +135,20 @@
 		DD4BFCE42D5D98FF003A8045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD5917C32D60B95A006E82F9 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		DD5917C72D60C2A1006E82F9 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
+		DD708F372D64A74C004F8C56 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		DD708F382D64A759004F8C56 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		DD708F3D2D64B02E004F8C56 /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
+		DD708F3F2D64B182004F8C56 /* LoginTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTargetType.swift; sourceTree = "<group>"; };
+		DD708F412D64B18E004F8C56 /* AccountTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTargetType.swift; sourceTree = "<group>"; };
+		DD708F432D64B19A004F8C56 /* ProfileTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTargetType.swift; sourceTree = "<group>"; };
+		DD708F452D64B1A2004F8C56 /* CommentTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTargetType.swift; sourceTree = "<group>"; };
+		DD708F472D64B1AB004F8C56 /* CommentLikedTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentLikedTargetType.swift; sourceTree = "<group>"; };
+		DD708F492D64B1B9004F8C56 /* ContentTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTargetType.swift; sourceTree = "<group>"; };
+		DD708F4B2D64B1C1004F8C56 /* ContentLikedTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLikedTargetType.swift; sourceTree = "<group>"; };
+		DD708F4D2D64B1D0004F8C56 /* GhostTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostTargetType.swift; sourceTree = "<group>"; };
+		DD708F4F2D64B1D8004F8C56 /* NotificationTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTargetType.swift; sourceTree = "<group>"; };
+		DD708F512D64B1E1004F8C56 /* InformationTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTargetType.swift; sourceTree = "<group>"; };
+		DD708F542D64C3EE004F8C56 /* Share.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Share.xcconfig; sourceTree = "<group>"; };
 		DD7184832D61C46C0063A65A /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
 		DD72E2822D5DA7F70059D55D /* UpdateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToken.swift; sourceTree = "<group>"; };
 		DD87ECB02D632B3E002FBE66 /* FetchMemberContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMemberContents.swift; sourceTree = "<group>"; };
@@ -437,8 +462,9 @@
 		DD6BD9B92D5D9AD100736D51 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				DD4BFCDF2D5D98FF003A8045 /* Assets.xcassets */,
+				DD708F392D64A768004F8C56 /* Config */,
 				DD4BFCE02D5D98FF003A8045 /* Info.plist */,
+				DD4BFCDF2D5D98FF003A8045 /* Assets.xcassets */,
 				DD4BFCE22D5D98FF003A8045 /* LaunchScreen.storyboard */,
 				DD4BFCE42D5D98FF003A8045 /* ViewController.swift */,
 			);
@@ -458,6 +484,7 @@
 		DD6BD9BB2D5D9B1E00736D51 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				DD708F3C2D64B026004F8C56 /* Bundle */,
 				DD7184822D61C4650063A65A /* Token */,
 				DD5917C22D60B932006E82F9 /* Keychain */,
 				DED2EE002D5DAF9700A9434B /* Network */,
@@ -486,9 +513,37 @@
 		DD6BD9CA2D5D9BB000736D51 /* TargetType */ = {
 			isa = PBXGroup;
 			children = (
+				DD708F3F2D64B182004F8C56 /* LoginTargetType.swift */,
+				DD708F412D64B18E004F8C56 /* AccountTargetType.swift */,
+				DD708F432D64B19A004F8C56 /* ProfileTargetType.swift */,
+				DD708F452D64B1A2004F8C56 /* CommentTargetType.swift */,
+				DD708F472D64B1AB004F8C56 /* CommentLikedTargetType.swift */,
+				DD708F492D64B1B9004F8C56 /* ContentTargetType.swift */,
+				DD708F4B2D64B1C1004F8C56 /* ContentLikedTargetType.swift */,
+				DD708F4D2D64B1D0004F8C56 /* GhostTargetType.swift */,
+				DD708F4F2D64B1D8004F8C56 /* NotificationTargetType.swift */,
+				DD708F512D64B1E1004F8C56 /* InformationTargetType.swift */,
 				DEA4E21E2D607FB000909437 /* BaseTargetType.swift */,
 			);
 			path = TargetType;
+			sourceTree = "<group>";
+		};
+		DD708F392D64A768004F8C56 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DD708F542D64C3EE004F8C56 /* Share.xcconfig */,
+				DD708F382D64A759004F8C56 /* Release.xcconfig */,
+				DD708F372D64A74C004F8C56 /* Development.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		DD708F3C2D64B026004F8C56 /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				DD708F3D2D64B02E004F8C56 /* Bundle+.swift */,
+			);
+			path = Bundle;
 			sourceTree = "<group>";
 		};
 		DD7184822D61C4650063A65A /* Token */ = {
@@ -821,6 +876,7 @@
 				DED2EE0D2D5DBF6500A9434B /* Publisher+.swift in Sources */,
 				DEA4E2272D60BEDD00909437 /* DIContainer.swift in Sources */,
 				DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */,
+				DD708F402D64B188004F8C56 /* LoginTargetType.swift in Sources */,
 				DEA4E2292D60BF0C00909437 /* Injected.swift in Sources */,
 				DE7223762D61F280003B8145 /* Content.swift in Sources */,
 				DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */,
@@ -834,7 +890,9 @@
 				DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */,
 				DD216C182D6388760077C57D /* account.swift in Sources */,
 				DE7223722D61EF0C003B8145 /* UserProfile.swift in Sources */,
+				DD708F462D64B1A7004F8C56 /* CommentTargetType.swift in Sources */,
 				DD9B12422D5DB8B300422B1F /* UpdateUserProfile.swift in Sources */,
+				DD708F4C2D64B1CB004F8C56 /* ContentLikedTargetType.swift in Sources */,
 				DD216C1A2D63887B0077C57D /* profile.swift in Sources */,
 				DE7223682D61EC87003B8145 /* LCKTeam.swift in Sources */,
 				DD216C1E2D6388B80077C57D /* commentLiked.swift in Sources */,
@@ -851,8 +909,10 @@
 				DE7223662D61EC33003B8145 /* User.swift in Sources */,
 				DD9B12542D5DCA0300422B1F /* UpdateGhost.swift in Sources */,
 				DD216C202D6388C10077C57D /* content.swift in Sources */,
+				DD708F4E2D64B1D5004F8C56 /* GhostTargetType.swift in Sources */,
 				DE72235B2D61DE82003B8145 /* FetchGameCategory.swift in Sources */,
 				DE7223702D61EE6A003B8145 /* AccountDeleteReason.swift in Sources */,
+				DD708F422D64B196004F8C56 /* AccountTargetType.swift in Sources */,
 				DDF38BF92D5DA1CC005FF627 /* DTO.swift in Sources */,
 				DEBEDFD82D5F846F00086E5A /* APIProvider.swift in Sources */,
 				DD216C282D6388E10077C57D /* information.swift in Sources */,
@@ -865,6 +925,7 @@
 				DD7184842D61C4700063A65A /* TokenStorage.swift in Sources */,
 				DE7223592D61DDE3003B8145 /* FetchGameSchedules.swift in Sources */,
 				DEA4E2222D60813300909437 /* Empty.swift in Sources */,
+				DD708F502D64B1DE004F8C56 /* NotificationTargetType.swift in Sources */,
 				DD216C262D6388D70077C57D /* notification.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */,
@@ -875,6 +936,7 @@
 				DD216C162D63886C0077C57D /* login.swift in Sources */,
 				DE72237A2D61FAC9003B8145 /* GameSchedule.swift in Sources */,
 				DD87ECB12D632B45002FBE66 /* FetchMemberContents.swift in Sources */,
+				DD708F522D64B1E8004F8C56 /* InformationTargetType.swift in Sources */,
 				DE72236A2D61ECCA003B8145 /* Token.swift in Sources */,
 				DE72236C2D61ECF4003B8145 /* SocialPlatform.swift in Sources */,
 				DD9B12522D5DC9C000422B1F /* UpdateContentLiked.swift in Sources */,
@@ -886,15 +948,19 @@
 				DEA4E2242D6081B400909437 /* MoyaLoggingPlugin.swift in Sources */,
 				DE7223802D61FE97003B8145 /* TriggerType.swift in Sources */,
 				DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */,
+				DD708F4A2D64B1BE004F8C56 /* ContentTargetType.swift in Sources */,
 				DE7223612D61DFEE003B8145 /* FetchNews.swift in Sources */,
 				DD216C3E2D6389040077C57D /* commentImpl.swift in Sources */,
+				DD708F482D64B1B3004F8C56 /* CommentLikedTargetType.swift in Sources */,
 				DD216C3F2D6389040077C57D /* loginImpl.swift in Sources */,
 				DD216C402D6389040077C57D /* contentLikedImpl.swift in Sources */,
 				DD216C412D6389040077C57D /* informationImpl.swift in Sources */,
+				DD708F442D64B19F004F8C56 /* ProfileTargetType.swift in Sources */,
 				DD216C422D6389040077C57D /* ghostImpl.swift in Sources */,
 				DD216C432D6389040077C57D /* commentLikedImpl.swift in Sources */,
 				DD216C442D6389040077C57D /* notificationImpl.swift in Sources */,
 				DD216C452D6389040077C57D /* contentImpl.swift in Sources */,
+				DD708F3E2D64B031004F8C56 /* Bundle+.swift in Sources */,
 				DD216C462D6389040077C57D /* profileImpl.swift in Sources */,
 				DD216C472D6389040077C57D /* accountImpl.swift in Sources */,
 			);
@@ -916,6 +982,7 @@
 /* Begin XCBuildConfiguration section */
 		DD4BFCC02D5D93AD003A8045 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD708F372D64A74C004F8C56 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -944,6 +1011,7 @@
 		};
 		DD4BFCC12D5D93AD003A8045 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD708F382D64A759004F8C56 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
