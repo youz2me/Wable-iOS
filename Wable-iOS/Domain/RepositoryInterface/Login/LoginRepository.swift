@@ -10,6 +10,6 @@ import Combine
 import Foundation
 
 protocol LoginRepository {
-    func updateTokenStatus() -> AnyPublisher<Void, Error>
+    func updateTokenStatus() -> AnyPublisher<Token, Error>
     func fetchUserAuth(platform: String, userName: String) -> AnyPublisher<Account, Error>
 }

@@ -42,6 +42,7 @@
 		DD708F502D64B1DE004F8C56 /* NotificationTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F4F2D64B1D8004F8C56 /* NotificationTargetType.swift */; };
 		DD708F522D64B1E8004F8C56 /* InformationTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F512D64B1E1004F8C56 /* InformationTargetType.swift */; };
 		DD708F562D64EBBA004F8C56 /* FeaturePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F552D64EBB3004F8C56 /* FeaturePath.swift */; };
+		DD708F582D64F5AE004F8C56 /* ProfileRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F572D64F5A4004F8C56 /* ProfileRepositoryImpl.swift */; };
 		DD7184842D61C4700063A65A /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7184832D61C46C0063A65A /* TokenStorage.swift */; };
 		DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72E2822D5DA7F70059D55D /* UpdateToken.swift */; };
 		DD75DE482D64874100DF7B2A /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD75DE472D64873A00DF7B2A /* CommentRepository.swift */; };
@@ -145,6 +146,7 @@
 		DD708F512D64B1E1004F8C56 /* InformationTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTargetType.swift; sourceTree = "<group>"; };
 		DD708F542D64C3EE004F8C56 /* Share.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Share.xcconfig; sourceTree = "<group>"; };
 		DD708F552D64EBB3004F8C56 /* FeaturePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturePath.swift; sourceTree = "<group>"; };
+		DD708F572D64F5A4004F8C56 /* ProfileRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepositoryImpl.swift; sourceTree = "<group>"; };
 		DD7184832D61C46C0063A65A /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
 		DD72E2822D5DA7F70059D55D /* UpdateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToken.swift; sourceTree = "<group>"; };
 		DD75DE472D64873A00DF7B2A /* CommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 		DD216C2E2D6389040077C57D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				DD708F572D64F5A4004F8C56 /* ProfileRepositoryImpl.swift */,
 				DD216C2D2D6389040077C57D /* profileImpl.swift */,
 			);
 			path = Profile;
@@ -937,6 +940,7 @@
 				DD216C262D6388D70077C57D /* notification.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */,
+				DD708F582D64F5AE004F8C56 /* ProfileRepositoryImpl.swift in Sources */,
 				DE7223782D61F8B8003B8145 /* Notification.swift in Sources */,
 				DD9B123E2D5DB5C700422B1F /* FetchAccountInfo.swift in Sources */,
 				DE72237E2D61FD47003B8145 /* Announcement.swift in Sources */,

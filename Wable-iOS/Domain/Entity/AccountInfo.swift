@@ -11,7 +11,7 @@ import Foundation
 // MARK: 계정 정보
 
 struct AccountInfo {
-    let memberID: String
+    let memberID: Int
     let createdDate: Date?
     let displayMemberID: String
     let socialPlatform: SocialPlatform
