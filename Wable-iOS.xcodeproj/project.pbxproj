@@ -70,8 +70,8 @@
 		DDF3807A2D649E2C003AFD7B /* LoginRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF380792D649E22003AFD7B /* LoginRepositoryImpl.swift */; };
 		DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */; };
 		DDF38BF92D5DA1CC005FF627 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF82D5DA1C9005FF627 /* DTO.swift */; };
-		DDF80E682D61DE080048E9CC /* FetchNotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF80E672D61DDF90048E9CC /* FetchNotificationInfo.swift */; };
-		DDF80E6A2D61DECC0048E9CC /* FetchUserNotificationInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF80E692D61DEC30048E9CC /* FetchUserNotificationInfos.swift */; };
+		DDF80E682D61DE080048E9CC /* FetchInfoNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF80E672D61DDF90048E9CC /* FetchInfoNotifications.swift */; };
+		DDF80E6A2D61DECC0048E9CC /* FetchUserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF80E692D61DEC30048E9CC /* FetchUserNotifications.swift */; };
 		DDF80E6C2D61E0590048E9CC /* FetchNotificationNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF80E6B2D61E0430048E9CC /* FetchNotificationNumber.swift */; };
 		DE7223592D61DDE3003B8145 /* FetchGameSchedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7223582D61DDE3003B8145 /* FetchGameSchedules.swift */; };
 		DE72235B2D61DE82003B8145 /* FetchGameCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72235A2D61DE82003B8145 /* FetchGameCategory.swift */; };
@@ -173,8 +173,8 @@
 		DDF380792D649E22003AFD7B /* LoginRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryImpl.swift; sourceTree = "<group>"; };
 		DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		DDF38BF82D5DA1C9005FF627 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
-		DDF80E672D61DDF90048E9CC /* FetchNotificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchNotificationInfo.swift; sourceTree = "<group>"; };
-		DDF80E692D61DEC30048E9CC /* FetchUserNotificationInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserNotificationInfos.swift; sourceTree = "<group>"; };
+		DDF80E672D61DDF90048E9CC /* FetchInfoNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchInfoNotifications.swift; sourceTree = "<group>"; };
+		DDF80E692D61DEC30048E9CC /* FetchUserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserNotifications.swift; sourceTree = "<group>"; };
 		DDF80E6B2D61E0430048E9CC /* FetchNotificationNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchNotificationNumber.swift; sourceTree = "<group>"; };
 		DE7223582D61DDE3003B8145 /* FetchGameSchedules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGameSchedules.swift; sourceTree = "<group>"; };
 		DE72235A2D61DE82003B8145 /* FetchGameCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGameCategory.swift; sourceTree = "<group>"; };
@@ -711,9 +711,9 @@
 		DDF80E662D61DDEF0048E9CC /* Notification */ = {
 			isa = PBXGroup;
 			children = (
-				DDF80E692D61DEC30048E9CC /* FetchUserNotificationInfos.swift */,
+				DDF80E692D61DEC30048E9CC /* FetchUserNotifications.swift */,
 				DDF80E6B2D61E0430048E9CC /* FetchNotificationNumber.swift */,
-				DDF80E672D61DDF90048E9CC /* FetchNotificationInfo.swift */,
+				DDF80E672D61DDF90048E9CC /* FetchInfoNotifications.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -878,7 +878,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDF80E682D61DE080048E9CC /* FetchNotificationInfo.swift in Sources */,
+				DDF80E682D61DE080048E9CC /* FetchInfoNotifications.swift in Sources */,
 				DED2EE0D2D5DBF6500A9434B /* Publisher+.swift in Sources */,
 				DEA4E2272D60BEDD00909437 /* DIContainer.swift in Sources */,
 				DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */,
@@ -893,7 +893,7 @@
 				DE7223742D61EFA5003B8145 /* Comment.swift in Sources */,
 				DD75DE4C2D64976800DF7B2A /* AccountInfo.swift in Sources */,
 				DD389B502D625369004351F5 /* FetchContent.swift in Sources */,
-				DDF80E6A2D61DECC0048E9CC /* FetchUserNotificationInfos.swift in Sources */,
+				DDF80E6A2D61DECC0048E9CC /* FetchUserNotifications.swift in Sources */,
 				DD9B125B2D5DD18000422B1F /* CreateAccountRequest.swift in Sources */,
 				DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */,
 				DD216C182D6388760077C57D /* account.swift in Sources */,
