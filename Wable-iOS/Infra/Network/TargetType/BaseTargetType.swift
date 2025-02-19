@@ -9,20 +9,40 @@ import Foundation
 
 import Moya
 
-protocol BaseTargetType: TargetType {}
+protocol BaseTargetType: TargetType {
+    var endPoint: String? { get }
+    var query: [String: Any]? { get }
+    var requestBody: Encodable? { get }
+}
 
 extension BaseTargetType {
     var baseURL: URL {
+        return Bundle.baseURL
+    }
+    
+    var path: String {
+        guard let url = endPoint else { return "" }
         
-        // TODO: 추후 BaseURL 수정 요망
-        
-        guard let url = URL(string: Bundle.baseURL) else {
-            fatalError("Base URL must be set.")
-        }
         return url
+    }
+    
+    var task: Task {
+        if let query {
+            return .requestParameters(
+                parameters: query,
+                encoding: URLEncoding.default
+            )
+        } else if let requestBody {
+            return .requestJSONEncodable(requestBody)
+        }
+        return .requestPlain
     }
     
     var validationType: ValidationType {
         return .successCodes
+    }
+    
+    var headers: [String : String]? {
+        return ["Content-Type": "application/json"]
     }
 }
