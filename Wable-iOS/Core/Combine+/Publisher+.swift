@@ -9,6 +9,9 @@ import Combine
 import Foundation
 
 extension Publisher {
+    
+    // MARK: - withUnretained
+
     /// 이 메서드는 클로저 내부에서 `owner`를 약한 참조(`weak`)로 캡처하여
     /// 메모리 순환 참조를 방지하고, `owner`가 존재하지 않을 경우 값을 무시합니다.
     ///
@@ -34,5 +37,27 @@ extension Publisher {
             return (owner, value)
         }
         .eraseToAnyPublisher()
+    }
+    
+    // MARK: - asVoid
+    
+    func asVoid() -> AnyPublisher<Void, Failure> {
+        self.map { _ in () }
+            .eraseToAnyPublisher()
+    }
+    
+    // MARK: - normalizeError
+    
+    func normalizeError() -> AnyPublisher<Output, Error> {
+        self.mapError { $0 as Error }
+            .eraseToAnyPublisher()
+    }
+    
+    // MARK: - asVoidWithError
+
+    func asVoidWithError() -> AnyPublisher<Void, Error> {
+        self.map { _ in () }
+            .mapError { $0 as Error }
+            .eraseToAnyPublisher()
     }
 }
