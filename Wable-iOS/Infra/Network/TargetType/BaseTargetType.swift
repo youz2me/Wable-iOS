@@ -21,10 +21,7 @@ extension BaseTargetType {
     }
     
     var path: String {
-        guard let url = endPoint
-        else {
-            return ""
-        }
+        guard let url = endPoint else { return "" }
         
         return url
     }
@@ -35,8 +32,7 @@ extension BaseTargetType {
                 parameters: query,
                 encoding: URLEncoding.default
             )
-        }
-        else if let requestBody {
+        } else if let requestBody {
             return .requestJSONEncodable(requestBody)
         }
         return .requestPlain

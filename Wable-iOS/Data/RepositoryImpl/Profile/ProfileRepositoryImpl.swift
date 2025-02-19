@@ -11,11 +11,10 @@ import Foundation
 import CombineMoya
 import Moya
 
-
-class ProfileRepositoryImpl {
-    let provider = APIProvider<ProfileTargetType>()
-    let dateFormatter: DateFormatter
-    let decoder = JSONDecoder()
+final class ProfileRepositoryImpl {
+    private let provider = APIProvider<ProfileTargetType>()
+    private let dateFormatter: DateFormatter
+    private let decoder = JSONDecoder()
     
     init() {
         self.dateFormatter = DateFormatter()

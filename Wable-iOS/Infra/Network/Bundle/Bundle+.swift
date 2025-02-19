@@ -9,7 +9,8 @@ import Foundation
 
 extension Bundle {
     static let baseURL: URL = {
-        guard let urlString = main.object(forInfoDictionaryKey: "BASE_URL") as? String, let url = URL(string: urlString)
+        guard let urlString = main.object(forInfoDictionaryKey: "BASE_URL") as? String,
+              let url = URL(string: urlString)
         else {
             fatalError("BaseURL을 찾을 수 없습니다.")
         }

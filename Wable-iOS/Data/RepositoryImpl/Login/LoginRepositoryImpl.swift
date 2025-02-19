@@ -12,10 +12,9 @@ import Foundation
 import CombineMoya
 import Moya
 
-
-class LoginRepositoryImpl {
-    let provider = MoyaProvider<LoginTargetType>()
-    let decoder = JSONDecoder()
+final class LoginRepositoryImpl {
+    private let provider = MoyaProvider<LoginTargetType>()
+    private let decoder = JSONDecoder()
 }
 
 extension LoginRepositoryImpl: LoginRepository {

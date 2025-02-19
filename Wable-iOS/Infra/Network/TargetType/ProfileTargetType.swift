@@ -49,6 +49,4 @@ extension ProfileTargetType: BaseTargetType {
             return .patch
         }
     }
-    
-    
 }
