@@ -16,16 +16,13 @@ enum ContentLikedTargetType {
 }
 
 extension ContentLikedTargetType: BaseTargetType {
-    var feature: FeaturePath {
-        return .contentLiked
-    }
     
     var endPoint: String? {
         switch self {
         case .createContentLiked(contentID: let contentID):
-            return "\(contentID)/liked"
+            return "v1/content/\(contentID)/liked"
         case .deleteContentLiked(contentID: let contentID):
-            return "/\(contentID)/unliked"
+            return "v1/content/\(contentID)/unliked"
         }
     }
     
@@ -39,9 +36,9 @@ extension ContentLikedTargetType: BaseTargetType {
     
     var method: Moya.Method {
         switch self {
-        case .createContentLiked(contentID: let contentID, request: let request):
+        case .createContentLiked:
             return .post
-        case .deleteContentLiked(contentID: let contentID):
+        case .deleteContentLiked:
             return .delete
         }
     }

@@ -19,10 +19,6 @@ enum ContentTargetType {
 }
 
 extension ContentTargetType: BaseTargetType {
-    var feature: FeaturePath {
-        return .content
-    }
-    
     var endPoint: String? {
         switch self {
         case .createContent:

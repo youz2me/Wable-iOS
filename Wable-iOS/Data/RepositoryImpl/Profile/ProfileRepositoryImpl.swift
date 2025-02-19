@@ -93,6 +93,27 @@ extension ProfileRepositoryImpl: ProfileRepository {
     // TODO: 엔티티가 이상한데 확인하기
     
     func updateUserProfile(profile: UserProfile) -> AnyPublisher<Void, any Error> {
-        <#code#>
+        return provider.requestPublisher(
+            .updateUserProfile(
+                request: DTO.Request.UpdateUserProfile(
+                    info: DTO.Request.ProfileInfo(
+                        nickname: nil,
+                        isAlarmAllowed: nil,
+                        memberIntro: nil,
+                        isPushAlarmAllowed: nil,
+                        fcmToken: nil,
+                        memberLCKYears: nil,
+                        memberFanTeam: nil,
+                        memberDefaultProfileImage: nil
+                    ),
+                    file: nil
+                )
+            )
+        )
+        .map { _ in () }
+        .mapError {
+            $0 as? WableNetworkError ?? .unknown($0)
+        }
+        .eraseToAnyPublisher()
     }
 }

@@ -10,7 +10,6 @@ import Foundation
 import Moya
 
 protocol BaseTargetType: TargetType {
-    var feature: FeaturePath { get }
     var endPoint: String? { get }
     var query: [String: Any]? { get }
     var requestBody: Encodable? { get }
@@ -18,12 +17,7 @@ protocol BaseTargetType: TargetType {
 
 extension BaseTargetType {
     var baseURL: URL {
-        guard let url = URL(string: Bundle.baseURL)
-        else {
-            WableLogger.log("URL을 찾을 수 없습니다.", for: .error)
-        }
-        
-        return url
+        return Bundle.baseURL
     }
     
     var path: String {
@@ -32,7 +26,7 @@ extension BaseTargetType {
             return ""
         }
         
-        return feature.rawValue + url
+        return url
     }
     
     var task: Task {
@@ -53,6 +47,6 @@ extension BaseTargetType {
     }
     
     var headers: [String : String]? {
-        return .none
+        return ["Content-Type": "application/json"]
     }
 }

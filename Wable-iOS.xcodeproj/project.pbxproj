@@ -41,7 +41,6 @@
 		DD708F4E2D64B1D5004F8C56 /* GhostTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F4D2D64B1D0004F8C56 /* GhostTargetType.swift */; };
 		DD708F502D64B1DE004F8C56 /* NotificationTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F4F2D64B1D8004F8C56 /* NotificationTargetType.swift */; };
 		DD708F522D64B1E8004F8C56 /* InformationTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F512D64B1E1004F8C56 /* InformationTargetType.swift */; };
-		DD708F562D64EBBA004F8C56 /* FeaturePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F552D64EBB3004F8C56 /* FeaturePath.swift */; };
 		DD708F582D64F5AE004F8C56 /* ProfileRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD708F572D64F5A4004F8C56 /* ProfileRepositoryImpl.swift */; };
 		DD7184842D61C4700063A65A /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7184832D61C46C0063A65A /* TokenStorage.swift */; };
 		DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72E2822D5DA7F70059D55D /* UpdateToken.swift */; };
@@ -145,7 +144,6 @@
 		DD708F4F2D64B1D8004F8C56 /* NotificationTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTargetType.swift; sourceTree = "<group>"; };
 		DD708F512D64B1E1004F8C56 /* InformationTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTargetType.swift; sourceTree = "<group>"; };
 		DD708F542D64C3EE004F8C56 /* Share.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Share.xcconfig; sourceTree = "<group>"; };
-		DD708F552D64EBB3004F8C56 /* FeaturePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturePath.swift; sourceTree = "<group>"; };
 		DD708F572D64F5A4004F8C56 /* ProfileRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepositoryImpl.swift; sourceTree = "<group>"; };
 		DD7184832D61C46C0063A65A /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
 		DD72E2822D5DA7F70059D55D /* UpdateToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToken.swift; sourceTree = "<group>"; };
@@ -491,7 +489,6 @@
 		DD6BD9BB2D5D9B1E00736D51 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
-				DD708F3C2D64B026004F8C56 /* Bundle */,
 				DD7184822D61C4650063A65A /* Token */,
 				DD5917C22D60B932006E82F9 /* Keychain */,
 				DED2EE002D5DAF9700A9434B /* Network */,
@@ -520,6 +517,7 @@
 		DD6BD9CA2D5D9BB000736D51 /* TargetType */ = {
 			isa = PBXGroup;
 			children = (
+				DEA4E21E2D607FB000909437 /* BaseTargetType.swift */,
 				DD708F3F2D64B182004F8C56 /* LoginTargetType.swift */,
 				DD708F412D64B18E004F8C56 /* AccountTargetType.swift */,
 				DD708F432D64B19A004F8C56 /* ProfileTargetType.swift */,
@@ -530,7 +528,6 @@
 				DD708F4D2D64B1D0004F8C56 /* GhostTargetType.swift */,
 				DD708F4F2D64B1D8004F8C56 /* NotificationTargetType.swift */,
 				DD708F512D64B1E1004F8C56 /* InformationTargetType.swift */,
-				DEA4E21E2D607FB000909437 /* BaseTargetType.swift */,
 			);
 			path = TargetType;
 			sourceTree = "<group>";
@@ -776,10 +773,10 @@
 		DED2EE002D5DAF9700A9434B /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				DD708F552D64EBB3004F8C56 /* FeaturePath.swift */,
 				DEBEDFD72D5F846F00086E5A /* APIProvider.swift */,
 				DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */,
 				DEA4E2232D6081B400909437 /* MoyaLoggingPlugin.swift */,
+				DD708F3C2D64B026004F8C56 /* Bundle */,
 				DD6BD9CA2D5D9BB000736D51 /* TargetType */,
 			);
 			path = Network;
@@ -897,7 +894,6 @@
 				DD75DE4C2D64976800DF7B2A /* AccountInfo.swift in Sources */,
 				DD389B502D625369004351F5 /* FetchContent.swift in Sources */,
 				DDF80E6A2D61DECC0048E9CC /* FetchUserNotificationInfos.swift in Sources */,
-				DD708F562D64EBBA004F8C56 /* FeaturePath.swift in Sources */,
 				DD9B125B2D5DD18000422B1F /* CreateAccountRequest.swift in Sources */,
 				DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */,
 				DD216C182D6388760077C57D /* account.swift in Sources */,

@@ -17,18 +17,14 @@ enum ProfileTargetType {
 }
 
 extension ProfileTargetType: BaseTargetType {
-    var feature: FeaturePath {
-        return .profile
-    }
-    
     var endPoint: String? {
         switch self {
         case .fetchUserInfo:
-            return "/member-data"
+            return "/v1/member-data"
         case .fetchUserProfile(memberID: let memberID):
-            return "/viewmember/\(memberID)"
+            return "/v1/viewmember/\(memberID)"
         case .updateUserProfile:
-            return "/user-profile2"
+            return "/v1/user-profile2"
         }
     }
     

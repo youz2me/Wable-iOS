@@ -17,10 +17,6 @@ enum LoginTargetType {
 }
 
 extension LoginTargetType: BaseTargetType {
-    var feature: FeaturePath {
-        return .login
-    }
-    
     var query: [String : Any]? {
         return .none
     }
@@ -38,7 +34,7 @@ extension LoginTargetType: BaseTargetType {
         switch self {
         case .fetchTokenStatus:
             return "/v1/auth/token"
-        case .fetchUserAuth(request: let request):
+        case .fetchUserAuth:
             return "/v2/auth"
         }
     }
@@ -47,7 +43,7 @@ extension LoginTargetType: BaseTargetType {
         switch self {
         case .fetchTokenStatus:
             return .get
-        case .fetchUserAuth(request: let request):
+        case .fetchUserAuth:
             return .post
         }
     }

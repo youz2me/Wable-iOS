@@ -16,16 +16,13 @@ enum CommentLikedTargetType {
 }
 
 extension CommentLikedTargetType: BaseTargetType {
-    var feature: FeaturePath {
-        return .commentLiked
-    }
     
     var endPoint: String? {
         switch self {
         case .createCommentLiked(contentID: let contentID):
-            return "/\(contentID)/liked"
+            return "v1/comment/\(contentID)/liked"
         case .deleteCommentLiked(commentID: let commentID):
-            return "/\(commentID)/unliked"
+            return "v1/comment/\(commentID)/unliked"
         }
     }
     
@@ -35,7 +32,7 @@ extension CommentLikedTargetType: BaseTargetType {
     
     var requestBody: (any Encodable)? {
         switch self {
-        case .createCommentLiked(contentID: let contentID, request: let request):
+        case .createCommentLiked(contentID: _, request: let request):
             return request
         default:
             return .none

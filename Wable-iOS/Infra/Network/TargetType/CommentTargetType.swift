@@ -18,10 +18,6 @@ enum CommentTargetType {
 }
 
 extension CommentTargetType: BaseTargetType {
-    var feature: FeaturePath {
-        return .comment
-    }
-    
     var endPoint: String? {
         switch self {
         case .fetchUserCommentList(memberID: let memberID):
@@ -37,9 +33,9 @@ extension CommentTargetType: BaseTargetType {
     
     var query: [String : Any]? {
         switch self {
-        case .fetchUserCommentList(memberID: let memberID, cursor: let cursor):
+        case .fetchUserCommentList(memberID: _, cursor: let cursor):
             return ["cursor" : cursor]
-        case .fetchContentCommentList(contentID: let contentID, cursor: let cursor):
+        case .fetchContentCommentList(contentID: _, cursor: let cursor):
             return ["cursor" : cursor]
         default:
             return .none
@@ -48,7 +44,7 @@ extension CommentTargetType: BaseTargetType {
     
     var requestBody: (any Encodable)? {
         switch self {
-        case .createComment(contentID: let contentID, request: let request):
+        case .createComment(contentID: _, request: let request):
             return request
         default:
             return .none
