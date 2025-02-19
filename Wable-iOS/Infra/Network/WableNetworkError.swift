@@ -20,7 +20,7 @@ enum WableNetworkError: Error, CustomStringConvertible {
     case missingData
     case unknown(Error)
     
-    var description: String {
+    var localizedDescription: String {
         switch self {
         case .decodedError(let error):
             "디코딩 과정에서 오류가 발생했습니다: \(error.localizedDescription)"
@@ -33,5 +33,9 @@ enum WableNetworkError: Error, CustomStringConvertible {
         case .unknown(let error):
             "알 수 없는 오류입니다: \(error.localizedDescription)"
         }
+    }
+    
+    var description: String {
+        localizedDescription
     }
 }

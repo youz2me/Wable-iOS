@@ -20,7 +20,10 @@ final class APIProvider<Target: BaseTargetType>: MoyaProvider<Target> {
         super.init(session: session, plugins: plugin)
     }
     
-    func request<D: Decodable>(_ target: Target) -> AnyPublisher<D, WableNetworkError> {
+    func request<D: Decodable>(
+        _ target: Target,
+        for type: D.Type
+    ) -> AnyPublisher<D, WableNetworkError> {
         return self.requestPublisher(target)
             .map(\.data)
             .decode(type: BaseResponse<D>.self, decoder: jsonDecoder)

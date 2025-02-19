@@ -16,7 +16,7 @@ struct ActivityNotification {
     let time: Date?
     let text: String
     let userID: Int
-    let userNickname: Int
+    let userNickname: String
     let triggerUserID: Int
     let triggerUserNickname: String
     let triggerUserProfileURL: URL?
