@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		DD216C182D6388760077C57D /* account.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C172D6388700077C57D /* account.swift */; };
 		DD216C242D6388CF0077C57D /* ghost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C232D6388CE0077C57D /* ghost.swift */; };
-		DD216C262D6388D70077C57D /* notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C252D6388D30077C57D /* notification.swift */; };
+		DD216C262D6388D70077C57D /* NotificationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C252D6388D30077C57D /* NotificationRepository.swift */; };
 		DD216C282D6388E10077C57D /* InformationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C272D6388DB0077C57D /* InformationRepository.swift */; };
 		DD216C3E2D6389040077C57D /* commentImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C2F2D6389040077C57D /* commentImpl.swift */; };
 		DD216C402D6389040077C57D /* contentLikedImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C352D6389040077C57D /* contentLikedImpl.swift */; };
 		DD216C412D6389040077C57D /* InformationRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C3B2D6389040077C57D /* InformationRepositoryImpl.swift */; };
 		DD216C422D6389040077C57D /* ghostImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C372D6389040077C57D /* ghostImpl.swift */; };
 		DD216C432D6389040077C57D /* commentLikedImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C312D6389040077C57D /* commentLikedImpl.swift */; };
-		DD216C442D6389040077C57D /* notificationImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C392D6389040077C57D /* notificationImpl.swift */; };
+		DD216C442D6389040077C57D /* NotificationRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C392D6389040077C57D /* NotificationRepositoryImpl.swift */; };
 		DD216C452D6389040077C57D /* contentImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C332D6389040077C57D /* contentImpl.swift */; };
 		DD216C462D6389040077C57D /* profileImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C2D2D6389040077C57D /* profileImpl.swift */; };
 		DD216C472D6389040077C57D /* accountImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C2B2D6389040077C57D /* accountImpl.swift */; };
@@ -119,7 +119,7 @@
 /* Begin PBXFileReference section */
 		DD216C172D6388700077C57D /* account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = account.swift; sourceTree = "<group>"; };
 		DD216C232D6388CE0077C57D /* ghost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ghost.swift; sourceTree = "<group>"; };
-		DD216C252D6388D30077C57D /* notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notification.swift; sourceTree = "<group>"; };
+		DD216C252D6388D30077C57D /* NotificationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepository.swift; sourceTree = "<group>"; };
 		DD216C272D6388DB0077C57D /* InformationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationRepository.swift; sourceTree = "<group>"; };
 		DD216C2B2D6389040077C57D /* accountImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountImpl.swift; sourceTree = "<group>"; };
 		DD216C2D2D6389040077C57D /* profileImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileImpl.swift; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		DD216C332D6389040077C57D /* contentImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentImpl.swift; sourceTree = "<group>"; };
 		DD216C352D6389040077C57D /* contentLikedImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentLikedImpl.swift; sourceTree = "<group>"; };
 		DD216C372D6389040077C57D /* ghostImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ghostImpl.swift; sourceTree = "<group>"; };
-		DD216C392D6389040077C57D /* notificationImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationImpl.swift; sourceTree = "<group>"; };
+		DD216C392D6389040077C57D /* NotificationRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepositoryImpl.swift; sourceTree = "<group>"; };
 		DD216C3B2D6389040077C57D /* InformationRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationRepositoryImpl.swift; sourceTree = "<group>"; };
 		DD389B4F2D625363004351F5 /* FetchContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchContent.swift; sourceTree = "<group>"; };
 		DD4BFCAC2D5D93AD003A8045 /* Wable-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wable-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -326,7 +326,7 @@
 		DD216C132D63882D0077C57D /* Notification */ = {
 			isa = PBXGroup;
 			children = (
-				DD216C252D6388D30077C57D /* notification.swift */,
+				DD216C252D6388D30077C57D /* NotificationRepository.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -407,7 +407,7 @@
 		DD216C3A2D6389040077C57D /* Notification */ = {
 			isa = PBXGroup;
 			children = (
-				DD216C392D6389040077C57D /* notificationImpl.swift */,
+				DD216C392D6389040077C57D /* NotificationRepositoryImpl.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -1055,7 +1055,7 @@
 				DE7223592D61DDE3003B8145 /* FetchGameSchedules.swift in Sources */,
 				DEA4E2222D60813300909437 /* Empty.swift in Sources */,
 				DD708F502D64B1DE004F8C56 /* NotificationTargetType.swift in Sources */,
-				DD216C262D6388D70077C57D /* notification.swift in Sources */,
+				DD216C262D6388D70077C57D /* NotificationRepository.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */,
 				DD708F582D64F5AE004F8C56 /* ProfileRepositoryImpl.swift in Sources */,
@@ -1093,7 +1093,7 @@
 				DD708F442D64B19F004F8C56 /* ProfileTargetType.swift in Sources */,
 				DD216C422D6389040077C57D /* ghostImpl.swift in Sources */,
 				DD216C432D6389040077C57D /* commentLikedImpl.swift in Sources */,
-				DD216C442D6389040077C57D /* notificationImpl.swift in Sources */,
+				DD216C442D6389040077C57D /* NotificationRepositoryImpl.swift in Sources */,
 				DE495A202D65B28B00D75A3A /* GhostMapper.swift in Sources */,
 				DD216C452D6389040077C57D /* contentImpl.swift in Sources */,
 				DD708F3E2D64B031004F8C56 /* Bundle+.swift in Sources */,
