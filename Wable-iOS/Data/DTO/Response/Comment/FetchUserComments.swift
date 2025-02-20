@@ -11,7 +11,7 @@ import Foundation
 // MARK: - 멤버에 해당하는 답글 리스트 조회
 
 extension DTO.Response {
-    struct FetchMemberComments: Decodable {
+    struct FetchUserComments: Decodable {
         let memberID: Int
         let memberProfileURL, memberNickname: String
         let isLiked, isGhost: Bool

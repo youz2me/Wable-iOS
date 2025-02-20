@@ -13,62 +13,34 @@ import CombineMoya
 import Moya
 
 final class LoginRepositoryImpl {
-    private let provider = MoyaProvider<LoginTargetType>()
-    private let decoder = JSONDecoder()
+    private let provider = APIProvider<LoginTargetType>()
 }
 
 extension LoginRepositoryImpl: LoginRepository {
     func updateTokenStatus() -> AnyPublisher<Token, any Error> {
-        return provider.requestPublisher(.fetchTokenStatus)
-            .map(\.data)
-            .decode(type: DTO.Response.UpdateToken.self, decoder: decoder)
-            .tryMap { token in
-                return Token(
-                    accessToken: token.accessToken,
-                    refreshToken: token.refreshToken
-                )
-            }
-            .mapError {
-                $0 as? WableNetworkError ?? .unknown($0)
-            }
-            .eraseToAnyPublisher()
+        return provider.request(
+            .fetchTokenStatus,
+            for: DTO.Response.UpdateToken.self
+        )
+        .map { token in
+            LoginMapper.tokenMapper(token)
+        }
+        .normalizeError()
     }
     
     func fetchUserAuth(platform: String, userName: String) -> AnyPublisher<Account, any Error> {
-        return provider.requestPublisher(.fetchUserAuth(request: DTO.Request.CreateAccount(socialPlatform: platform, userName: userName)))
-            .map(\.data)
-            .decode(type: DTO.Response.CreateAccount.self, decoder: decoder)
-            .tryMap {
-                guard let url = URL(string: $0.memberProfileURL), let fanTeam = LCKTeam(rawValue: $0.memberFanTeam)
-                else {
-                    let context = DecodingError.Context(
-                        codingPath: [],
-                        debugDescription: "memberProfileURL 또는 memberFanTeam 값이 올바르지 않습니다."
-                    )
-                    throw WableNetworkError.decodedError(DecodingError.valueNotFound(String.self, context))
-                }
-                
-                return Account(
-                    user: User(
-                        id: $0.memberID,
-                        nickname: $0.nickName,
-                        profileURL: url,
-                        fanTeam: fanTeam
-                    ),
-                    token: Token(
-                        accessToken: $0.accessToken,
-                        refreshToken: $0.refreshToken
-                    ),
-                    userLevel: $0.memberLevel,
-                    lckYears: $0.memberLCKYears,
-                    isAdmin: $0.isAdmin,
-                    isPushAlarmAllowed: $0.isPushAlarmAllowed,
-                    isNewUser: $0.isNewUser
+        return provider.request(
+            .fetchUserAuth(
+                request: DTO.Request.CreateAccount(
+                    socialPlatform: platform,
+                    userName: userName
                 )
-            }
-            .mapError {
-                $0 as? WableNetworkError ?? .unknown($0)
-            }
-            .eraseToAnyPublisher()
+            ),
+            for: DTO.Response.CreateAccount.self
+        )
+        .map { account in
+            LoginMapper.accountMapper(account)
+        }
+        .normalizeError()
     }
 }

@@ -11,7 +11,7 @@ import Foundation
 import Moya
 
 enum CommentLikedTargetType {
-    case createCommentLiked(contentID: Int, request: DTO.Request.CreateCommentLiked)
+    case createCommentLiked(commentID: Int, request: DTO.Request.CreateCommentLiked)
     case deleteCommentLiked(commentID: Int)
 }
 
@@ -32,7 +32,7 @@ extension CommentLikedTargetType: BaseTargetType {
     
     var requestBody: (any Encodable)? {
         switch self {
-        case .createCommentLiked(contentID: _, request: let request):
+        case .createCommentLiked(commentID: _, request: let request):
             return request
         default:
             return .none
