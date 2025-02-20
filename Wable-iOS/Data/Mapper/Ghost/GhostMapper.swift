@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+
+// TODO: Ghost의 경우, Mapper 필요 없음. 추후 삭제 예정
+

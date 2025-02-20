@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		DD216C182D6388760077C57D /* account.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C172D6388700077C57D /* account.swift */; };
-		DD216C242D6388CF0077C57D /* ghost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C232D6388CE0077C57D /* ghost.swift */; };
+		DD216C242D6388CF0077C57D /* GhostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C232D6388CE0077C57D /* GhostRepository.swift */; };
 		DD216C262D6388D70077C57D /* NotificationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C252D6388D30077C57D /* NotificationRepository.swift */; };
 		DD216C282D6388E10077C57D /* InformationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C272D6388DB0077C57D /* InformationRepository.swift */; };
 		DD216C3E2D6389040077C57D /* commentImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C2F2D6389040077C57D /* commentImpl.swift */; };
 		DD216C402D6389040077C57D /* contentLikedImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C352D6389040077C57D /* contentLikedImpl.swift */; };
 		DD216C412D6389040077C57D /* InformationRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C3B2D6389040077C57D /* InformationRepositoryImpl.swift */; };
-		DD216C422D6389040077C57D /* ghostImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C372D6389040077C57D /* ghostImpl.swift */; };
+		DD216C422D6389040077C57D /* GhostRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C372D6389040077C57D /* GhostRepositoryImpl.swift */; };
 		DD216C432D6389040077C57D /* commentLikedImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C312D6389040077C57D /* commentLikedImpl.swift */; };
 		DD216C442D6389040077C57D /* NotificationRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C392D6389040077C57D /* NotificationRepositoryImpl.swift */; };
 		DD216C452D6389040077C57D /* contentImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C332D6389040077C57D /* contentImpl.swift */; };
@@ -118,7 +118,7 @@
 
 /* Begin PBXFileReference section */
 		DD216C172D6388700077C57D /* account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = account.swift; sourceTree = "<group>"; };
-		DD216C232D6388CE0077C57D /* ghost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ghost.swift; sourceTree = "<group>"; };
+		DD216C232D6388CE0077C57D /* GhostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostRepository.swift; sourceTree = "<group>"; };
 		DD216C252D6388D30077C57D /* NotificationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepository.swift; sourceTree = "<group>"; };
 		DD216C272D6388DB0077C57D /* InformationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationRepository.swift; sourceTree = "<group>"; };
 		DD216C2B2D6389040077C57D /* accountImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountImpl.swift; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 		DD216C312D6389040077C57D /* commentLikedImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentLikedImpl.swift; sourceTree = "<group>"; };
 		DD216C332D6389040077C57D /* contentImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentImpl.swift; sourceTree = "<group>"; };
 		DD216C352D6389040077C57D /* contentLikedImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentLikedImpl.swift; sourceTree = "<group>"; };
-		DD216C372D6389040077C57D /* ghostImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ghostImpl.swift; sourceTree = "<group>"; };
+		DD216C372D6389040077C57D /* GhostRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostRepositoryImpl.swift; sourceTree = "<group>"; };
 		DD216C392D6389040077C57D /* NotificationRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepositoryImpl.swift; sourceTree = "<group>"; };
 		DD216C3B2D6389040077C57D /* InformationRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationRepositoryImpl.swift; sourceTree = "<group>"; };
 		DD389B4F2D625363004351F5 /* FetchContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchContent.swift; sourceTree = "<group>"; };
@@ -318,7 +318,7 @@
 		DD216C122D6388220077C57D /* Ghost */ = {
 			isa = PBXGroup;
 			children = (
-				DD216C232D6388CE0077C57D /* ghost.swift */,
+				DD216C232D6388CE0077C57D /* GhostRepository.swift */,
 			);
 			path = Ghost;
 			sourceTree = "<group>";
@@ -399,7 +399,7 @@
 		DD216C382D6389040077C57D /* Ghost */ = {
 			isa = PBXGroup;
 			children = (
-				DD216C372D6389040077C57D /* ghostImpl.swift */,
+				DD216C372D6389040077C57D /* GhostRepositoryImpl.swift */,
 			);
 			path = Ghost;
 			sourceTree = "<group>";
@@ -1077,7 +1077,7 @@
 				DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */,
 				DE495A1A2D65B27900D75A3A /* CommentLikedMapper.swift in Sources */,
 				DE72236E2D61EDD1003B8145 /* Account.swift in Sources */,
-				DD216C242D6388CF0077C57D /* ghost.swift in Sources */,
+				DD216C242D6388CF0077C57D /* GhostRepository.swift in Sources */,
 				DEA4E2242D6081B400909437 /* MoyaLoggingPlugin.swift in Sources */,
 				DE7223802D61FE97003B8145 /* TriggerType.swift in Sources */,
 				DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */,
@@ -1091,7 +1091,7 @@
 				DD216C412D6389040077C57D /* InformationRepositoryImpl.swift in Sources */,
 				DE495A242D65B29600D75A3A /* InformationMapper.swift in Sources */,
 				DD708F442D64B19F004F8C56 /* ProfileTargetType.swift in Sources */,
-				DD216C422D6389040077C57D /* ghostImpl.swift in Sources */,
+				DD216C422D6389040077C57D /* GhostRepositoryImpl.swift in Sources */,
 				DD216C432D6389040077C57D /* commentLikedImpl.swift in Sources */,
 				DD216C442D6389040077C57D /* NotificationRepositoryImpl.swift in Sources */,
 				DE495A202D65B28B00D75A3A /* GhostMapper.swift in Sources */,
