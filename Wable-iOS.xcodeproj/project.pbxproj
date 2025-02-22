@@ -50,6 +50,9 @@
 		DD8CEFFD2D6A06D600DBE580 /* Viewit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CEFFC2D6A06D400DBE580 /* Viewit.swift */; };
 		DD8CEFFF2D6A224800DBE580 /* ViewitPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CEFFE2D6A224400DBE580 /* ViewitPost.swift */; };
 		DD8CF0012D6A22BF00DBE580 /* ViewitContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CF0002D6A22BA00DBE580 /* ViewitContent.swift */; };
+		DD8CF0062D6A236A00DBE580 /* CommunityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CF0052D6A236200DBE580 /* CommunityRepository.swift */; };
+		DD8CF0082D6A244200DBE580 /* ReportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CF0072D6A243B00DBE580 /* ReportRepository.swift */; };
+		DD8CF00A2D6A250E00DBE580 /* ViewitRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8CF0092D6A250200DBE580 /* ViewitRepository.swift */; };
 		DD9A0A0D2D647C9100055918 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A0A0C2D647C8800055918 /* LoginRepository.swift */; };
 		DD9B123A2D5DB3BB00422B1F /* DeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B12392D5DB3BB00422B1F /* DeleteAccount.swift */; };
 		DD9B123C2D5DB4D000422B1F /* UpdateUserBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9B123B2D5DB4D000422B1F /* UpdateUserBadge.swift */; };
@@ -172,6 +175,9 @@
 		DD8CEFFC2D6A06D400DBE580 /* Viewit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewit.swift; sourceTree = "<group>"; };
 		DD8CEFFE2D6A224400DBE580 /* ViewitPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewitPost.swift; sourceTree = "<group>"; };
 		DD8CF0002D6A22BA00DBE580 /* ViewitContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewitContent.swift; sourceTree = "<group>"; };
+		DD8CF0052D6A236200DBE580 /* CommunityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityRepository.swift; sourceTree = "<group>"; };
+		DD8CF0072D6A243B00DBE580 /* ReportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRepository.swift; sourceTree = "<group>"; };
+		DD8CF0092D6A250200DBE580 /* ViewitRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewitRepository.swift; sourceTree = "<group>"; };
 		DD9A0A0C2D647C8800055918 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		DD9B12372D5DB32400422B1F /* CreateAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountResponse.swift; sourceTree = "<group>"; };
 		DD9B12392D5DB3BB00422B1F /* DeleteAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccount.swift; sourceTree = "<group>"; };
@@ -273,6 +279,9 @@
 				DD216C122D6388220077C57D /* Ghost */,
 				DD216C132D63882D0077C57D /* Notification */,
 				DD216C142D6388370077C57D /* Information */,
+				DD8CF0042D6A234900DBE580 /* Community */,
+				DD8CF0032D6A234200DBE580 /* Report */,
+				DD8CF0022D6A233800DBE580 /* Viewit */,
 			);
 			path = RepositoryInterface;
 			sourceTree = "<group>";
@@ -706,6 +715,30 @@
 			path = Ghost;
 			sourceTree = "<group>";
 		};
+		DD8CF0022D6A233800DBE580 /* Viewit */ = {
+			isa = PBXGroup;
+			children = (
+				DD8CF0092D6A250200DBE580 /* ViewitRepository.swift */,
+			);
+			path = Viewit;
+			sourceTree = "<group>";
+		};
+		DD8CF0032D6A234200DBE580 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				DD8CF0072D6A243B00DBE580 /* ReportRepository.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		DD8CF0042D6A234900DBE580 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				DD8CF0052D6A236200DBE580 /* CommunityRepository.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
 		DDA73B332D6724E400657E80 /* Community */ = {
 			isa = PBXGroup;
 			children = (
@@ -1123,6 +1156,7 @@
 				DD8CF0012D6A22BF00DBE580 /* ViewitContent.swift in Sources */,
 				DD708F502D64B1DE004F8C56 /* NotificationTargetType.swift in Sources */,
 				DD216C262D6388D70077C57D /* notification.swift in Sources */,
+				DD8CF0062D6A236A00DBE580 /* CommunityRepository.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */,
 				DD708F582D64F5AE004F8C56 /* ProfileRepositoryImpl.swift in Sources */,
@@ -1145,7 +1179,9 @@
 				DD9B12462D5DBBDD00422B1F /* FetchContentComments.swift in Sources */,
 				DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */,
 				DDA73B372D67287000657E80 /* UpdatePreRegister.swift in Sources */,
+				DD8CF0082D6A244200DBE580 /* ReportRepository.swift in Sources */,
 				DE495A1A2D65B27900D75A3A /* CommentLikedMapper.swift in Sources */,
+				DD8CF00A2D6A250E00DBE580 /* ViewitRepository.swift in Sources */,
 				DE72236E2D61EDD1003B8145 /* Account.swift in Sources */,
 				DD8CEFFB2D6A066400DBE580 /* Community.swift in Sources */,
 				DD8CEFFD2D6A06D600DBE580 /* Viewit.swift in Sources */,
