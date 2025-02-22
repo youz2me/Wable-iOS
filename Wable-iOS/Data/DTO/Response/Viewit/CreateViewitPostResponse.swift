@@ -11,7 +11,7 @@ import Foundation
 // MARK: - 뷰잇 게시물 작성
 
 extension DTO.Response {
-    struct CreateViewitPost {
+    struct CreateViewitPost: Decodable {
         let viewitImage: String
         let viewitLink: String
         let viewitTitle: String

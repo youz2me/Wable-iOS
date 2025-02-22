@@ -11,5 +11,5 @@ import Foundation
 
 protocol ReportRepository {
     func createReport(nickname: String, text: String) -> AnyPublisher<Void, Error>
-    func createBan(memberID: Int, triggerType: BanTriggerType) -> AnyPublisher<Void, Error>
+    func createBan(memberID: Int, triggerType: BanTriggerType, triggerID: Int) -> AnyPublisher<Void, Error>
 }

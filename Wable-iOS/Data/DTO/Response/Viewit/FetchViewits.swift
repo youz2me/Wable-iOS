@@ -11,12 +11,12 @@ import Foundation
 // MARK: - 뷰잇 목록 조회
 
 extension DTO.Response {
-    struct FetchViewits {
+    struct FetchViewits: Decodable {
         let memberID: Int
         let memberProfileURL: String
         let memberNickname: String
         let viewitID: Int
-        let viewitIamge: String
+        let viewitImage: String
         let viewitLink: String
         let viewitTitle: String
         let viewitText: String
@@ -28,8 +28,9 @@ extension DTO.Response {
         enum CodingKeys: String, CodingKey {
             case memberID = "memberId"
             case memberProfileURL = "memberProfileUrl"
+            case memberNickname
             case viewitID = "viewitId"
-            case memberNickname,viewitImage, viewitLink, viewitTitle, viewitText, time, isLiked, likedNumber, isBlind
+            case viewitImage, viewitLink, viewitTitle, viewitText, time, isLiked, likedNumber, isBlind
         }
     }
 }

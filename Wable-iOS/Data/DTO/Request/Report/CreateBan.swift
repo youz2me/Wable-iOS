@@ -1,5 +1,5 @@
 //
-//  UpdateBan.swift
+//  CreateBan.swift
 //  Wable-iOS
 //
 //  Created by YOUJIM on 2/20/25.
@@ -11,7 +11,7 @@ import Foundation
 // MARK: - 밴하기 기능
 
 extension DTO.Request {
-    struct UpdateBan {
+    struct CreateBan: Encodable {
         let memberID: Int
         let triggerType: String
         let triggerID: Int

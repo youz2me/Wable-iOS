@@ -15,7 +15,10 @@ struct Viewit {
     let viewitID: Int
     let userNickname: String
     let userProfileURL: URL?
-    let content: ViewitContent
+    let thumbnailURL: URL?
+    let linkURL: URL?
+    let title: String
+    let text: String
     let time: Date?
     let likedCount: Int
     let isLiked: Bool

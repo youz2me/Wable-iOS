@@ -1,0 +1,40 @@
+//
+//  ViewitMapper.swift
+//  Wable-iOS
+//
+//  Created by YOUJIM on 2/23/25.
+//
+
+import Foundation
+
+enum ViewitMapper { }
+
+extension ViewitMapper {
+    static func communityListMapper(_ response: [DTO.Response.FetchViewits]) -> [Viewit] {
+        response.map { content in
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = ""
+            
+            let userProfileURL = URL(string: content.memberProfileURL)
+            let thumbnailURL = URL(string: content.viewitImage)
+            let videoURL = URL(string: content.viewitLink)
+            let time = dateFormatter.date(from: content.time)
+            
+            return Viewit(
+                userID: content.memberID,
+                viewitID: content.viewitID,
+                userNickname: content.memberNickname,
+                userProfileURL: userProfileURL,
+                thumbnailURL: thumbnailURL,
+                linkURL: videoURL,
+                title: content.viewitTitle,
+                text: content.viewitText,
+                time: time,
+                likedCount: content.likedNumber,
+                isLiked: content.isLiked,
+                isBlind: content.isBlind
+            )
+        }
+    }
+}
+

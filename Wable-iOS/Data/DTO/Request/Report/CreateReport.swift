@@ -11,7 +11,7 @@ import Foundation
 // MARK: - 신고하기 버튼
 
 extension DTO.Request {
-    struct CreateReport {
+    struct CreateReport: Encodable {
         let reportTargetNickname: String
         let relateText: String
     }

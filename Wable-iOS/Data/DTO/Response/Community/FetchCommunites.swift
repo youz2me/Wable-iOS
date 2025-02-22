@@ -11,7 +11,7 @@ import Foundation
 // MARK: - 커뮤니티 목록 조회 (사전 참여)
 
 extension DTO.Response {
-    struct FetchCommunites {
+    struct FetchCommunites: Decodable {
         let communityName: String
         let communityNum: Int
     }

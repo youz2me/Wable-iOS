@@ -11,7 +11,7 @@ import Foundation
 // MARK: - 커뮤니티 사전 참여
 
 extension DTO.Request {
-    struct UpdatePreRegister {
+    struct UpdatePreRegister: Encodable {
         let communityName: String
     }
 }
