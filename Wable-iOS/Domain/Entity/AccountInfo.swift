@@ -14,6 +14,6 @@ struct AccountInfo {
     let memberID: Int
     let createdDate: Date?
     let displayMemberID: String
-    let socialPlatform: SocialPlatform
+    let socialPlatform: SocialPlatform?
     let version: String
 }
