@@ -13,8 +13,7 @@
 		DD216C412D6389040077C57D /* InformationRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C3B2D6389040077C57D /* InformationRepositoryImpl.swift */; };
 		DD216C422D6389040077C57D /* GhostRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C372D6389040077C57D /* GhostRepositoryImpl.swift */; };
 		DD216C442D6389040077C57D /* NotificationRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C392D6389040077C57D /* NotificationRepositoryImpl.swift */; };
-		DD216C452D6389040077C57D /* contentImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C332D6389040077C57D /* contentImpl.swift */; };
-		DD216C462D6389040077C57D /* profileImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C2D2D6389040077C57D /* profileImpl.swift */; };
+		DD216C462D6389040077C57D /* (null) in Sources */ = {isa = PBXBuildFile; };
 		DD3348BE2D6ADE570003BD3A /* AccountRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3348BD2D6ADE520003BD3A /* AccountRepository.swift */; };
 		DD3348C02D6ADF630003BD3A /* AccountRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3348BF2D6ADF5A0003BD3A /* AccountRepositoryImpl.swift */; };
 		DD389B502D625369004351F5 /* FetchContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD389B4F2D625363004351F5 /* FetchContent.swift */; };
@@ -382,102 +381,22 @@
 			path = Information;
 			sourceTree = "<group>";
 		};
-		DD216C2A2D6389040077C57D /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				DDF380792D649E22003AFD7B /* LoginRepositoryImpl.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		DD216C2C2D6389040077C57D /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				DD3348BF2D6ADF5A0003BD3A /* AccountRepositoryImpl.swift */,
-			);
-			path = Account;
-			sourceTree = "<group>";
-		};
-		DD216C2E2D6389040077C57D /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				DD708F572D64F5A4004F8C56 /* ProfileRepositoryImpl.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		DD216C302D6389040077C57D /* Comment */ = {
-			isa = PBXGroup;
-			children = (
-				DD6A343C2D65F62F00BB9336 /* CommentRepositoryImpl.swift */,
-			);
-			path = Comment;
-			sourceTree = "<group>";
-		};
-		DD216C322D6389040077C57D /* CommentLiked */ = {
-			isa = PBXGroup;
-			children = (
-				DD6A343E2D65FD4900BB9336 /* CommentLikedRepositoryImpl.swift */,
-			);
-			path = CommentLiked;
-			sourceTree = "<group>";
-		};
-		DD216C342D6389040077C57D /* Content */ = {
-			isa = PBXGroup;
-			children = (
-				DDF3F5362D6600120052A572 /* ContentRepositoryImpl.swift */,
-			);
-			path = Content;
-			sourceTree = "<group>";
-		};
-		DD216C362D6389040077C57D /* ContentLiked */ = {
-			isa = PBXGroup;
-			children = (
-				DDF3F5382D66074F0052A572 /* ContentLikedRepositoryImpl.swift */,
-			);
-			path = ContentLiked;
-			sourceTree = "<group>";
-		};
-		DD216C382D6389040077C57D /* Ghost */ = {
-			isa = PBXGroup;
-			children = (
-				DD216C372D6389040077C57D /* GhostRepositoryImpl.swift */,
-			);
-			path = Ghost;
-			sourceTree = "<group>";
-		};
-		DD216C3A2D6389040077C57D /* Notification */ = {
-			isa = PBXGroup;
-			children = (
-				DD216C392D6389040077C57D /* NotificationRepositoryImpl.swift */,
-			);
-			path = Notification;
-			sourceTree = "<group>";
-		};
-		DD216C3C2D6389040077C57D /* Information */ = {
-			isa = PBXGroup;
-			children = (
-				DD216C3B2D6389040077C57D /* InformationRepositoryImpl.swift */,
-			);
-			path = Information;
-			sourceTree = "<group>";
-		};
 		DD216C3D2D6389040077C57D /* RepositoryImpl */ = {
 			isa = PBXGroup;
 			children = (
-				DD216C2A2D6389040077C57D /* Login */,
-				DD216C2C2D6389040077C57D /* Account */,
-				DD216C2E2D6389040077C57D /* Profile */,
-				DD216C302D6389040077C57D /* Comment */,
-				DD216C322D6389040077C57D /* CommentLiked */,
-				DD216C342D6389040077C57D /* Content */,
-				DD216C362D6389040077C57D /* ContentLiked */,
-				DD216C382D6389040077C57D /* Ghost */,
-				DD216C3A2D6389040077C57D /* Notification */,
-				DD216C3C2D6389040077C57D /* Information */,
-				DD8CF00C2D6A264600DBE580 /* Community */,
-				DD8CF00E2D6A264600DBE580 /* Report */,
-				DD8CF0102D6A264600DBE580 /* Viewit */,
+				DDF380792D649E22003AFD7B /* LoginRepositoryImpl.swift */,
+				DD3348BF2D6ADF5A0003BD3A /* AccountRepositoryImpl.swift */,
+				DD708F572D64F5A4004F8C56 /* ProfileRepositoryImpl.swift */,
+				DD6A343C2D65F62F00BB9336 /* CommentRepositoryImpl.swift */,
+				DD6A343E2D65FD4900BB9336 /* CommentLikedRepositoryImpl.swift */,
+				DDF3F5362D6600120052A572 /* ContentRepositoryImpl.swift */,
+				DDF3F5382D66074F0052A572 /* ContentLikedRepositoryImpl.swift */,
+				DD216C372D6389040077C57D /* GhostRepositoryImpl.swift */,
+				DD216C392D6389040077C57D /* NotificationRepositoryImpl.swift */,
+				DD216C3B2D6389040077C57D /* InformationRepositoryImpl.swift */,
+				DD8CF0142D6A265700DBE580 /* CommunityRepositoryImpl.swift */,
+				DD8CF0282D6A30CE00DBE580 /* ReportRepositoryImpl.swift */,
+				DD8CF02A2D6A318100DBE580 /* ViewitRepositoryImpl.swift */,
 			);
 			path = RepositoryImpl;
 			sourceTree = "<group>";
@@ -759,30 +678,6 @@
 				DD8CF0052D6A236200DBE580 /* CommunityRepository.swift */,
 			);
 			path = Community;
-			sourceTree = "<group>";
-		};
-		DD8CF00C2D6A264600DBE580 /* Community */ = {
-			isa = PBXGroup;
-			children = (
-				DD8CF0142D6A265700DBE580 /* CommunityRepositoryImpl.swift */,
-			);
-			path = Community;
-			sourceTree = "<group>";
-		};
-		DD8CF00E2D6A264600DBE580 /* Report */ = {
-			isa = PBXGroup;
-			children = (
-				DD8CF0282D6A30CE00DBE580 /* ReportRepositoryImpl.swift */,
-			);
-			path = Report;
-			sourceTree = "<group>";
-		};
-		DD8CF0102D6A264600DBE580 /* Viewit */ = {
-			isa = PBXGroup;
-			children = (
-				DD8CF02A2D6A318100DBE580 /* ViewitRepositoryImpl.swift */,
-			);
-			path = Viewit;
 			sourceTree = "<group>";
 		};
 		DD8CF01E2D6A2A8100DBE580 /* Viewit */ = {
@@ -1281,7 +1176,7 @@
 				DD8CF01B2D6A26B100DBE580 /* ReportTargetType.swift in Sources */,
 				DE495A202D65B28B00D75A3A /* GhostMapper.swift in Sources */,
 				DD708F3E2D64B031004F8C56 /* Bundle+.swift in Sources */,
-				DD216C462D6389040077C57D /* profileImpl.swift in Sources */,
+				DD216C462D6389040077C57D /* (null) in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
