@@ -10,14 +10,14 @@ import Foundation
 enum LoginMapper { }
 
 extension LoginMapper {
-    static func tokenMapper(_ response: DTO.Response.UpdateToken) -> Token {
+    static func toDomain(_ response: DTO.Response.UpdateToken) -> Token {
         return Token(
             accessToken: response.accessToken,
             refreshToken: response.refreshToken
         )
     }
     
-    static func accountMapper(_ response: DTO.Response.CreateAccount) -> Account {
+    static func toDomain(_ response: DTO.Response.CreateAccount) -> Account {
         let url = URL(string: response.memberProfileURL)
         let fanTeam = LCKTeam(rawValue: response.memberFanTeam)
         

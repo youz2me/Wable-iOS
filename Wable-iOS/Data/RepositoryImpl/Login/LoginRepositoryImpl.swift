@@ -22,9 +22,7 @@ extension LoginRepositoryImpl: LoginRepository {
             .fetchTokenStatus,
             for: DTO.Response.UpdateToken.self
         )
-        .map { token in
-            LoginMapper.tokenMapper(token)
-        }
+        .map(LoginMapper.toDomain)
         .normalizeError()
     }
     
@@ -38,9 +36,7 @@ extension LoginRepositoryImpl: LoginRepository {
             ),
             for: DTO.Response.CreateAccount.self
         )
-        .map { account in
-            LoginMapper.accountMapper(account)
-        }
+        .map(LoginMapper.toDomain)
         .normalizeError()
     }
 }

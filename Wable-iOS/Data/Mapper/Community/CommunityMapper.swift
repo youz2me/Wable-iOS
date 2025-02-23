@@ -11,8 +11,8 @@ import Foundation
 enum CommunityMapper { }
 
 extension CommunityMapper {
-    static func communityListMapper(_ response: [DTO.Response.FetchCommunites]) -> [Community] {
-        response.map { content in
+    static func toDomain(_ response: [DTO.Response.FetchCommunites]) -> [Community] {
+        return response.map { content in
             let name = LCKTeam(rawValue: content.communityName)
             
             return Community(

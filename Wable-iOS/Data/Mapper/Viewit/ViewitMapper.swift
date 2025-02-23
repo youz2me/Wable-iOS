@@ -10,12 +10,12 @@ import Foundation
 enum ViewitMapper { }
 
 extension ViewitMapper {
-    static func communityListMapper(_ response: [DTO.Response.FetchViewits]) -> [Viewit] {
-        response.map { content in
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = ""
-            dateFormatter.timeZone = TimeZone(abbreviation: "KST")
-            
+    static func toDomain(_ response: [DTO.Response.FetchViewits]) -> [Viewit] {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = ""
+        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
+        
+        return response.map { content in
             let userProfileURL = URL(string: content.memberProfileURL)
             let thumbnailURL = URL(string: content.viewitImage)
             let videoURL = URL(string: content.viewitLink)

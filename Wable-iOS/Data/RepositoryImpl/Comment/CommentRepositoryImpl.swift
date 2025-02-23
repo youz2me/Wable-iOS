@@ -25,9 +25,7 @@ extension CommentRepositoryImpl: CommentRepository {
             ),
             for: [DTO.Response.FetchUserComments].self
         )
-        .map { comments in
-            CommentMapper.userCommentMapper(comments)
-        }
+        .map(CommentMapper.toDomain)
         .normalizeError()
     }
     
@@ -39,9 +37,7 @@ extension CommentRepositoryImpl: CommentRepository {
             ),
             for: [DTO.Response.FetchContentComments].self
         )
-        .map { contents in
-            CommentMapper.contentCommentMapper(contents)
-        }
+        .map(CommentMapper.toDomain)
         .normalizeError()
     }
     

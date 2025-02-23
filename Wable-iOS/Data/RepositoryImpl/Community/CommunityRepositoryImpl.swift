@@ -34,9 +34,7 @@ extension CommunityRepositoryImpl: CommunityRepository {
             .fetchCommunityList,
             for: [DTO.Response.FetchCommunites].self
         )
-        .map { response in
-            return CommunityMapper.communityListMapper(response)
-        }
+        .map(CommunityMapper.toDomain)
         .normalizeError()
     }
 }

@@ -45,9 +45,8 @@ extension ViewitRepositoryImpl: ViewitRepository {
         return provider.request(
             .fetchViewitList(cursor: cursor),
             for: [DTO.Response.FetchViewits].self
-        ).map { contents in
-            return ViewitMapper.communityListMapper(contents)
-        }
+        )
+        .map(ViewitMapper.toDomain)
         .normalizeError()
     }
     

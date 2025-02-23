@@ -10,7 +10,7 @@ import Foundation
 enum CommentMapper { }
 
 extension CommentMapper {
-    static func userCommentMapper(_ response: [DTO.Response.FetchUserComments]) -> [UserComment] {
+    static func toDomain(_ response: [DTO.Response.FetchUserComments]) -> [UserComment] {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:dd"
         dateFormatter.timeZone = TimeZone(abbreviation: "KST")
@@ -42,7 +42,7 @@ extension CommentMapper {
         }
     }
     
-    static func contentCommentMapper(_ response: [DTO.Response.FetchContentComments]) -> [ContentComment] {
+    static func toDomain(_ response: [DTO.Response.FetchContentComments]) -> [ContentComment] {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:SS"
         
@@ -70,7 +70,7 @@ extension CommentMapper {
                 ),
                 parentID: comment.parentCommentID,
                 isDeleted: comment.isDeleted,
-                childs: comment.childComments.map {  self.contentCommentMapper($0) } ?? []
+                childs: comment.childComments.map(toDomain) ?? []
             )
         }
     }

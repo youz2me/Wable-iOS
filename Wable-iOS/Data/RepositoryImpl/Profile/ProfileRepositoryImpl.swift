@@ -21,9 +21,7 @@ extension ProfileRepositoryImpl: ProfileRepository {
             .fetchUserInfo,
             for: DTO.Response.FetchAccountInfo.self
         )
-        .map { info in
-            ProfileMapper.accountInfoMapper(info)
-        }
+        .map(ProfileMapper.toDomain)
         .normalizeError()
     }
     
@@ -32,9 +30,7 @@ extension ProfileRepositoryImpl: ProfileRepository {
             .fetchUserProfile(memberID: memberID),
             for: DTO.Response.FetchUserProfile.self
         )
-        .map { profile in
-            ProfileMapper.userProfileMapper(profile)
-        }
+        .map(ProfileMapper.toDomain)
         .normalizeError()
     }
     

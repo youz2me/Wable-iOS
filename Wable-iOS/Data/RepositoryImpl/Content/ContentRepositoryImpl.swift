@@ -46,9 +46,7 @@ extension ContentRepositoryImpl: ContentRepository {
             .fetchContentInfo(contentID: contentID),
             for: DTO.Response.FetchContent.self
         )
-        .map { contentInfo in
-            ContentMapper.contentInfoMapper(contentInfo, title)
-        }
+        .map { ContentMapper.toDomain($0, title) }
         .normalizeError()
     }
     
@@ -57,9 +55,7 @@ extension ContentRepositoryImpl: ContentRepository {
             .fetchContentList(cursor: cursor),
             for: [DTO.Response.FetchContents].self
         )
-        .map { contents in
-            ContentMapper.contentListMapper(contents)
-        }
+        .map(ContentMapper.toDomain)
         .normalizeError()
     }
     
@@ -68,9 +64,7 @@ extension ContentRepositoryImpl: ContentRepository {
             .fetchUserContentList(memberID: memberID, cursor: cursor),
             for: [DTO.Response.FetchUserContents].self
         )
-        .map { contents in
-            ContentMapper.userContentListMapper(contents)
-        }
+        .map(ContentMapper.toDomain)
         .normalizeError()
     }
 }

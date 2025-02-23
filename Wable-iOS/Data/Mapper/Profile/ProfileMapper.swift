@@ -10,7 +10,7 @@ import Foundation
 enum ProfileMapper { }
 
 extension ProfileMapper {
-    static func accountInfoMapper(_ response: DTO.Response.FetchAccountInfo) -> AccountInfo {
+    static func toDomain(_ response: DTO.Response.FetchAccountInfo) -> AccountInfo {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy.MM.dd"
         dateFormatter.timeZone = TimeZone(abbreviation: "KST")
@@ -27,7 +27,7 @@ extension ProfileMapper {
         )
     }
     
-    static func userProfileMapper(_ response: DTO.Response.FetchUserProfile) -> UserProfile {
+    static func toDomain(_ response: DTO.Response.FetchUserProfile) -> UserProfile {
         let url = URL(string: response.memberProfileURL)
         let fanTeam = LCKTeam(rawValue: response.memberFanTeam)
         

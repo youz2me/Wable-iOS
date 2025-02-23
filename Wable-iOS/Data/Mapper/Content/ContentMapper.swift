@@ -10,7 +10,7 @@ import Foundation
 enum ContentMapper { }
 
 extension ContentMapper {
-    static func contentInfoMapper(_ response: DTO.Response.FetchContent, _ title: String) -> ContentInfo {
+    static func toDomain(_ response: DTO.Response.FetchContent, _ title: String) -> ContentInfo {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:SS"
         dateFormatter.timeZone = TimeZone(abbreviation: "KST")
@@ -40,12 +40,12 @@ extension ContentMapper {
         )
     }
     
-    static func contentListMapper(_ response: [DTO.Response.FetchContents]) -> [Content] {
-        response.map { content in
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:SS"
-            dateFormatter.timeZone = TimeZone(abbreviation: "KST")
-            
+    static func toDomain(_ response: [DTO.Response.FetchContents]) -> [Content] {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:SS"
+        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
+        
+        return response.map { content in
             let memberProfileURL = URL(string: content.memberProfileURL)
             let contentImageURL = URL(string: content.contentImageURL)
             let fanTeam = LCKTeam(rawValue: content.memberFanTeam)
@@ -78,12 +78,12 @@ extension ContentMapper {
         }
     }
     
-    static func userContentListMapper(_ response: [DTO.Response.FetchUserContents]) -> [UserContent] {
-        response.map { content in
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:SS"
-            dateFormatter.timeZone = TimeZone(abbreviation: "KST")
-            
+    static func toDomain(_ response: [DTO.Response.FetchUserContents]) -> [UserContent] {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:SS"
+        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
+        
+        return response.map { content in
             let memberProfileURL = URL(string: content.memberProfileURL)
             let contentImageURL = URL(string: content.contentImageURL ?? "")
             let fanTeam = LCKTeam(rawValue: content.memberFanTeam)
