@@ -14,6 +14,7 @@ extension ViewitMapper {
         response.map { content in
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = ""
+            dateFormatter.timeZone = TimeZone(abbreviation: "KST")
             
             let userProfileURL = URL(string: content.memberProfileURL)
             let thumbnailURL = URL(string: content.viewitImage)

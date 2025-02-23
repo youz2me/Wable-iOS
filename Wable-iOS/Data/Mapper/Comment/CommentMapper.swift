@@ -13,6 +13,7 @@ extension CommentMapper {
     static func userCommentMapper(_ response: [DTO.Response.FetchUserComments]) -> [UserComment] {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:dd"
+        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
         
         return response.map { comment in
             let url = URL(string: comment.memberProfileURL)

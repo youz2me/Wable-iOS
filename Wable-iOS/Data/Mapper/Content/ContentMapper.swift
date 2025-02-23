@@ -13,6 +13,7 @@ extension ContentMapper {
     static func contentInfoMapper(_ response: DTO.Response.FetchContent, _ title: String) -> ContentInfo {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:SS"
+        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
         
         let memberProfileURL = URL(string: response.memberProfileURL)
         let contentImageURL = URL(string: response.contentImageURL ?? "")
@@ -43,6 +44,8 @@ extension ContentMapper {
         response.map { content in
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:SS"
+            dateFormatter.timeZone = TimeZone(abbreviation: "KST")
+            
             let memberProfileURL = URL(string: content.memberProfileURL)
             let contentImageURL = URL(string: content.contentImageURL)
             let fanTeam = LCKTeam(rawValue: content.memberFanTeam)
@@ -79,6 +82,8 @@ extension ContentMapper {
         response.map { content in
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:SS"
+            dateFormatter.timeZone = TimeZone(abbreviation: "KST")
+            
             let memberProfileURL = URL(string: content.memberProfileURL)
             let contentImageURL = URL(string: content.contentImageURL ?? "")
             let fanTeam = LCKTeam(rawValue: content.memberFanTeam)

@@ -13,6 +13,8 @@ extension ProfileMapper {
     static func accountInfoMapper(_ response: DTO.Response.FetchAccountInfo) -> AccountInfo {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy.MM.dd"
+        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
+        
         let createdDate = dateFormatter.date(from: response.joinDate)
         let socialPlatform = SocialPlatform(rawValue: response.socialPlatform)
         
