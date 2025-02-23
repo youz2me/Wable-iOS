@@ -699,8 +699,6 @@
 		DE7223642D61EC27003B8145 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				DD8CEFFC2D6A06D400DBE580 /* Viewit.swift */,
-				DD8CEFFA2D6A065D00DBE580 /* Community.swift */,
 				DE7223672D61EC87003B8145 /* LCKTeam.swift */,
 				DE7223652D61EC33003B8145 /* User.swift */,
 				DE7223692D61ECCA003B8145 /* Token.swift */,
@@ -716,6 +714,8 @@
 				DE72237B2D61FC1D003B8145 /* LCKTeamRank.swift */,
 				DE72237D2D61FD47003B8145 /* Announcement.swift */,
 				DE72237F2D61FE97003B8145 /* TriggerType.swift */,
+				DD8CEFFA2D6A065D00DBE580 /* Community.swift */,
+				DD8CEFFC2D6A06D400DBE580 /* Viewit.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
