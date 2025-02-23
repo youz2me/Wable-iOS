@@ -278,101 +278,21 @@
 		DD216C0A2D6387950077C57D /* RepositoryInterface */ = {
 			isa = PBXGroup;
 			children = (
-				DD216C0B2D6387B50077C57D /* Login */,
-				DD216C0C2D6387BD0077C57D /* Account */,
-				DD216C0D2D6387E00077C57D /* Profile */,
-				DD216C0E2D6387F20077C57D /* Comment */,
-				DD216C0F2D6388080077C57D /* CommentLiked */,
-				DD216C102D6388110077C57D /* Content */,
-				DD216C112D6388170077C57D /* ContentLiked */,
-				DD216C122D6388220077C57D /* Ghost */,
-				DD216C132D63882D0077C57D /* Notification */,
-				DD216C142D6388370077C57D /* Information */,
-				DD8CF0042D6A234900DBE580 /* Community */,
-				DD8CF0032D6A234200DBE580 /* Report */,
-				DD8CF0022D6A233800DBE580 /* Viewit */,
+				DD9A0A0C2D647C8800055918 /* LoginRepository.swift */,
+				DD3348BD2D6ADE520003BD3A /* AccountRepository.swift */,
+				DDAA64E12D648529008043CA /* ProfileRepository.swift */,
+				DD75DE472D64873A00DF7B2A /* CommentRepository.swift */,
+				DD75DE492D648C4C00DF7B2A /* CommentLikedRepository.swift */,
+				DD75DE4F2D64997200DF7B2A /* ContentRepository.swift */,
+				DDF380772D649CE9003AFD7B /* ContentLikedRepository.swift */,
+				DD216C232D6388CE0077C57D /* GhostRepository.swift */,
+				DD216C252D6388D30077C57D /* NotificationRepository.swift */,
+				DD216C272D6388DB0077C57D /* InformationRepository.swift */,
+				DD8CF0052D6A236200DBE580 /* CommunityRepository.swift */,
+				DD8CF0072D6A243B00DBE580 /* ReportRepository.swift */,
+				DD8CF0092D6A250200DBE580 /* ViewitRepository.swift */,
 			);
 			path = RepositoryInterface;
-			sourceTree = "<group>";
-		};
-		DD216C0B2D6387B50077C57D /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				DD9A0A0C2D647C8800055918 /* LoginRepository.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		DD216C0C2D6387BD0077C57D /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				DD3348BD2D6ADE520003BD3A /* AccountRepository.swift */,
-			);
-			path = Account;
-			sourceTree = "<group>";
-		};
-		DD216C0D2D6387E00077C57D /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				DDAA64E12D648529008043CA /* ProfileRepository.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		DD216C0E2D6387F20077C57D /* Comment */ = {
-			isa = PBXGroup;
-			children = (
-				DD75DE472D64873A00DF7B2A /* CommentRepository.swift */,
-			);
-			path = Comment;
-			sourceTree = "<group>";
-		};
-		DD216C0F2D6388080077C57D /* CommentLiked */ = {
-			isa = PBXGroup;
-			children = (
-				DD75DE492D648C4C00DF7B2A /* CommentLikedRepository.swift */,
-			);
-			path = CommentLiked;
-			sourceTree = "<group>";
-		};
-		DD216C102D6388110077C57D /* Content */ = {
-			isa = PBXGroup;
-			children = (
-				DD75DE4F2D64997200DF7B2A /* ContentRepository.swift */,
-			);
-			path = Content;
-			sourceTree = "<group>";
-		};
-		DD216C112D6388170077C57D /* ContentLiked */ = {
-			isa = PBXGroup;
-			children = (
-				DDF380772D649CE9003AFD7B /* ContentLikedRepository.swift */,
-			);
-			path = ContentLiked;
-			sourceTree = "<group>";
-		};
-		DD216C122D6388220077C57D /* Ghost */ = {
-			isa = PBXGroup;
-			children = (
-				DD216C232D6388CE0077C57D /* GhostRepository.swift */,
-			);
-			path = Ghost;
-			sourceTree = "<group>";
-		};
-		DD216C132D63882D0077C57D /* Notification */ = {
-			isa = PBXGroup;
-			children = (
-				DD216C252D6388D30077C57D /* NotificationRepository.swift */,
-			);
-			path = Notification;
-			sourceTree = "<group>";
-		};
-		DD216C142D6388370077C57D /* Information */ = {
-			isa = PBXGroup;
-			children = (
-				DD216C272D6388DB0077C57D /* InformationRepository.swift */,
-			);
-			path = Information;
 			sourceTree = "<group>";
 		};
 		DD216C3D2D6389040077C57D /* RepositoryImpl */ = {
@@ -648,30 +568,6 @@
 				DD9B12532D5DC9FB00422B1F /* UpdateGhost.swift */,
 			);
 			path = Ghost;
-			sourceTree = "<group>";
-		};
-		DD8CF0022D6A233800DBE580 /* Viewit */ = {
-			isa = PBXGroup;
-			children = (
-				DD8CF0092D6A250200DBE580 /* ViewitRepository.swift */,
-			);
-			path = Viewit;
-			sourceTree = "<group>";
-		};
-		DD8CF0032D6A234200DBE580 /* Report */ = {
-			isa = PBXGroup;
-			children = (
-				DD8CF0072D6A243B00DBE580 /* ReportRepository.swift */,
-			);
-			path = Report;
-			sourceTree = "<group>";
-		};
-		DD8CF0042D6A234900DBE580 /* Community */ = {
-			isa = PBXGroup;
-			children = (
-				DD8CF0052D6A236200DBE580 /* CommunityRepository.swift */,
-			);
-			path = Community;
 			sourceTree = "<group>";
 		};
 		DD8CF01E2D6A2A8100DBE580 /* Viewit */ = {
