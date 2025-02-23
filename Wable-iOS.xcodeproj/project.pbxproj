@@ -398,7 +398,6 @@
 			isa = PBXGroup;
 			children = (
 				DD216C3D2D6389040077C57D /* RepositoryImpl */,
-				DDF38BF52D5DA1B2005FF627 /* DTO */,
 				DE495A042D65B1B400D75A3A /* Mapper */,
 			);
 			path = Data;
@@ -745,6 +744,7 @@
 				DEA4E2232D6081B400909437 /* MoyaLoggingPlugin.swift */,
 				DD708F3C2D64B026004F8C56 /* Bundle */,
 				DD6BD9CA2D5D9BB000736D51 /* TargetType */,
+				DDF38BF52D5DA1B2005FF627 /* DTO */,
 			);
 			path = Network;
 			sourceTree = "<group>";
