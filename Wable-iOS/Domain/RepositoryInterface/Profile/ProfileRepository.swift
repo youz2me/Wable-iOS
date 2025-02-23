@@ -12,5 +12,5 @@ import Foundation
 protocol ProfileRepository {
     func fetchUserInfo() -> AnyPublisher<AccountInfo, Error>
     func fetchUserProfile(memberID: Int) -> AnyPublisher<UserProfile, Error>
-    func updateUserProfile(profile: UserProfile) -> AnyPublisher<Void, Error>
+    func updateUserProfile(profile: UserProfile, isPushAlarmAllowed: Bool) -> AnyPublisher<Void, Error>
 }
