@@ -19,11 +19,11 @@ enum AccountTargetType {
 extension AccountTargetType: BaseTargetType {
     var endPoint: String? {
         switch self {
-        case .deleteAccount(request: let request):
+        case .deleteAccount:
             return "/v1/withdrawal"
-        case .fetchNicknameDuplication(nickname: let nickname):
+        case .fetchNicknameDuplication:
             return "/v1/nickname-validation"
-        case .updateUserBadge(badge: let badge):
+        case .updateUserBadge:
             return "/v1/fcmbadge"
         }
     }
