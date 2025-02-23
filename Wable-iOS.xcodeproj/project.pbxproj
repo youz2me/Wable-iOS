@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD216C182D6388760077C57D /* account.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C172D6388700077C57D /* account.swift */; };
 		DD216C242D6388CF0077C57D /* ghost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C232D6388CE0077C57D /* ghost.swift */; };
 		DD216C262D6388D70077C57D /* notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C252D6388D30077C57D /* notification.swift */; };
 		DD216C282D6388E10077C57D /* information.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C272D6388DB0077C57D /* information.swift */; };
@@ -19,7 +18,8 @@
 		DD216C442D6389040077C57D /* notificationImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C392D6389040077C57D /* notificationImpl.swift */; };
 		DD216C452D6389040077C57D /* contentImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C332D6389040077C57D /* contentImpl.swift */; };
 		DD216C462D6389040077C57D /* profileImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C2D2D6389040077C57D /* profileImpl.swift */; };
-		DD216C472D6389040077C57D /* accountImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C2B2D6389040077C57D /* accountImpl.swift */; };
+		DD3348BE2D6ADE570003BD3A /* AccountRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3348BD2D6ADE520003BD3A /* AccountRepository.swift */; };
+		DD3348C02D6ADF630003BD3A /* AccountRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3348BF2D6ADF5A0003BD3A /* AccountRepositoryImpl.swift */; };
 		DD389B502D625369004351F5 /* FetchContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD389B4F2D625363004351F5 /* FetchContent.swift */; };
 		DD4BFCDB2D5D989F003A8045 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DD4BFCDA2D5D989F003A8045 /* CombineMoya */; };
 		DD4BFCDD2D5D989F003A8045 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = DD4BFCDC2D5D989F003A8045 /* Moya */; };
@@ -117,11 +117,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD216C172D6388700077C57D /* account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = account.swift; sourceTree = "<group>"; };
 		DD216C232D6388CE0077C57D /* ghost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ghost.swift; sourceTree = "<group>"; };
 		DD216C252D6388D30077C57D /* notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notification.swift; sourceTree = "<group>"; };
 		DD216C272D6388DB0077C57D /* information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = information.swift; sourceTree = "<group>"; };
-		DD216C2B2D6389040077C57D /* accountImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountImpl.swift; sourceTree = "<group>"; };
 		DD216C2D2D6389040077C57D /* profileImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileImpl.swift; sourceTree = "<group>"; };
 		DD216C2F2D6389040077C57D /* commentImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentImpl.swift; sourceTree = "<group>"; };
 		DD216C312D6389040077C57D /* commentLikedImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentLikedImpl.swift; sourceTree = "<group>"; };
@@ -130,6 +128,8 @@
 		DD216C372D6389040077C57D /* ghostImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ghostImpl.swift; sourceTree = "<group>"; };
 		DD216C392D6389040077C57D /* notificationImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationImpl.swift; sourceTree = "<group>"; };
 		DD216C3B2D6389040077C57D /* informationImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationImpl.swift; sourceTree = "<group>"; };
+		DD3348BD2D6ADE520003BD3A /* AccountRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRepository.swift; sourceTree = "<group>"; };
+		DD3348BF2D6ADF5A0003BD3A /* AccountRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRepositoryImpl.swift; sourceTree = "<group>"; };
 		DD389B4F2D625363004351F5 /* FetchContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchContent.swift; sourceTree = "<group>"; };
 		DD4BFCAC2D5D93AD003A8045 /* Wable-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wable-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4BFCDE2D5D98FF003A8045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -270,7 +270,7 @@
 		DD216C0C2D6387BD0077C57D /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				DD216C172D6388700077C57D /* account.swift */,
+				DD3348BD2D6ADE520003BD3A /* AccountRepository.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -350,7 +350,7 @@
 		DD216C2C2D6389040077C57D /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				DD216C2B2D6389040077C57D /* accountImpl.swift */,
+				DD3348BF2D6ADF5A0003BD3A /* AccountRepositoryImpl.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -1011,13 +1011,13 @@
 				DE72235F2D61DF5E003B8145 /* FetchNewsNoticeCount.swift in Sources */,
 				DEA4E21F2D607FB000909437 /* BaseTargetType.swift in Sources */,
 				DD5917C82D60C2A7006E82F9 /* KeychainError.swift in Sources */,
+				DD3348BE2D6ADE570003BD3A /* AccountRepository.swift in Sources */,
 				DE7223742D61EFA5003B8145 /* Comment.swift in Sources */,
 				DD75DE4C2D64976800DF7B2A /* AccountInfo.swift in Sources */,
 				DD389B502D625369004351F5 /* FetchContent.swift in Sources */,
 				DDF80E6A2D61DECC0048E9CC /* FetchUserNotifications.swift in Sources */,
 				DD9B125B2D5DD18000422B1F /* CreateAccountRequest.swift in Sources */,
 				DD9B125C2D5DD18000422B1F /* CreateAccountResponse.swift in Sources */,
-				DD216C182D6388760077C57D /* account.swift in Sources */,
 				DE7223722D61EF0C003B8145 /* UserProfile.swift in Sources */,
 				DD708F462D64B1A7004F8C56 /* CommentTargetType.swift in Sources */,
 				DD9B12422D5DB8B300422B1F /* UpdateUserProfile.swift in Sources */,
@@ -1025,6 +1025,7 @@
 				DD708F4C2D64B1CB004F8C56 /* ContentLikedTargetType.swift in Sources */,
 				DE7223682D61EC87003B8145 /* LCKTeam.swift in Sources */,
 				DE7223632D61E08D003B8145 /* FetchNotices.swift in Sources */,
+				DD3348C02D6ADF630003BD3A /* AccountRepositoryImpl.swift in Sources */,
 				DD9B12442D5DBA4100422B1F /* FetchMemberComments.swift in Sources */,
 				DD72E2832D5DA86B0059D55D /* UpdateToken.swift in Sources */,
 				DD5917C42D60B965006E82F9 /* KeychainWrapper.swift in Sources */,
@@ -1098,7 +1099,6 @@
 				DD216C452D6389040077C57D /* contentImpl.swift in Sources */,
 				DD708F3E2D64B031004F8C56 /* Bundle+.swift in Sources */,
 				DD216C462D6389040077C57D /* profileImpl.swift in Sources */,
-				DD216C472D6389040077C57D /* accountImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
