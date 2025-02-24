@@ -94,7 +94,6 @@
 		DDF80E6A2D61DECC0048E9CC /* FetchUserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF80E692D61DEC30048E9CC /* FetchUserNotifications.swift */; };
 		DDF80E6C2D61E0590048E9CC /* FetchNotificationNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF80E6B2D61E0430048E9CC /* FetchNotificationNumber.swift */; };
 		DE495A122D65B25D00D75A3A /* LoginMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE495A112D65B25D00D75A3A /* LoginMapper.swift */; };
-		DE495A142D65B26400D75A3A /* AccountMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE495A132D65B26400D75A3A /* AccountMapper.swift */; };
 		DE495A162D65B26B00D75A3A /* ProfileMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE495A152D65B26B00D75A3A /* ProfileMapper.swift */; };
 		DE495A182D65B27000D75A3A /* CommentMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE495A172D65B27000D75A3A /* CommentMapper.swift */; };
 		DE495A1C2D65B27F00D75A3A /* ContentMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE495A1B2D65B27F00D75A3A /* ContentMapper.swift */; };
@@ -223,7 +222,6 @@
 		DDF80E692D61DEC30048E9CC /* FetchUserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserNotifications.swift; sourceTree = "<group>"; };
 		DDF80E6B2D61E0430048E9CC /* FetchNotificationNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchNotificationNumber.swift; sourceTree = "<group>"; };
 		DE495A112D65B25D00D75A3A /* LoginMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMapper.swift; sourceTree = "<group>"; };
-		DE495A132D65B26400D75A3A /* AccountMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountMapper.swift; sourceTree = "<group>"; };
 		DE495A152D65B26B00D75A3A /* ProfileMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMapper.swift; sourceTree = "<group>"; };
 		DE495A172D65B27000D75A3A /* CommentMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentMapper.swift; sourceTree = "<group>"; };
 		DE495A1B2D65B27F00D75A3A /* ContentMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMapper.swift; sourceTree = "<group>"; };
@@ -670,7 +668,6 @@
 			isa = PBXGroup;
 			children = (
 				DE495A112D65B25D00D75A3A /* LoginMapper.swift */,
-				DE495A132D65B26400D75A3A /* AccountMapper.swift */,
 				DE495A152D65B26B00D75A3A /* ProfileMapper.swift */,
 				DE495A172D65B27000D75A3A /* CommentMapper.swift */,
 				DE495A1B2D65B27F00D75A3A /* ContentMapper.swift */,
@@ -924,7 +921,6 @@
 				DE72237E2D61FD47003B8145 /* Announcement.swift in Sources */,
 				DD9B124E2D5DC3AF00422B1F /* FetchContents.swift in Sources */,
 				DE72237A2D61FAC9003B8145 /* GameSchedule.swift in Sources */,
-				DE495A142D65B26400D75A3A /* AccountMapper.swift in Sources */,
 				DD87ECB12D632B45002FBE66 /* FetchUserContents.swift in Sources */,
 				DD708F522D64B1E8004F8C56 /* InformationTargetType.swift in Sources */,
 				DE72236A2D61ECCA003B8145 /* Token.swift in Sources */,
