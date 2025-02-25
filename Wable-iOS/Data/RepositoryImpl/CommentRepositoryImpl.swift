@@ -17,7 +17,7 @@ final class CommentRepositoryImpl {
 }
 
 extension CommentRepositoryImpl: CommentRepository {
-    func fetchUserCommentList(memberID: Int, cursor: Int) -> AnyPublisher<[UserComment], any Error> {
+    func fetchUserCommentList(memberID: Int, cursor: Int) -> AnyPublisher<[UserComment], WableError> {
         return provider.request(
             .fetchUserCommentList(
                 memberID: memberID,
@@ -26,10 +26,10 @@ extension CommentRepositoryImpl: CommentRepository {
             for: [DTO.Response.FetchUserComments].self
         )
         .map(CommentMapper.toDomain)
-        .normalizeError()
+        .mapWableError()
     }
     
-    func fetchContentCommentList(contentID: Int, cursor: Int) -> AnyPublisher<[ContentComment], any Error> {
+    func fetchContentCommentList(contentID: Int, cursor: Int) -> AnyPublisher<[ContentComment], WableError> {
         return provider.request(
             .fetchContentCommentList(
                 contentID: contentID,
@@ -38,18 +38,19 @@ extension CommentRepositoryImpl: CommentRepository {
             for: [DTO.Response.FetchContentComments].self
         )
         .map(CommentMapper.toDomain)
-        .normalizeError()
+        .mapWableError()
     }
     
-    func deleteComment(commentID: Int) -> AnyPublisher<Void, any Error> {
+    func deleteComment(commentID: Int) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .deleteComment(commentID: commentID),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
     
-    func createComment(contentID: Int, text: String, parentID: Int?, parentMemberID: Int?) -> AnyPublisher<Void, any Error> {
+    func createComment(contentID: Int, text: String, parentID: Int?, parentMemberID: Int?) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .createComment(
                 contentID: contentID,
@@ -60,6 +61,7 @@ extension CommentRepositoryImpl: CommentRepository {
                 )
             )
             , for: DTO.Response.Empty.self)
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
 }

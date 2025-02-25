@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD1112102D6CCB8C00C953CD /* WableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD11120F2D6CCB8800C953CD /* WableError.swift */; };
 		DD216C242D6388CF0077C57D /* GhostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C232D6388CE0077C57D /* GhostRepository.swift */; };
 		DD216C262D6388D70077C57D /* NotificationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C252D6388D30077C57D /* NotificationRepository.swift */; };
 		DD216C282D6388E10077C57D /* InformationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD216C272D6388DB0077C57D /* InformationRepository.swift */; };
@@ -84,6 +85,7 @@
 		DDA73B492D672DD600657E80 /* FetchViewits.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA73B482D672DAF00657E80 /* FetchViewits.swift */; };
 		DDA73B4B2D672ECB00657E80 /* CreateViewitPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA73B4A2D672EBE00657E80 /* CreateViewitPostResponse.swift */; };
 		DDAA64E22D648530008043CA /* ProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA64E12D648529008043CA /* ProfileRepository.swift */; };
+		DDB8D1432D6D858C007C4CC7 /* ErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8D1422D6D8589007C4CC7 /* ErrorMapper.swift */; };
 		DDF380782D649CF0003AFD7B /* ContentLikedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF380772D649CE9003AFD7B /* ContentLikedRepository.swift */; };
 		DDF3807A2D649E2C003AFD7B /* LoginRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF380792D649E22003AFD7B /* LoginRepositoryImpl.swift */; };
 		DDF38BF42D5DA1AD005FF627 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF38BF32D5DA1A7005FF627 /* BaseResponse.swift */; };
@@ -125,7 +127,7 @@
 		DEA4E2272D60BEDD00909437 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E2262D60BEDD00909437 /* DIContainer.swift */; };
 		DEA4E2292D60BF0C00909437 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4E2282D60BF0C00909437 /* Injected.swift */; };
 		DEBEDFD82D5F846F00086E5A /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEDFD72D5F846F00086E5A /* APIProvider.swift */; };
-		DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */; };
+		DED2EE022D5DAFA600A9434B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE012D5DAFA600A9434B /* NetworkError.swift */; };
 		DED2EE052D5DB41A00A9434B /* WableLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE042D5DB41A00A9434B /* WableLogger.swift */; };
 		DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */; };
 		DED2EE0B2D5DBEFD00A9434B /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */; };
@@ -133,6 +135,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD11120F2D6CCB8800C953CD /* WableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableError.swift; sourceTree = "<group>"; };
 		DD216C232D6388CE0077C57D /* GhostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostRepository.swift; sourceTree = "<group>"; };
 		DD216C252D6388D30077C57D /* NotificationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepository.swift; sourceTree = "<group>"; };
 		DD216C272D6388DB0077C57D /* InformationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationRepository.swift; sourceTree = "<group>"; };
@@ -211,6 +214,7 @@
 		DDA73B482D672DAF00657E80 /* FetchViewits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchViewits.swift; sourceTree = "<group>"; };
 		DDA73B4A2D672EBE00657E80 /* CreateViewitPostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewitPostResponse.swift; sourceTree = "<group>"; };
 		DDAA64E12D648529008043CA /* ProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepository.swift; sourceTree = "<group>"; };
+		DDB8D1422D6D8589007C4CC7 /* ErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMapper.swift; sourceTree = "<group>"; };
 		DDE46F5B2D5DAD660020B050 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
 		DDF380772D649CE9003AFD7B /* ContentLikedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLikedRepository.swift; sourceTree = "<group>"; };
 		DDF380792D649E22003AFD7B /* LoginRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryImpl.swift; sourceTree = "<group>"; };
@@ -253,7 +257,7 @@
 		DEA4E2262D60BEDD00909437 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		DEA4E2282D60BF0C00909437 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		DEBEDFD72D5F846F00086E5A /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
-		DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableNetworkError.swift; sourceTree = "<group>"; };
+		DED2EE012D5DAFA600A9434B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		DED2EE042D5DB41A00A9434B /* WableLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WableLogger.swift; sourceTree = "<group>"; };
 		DED2EE082D5DBEA500A9434B /* AnyPublisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+.swift"; sourceTree = "<group>"; };
 		DED2EE0A2D5DBEFD00A9434B /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
@@ -273,6 +277,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD11120E2D6CCB8200C953CD /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				DD11120F2D6CCB8800C953CD /* WableError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		DD216C0A2D6387950077C57D /* RepositoryInterface */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +416,7 @@
 		DD6BD9C02D5D9B4900736D51 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				DD11120E2D6CCB8200C953CD /* Error */,
 				DD216C0A2D6387950077C57D /* RepositoryInterface */,
 				DE7223642D61EC27003B8145 /* Entity */,
 			);
@@ -667,6 +680,7 @@
 		DE495A042D65B1B400D75A3A /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				DDB8D1422D6D8589007C4CC7 /* ErrorMapper.swift */,
 				DE495A112D65B25D00D75A3A /* LoginMapper.swift */,
 				DE495A152D65B26B00D75A3A /* ProfileMapper.swift */,
 				DE495A172D65B27000D75A3A /* CommentMapper.swift */,
@@ -737,7 +751,7 @@
 			isa = PBXGroup;
 			children = (
 				DEBEDFD72D5F846F00086E5A /* APIProvider.swift */,
-				DED2EE012D5DAFA600A9434B /* WableNetworkError.swift */,
+				DED2EE012D5DAFA600A9434B /* NetworkError.swift */,
 				DEA4E2232D6081B400909437 /* MoyaLoggingPlugin.swift */,
 				DD708F3C2D64B026004F8C56 /* Bundle */,
 				DD6BD9CA2D5D9BB000736D51 /* TargetType */,
@@ -857,7 +871,7 @@
 				DDF3F5372D66001D0052A572 /* ContentRepositoryImpl.swift in Sources */,
 				DD8CF02B2D6A318900DBE580 /* ViewitRepositoryImpl.swift in Sources */,
 				DE7223762D61F280003B8145 /* Content.swift in Sources */,
-				DED2EE022D5DAFA600A9434B /* WableNetworkError.swift in Sources */,
+				DED2EE022D5DAFA600A9434B /* NetworkError.swift in Sources */,
 				DE72235F2D61DF5E003B8145 /* FetchNewsNoticeNumber.swift in Sources */,
 				DD8CF0152D6A266600DBE580 /* CommunityRepositoryImpl.swift in Sources */,
 				DEA4E21F2D607FB000909437 /* BaseTargetType.swift in Sources */,
@@ -901,6 +915,7 @@
 				DEBEDFD82D5F846F00086E5A /* APIProvider.swift in Sources */,
 				DD216C282D6388E10077C57D /* InformationRepository.swift in Sources */,
 				DD9B12402D5DB6EB00422B1F /* FetchUserProfile.swift in Sources */,
+				DDB8D1432D6D858C007C4CC7 /* ErrorMapper.swift in Sources */,
 				DD8CF0172D6A26A800DBE580 /* CommunityTargetType.swift in Sources */,
 				DD4BFCE72D5D98FF003A8045 /* SceneDelegate.swift in Sources */,
 				DE72237C2D61FC1D003B8145 /* LCKTeamRank.swift in Sources */,
@@ -912,6 +927,7 @@
 				DEA4E2222D60813300909437 /* Empty.swift in Sources */,
 				DD708F502D64B1DE004F8C56 /* NotificationTargetType.swift in Sources */,
 				DD216C262D6388D70077C57D /* NotificationRepository.swift in Sources */,
+				DD1112102D6CCB8C00C953CD /* WableError.swift in Sources */,
 				DD8CF0062D6A236A00DBE580 /* CommunityRepository.swift in Sources */,
 				DD4BFCE82D5D98FF003A8045 /* ViewController.swift in Sources */,
 				DED2EE092D5DBEA500A9434B /* AnyPublisher+.swift in Sources */,

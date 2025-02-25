@@ -17,7 +17,7 @@ final class AccountRepositoryImpl {
 }
 
 extension AccountRepositoryImpl: AccountRepository {
-    func deleteAccount(reason: [String]) -> AnyPublisher<Void, any Error> {
+    func deleteAccount(reason: [String]) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .deleteAccount(
                 request: DTO.Request.DeleteAccount(
@@ -26,22 +26,25 @@ extension AccountRepositoryImpl: AccountRepository {
             ),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
     
-    func fetchNicknameDuplication(nickname: String) -> AnyPublisher<Void, any Error> {
+    func fetchNicknameDuplication(nickname: String) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .fetchNicknameDuplication(nickname: nickname),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
     
-    func updateUserBadge(badge: Int) -> AnyPublisher<Void, any Error> {
+    func updateUserBadge(badge: Int) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .updateUserBadge(badge: badge),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
 }

@@ -15,42 +15,39 @@ final class NotificationRepositoryImpl: NotificationRepository {
         self.provider = provider
     }
     
-    func fetchInfoNotifications(cursor: Int) -> AnyPublisher<[InfoNotification], Error> {
+    func fetchInfoNotifications(cursor: Int) -> AnyPublisher<[InfoNotification], WableError> {
         return provider.request(
             .fetchInfoNotifications(cursor: cursor),
             for: [DTO.Response.FetchInfoNotifications].self
         )
         .map(NotificationMapper.toDomain(_:))
-        .normalizeError()
-        .eraseToAnyPublisher()
+        .mapWableError()
     }
     
-    func checkNotification() -> AnyPublisher<Void, Error> {
+    func checkNotification() -> AnyPublisher<Void, WableError> {
         return provider.request(
             .checkNotification,
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
-        .eraseToAnyPublisher()
+        .asVoid()
+        .mapWableError()
     }
     
-    func fetchUserNotifications(cursor: Int) -> AnyPublisher<[ActivityNotification], Error> {
+    func fetchUserNotifications(cursor: Int) -> AnyPublisher<[ActivityNotification], WableError> {
         return provider.request(
             .fetchUserNotifications(cursor: cursor),
             for: [DTO.Response.FetchUserNotifications].self
         )
         .map(NotificationMapper.toDomain(_:))
-        .normalizeError()
-        .eraseToAnyPublisher()
+        .mapWableError()
     }
     
-    func fetchUncheckedNotificationNumber() -> AnyPublisher<Int, Error> {
+    func fetchUncheckedNotificationNumber() -> AnyPublisher<Int, WableError> {
         return provider.request(
             .fetchUncheckedNotificationNumber,
             for: DTO.Response.FetchNotificationNumber.self
         )
         .map { $0.notificationNumber }
-        .normalizeError()
-        .eraseToAnyPublisher()
+        .mapWableError()
     }
 }

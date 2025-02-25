@@ -10,7 +10,7 @@ import Combine
 import Foundation
 
 protocol ProfileRepository {
-    func fetchUserInfo() -> AnyPublisher<AccountInfo, Error>
-    func fetchUserProfile(memberID: Int) -> AnyPublisher<UserProfile, Error>
-    func updateUserProfile(profile: UserProfile, isPushAlarmAllowed: Bool) -> AnyPublisher<Void, Error>
+    func fetchUserInfo() -> AnyPublisher<AccountInfo, WableError>
+    func fetchUserProfile(memberID: Int) -> AnyPublisher<UserProfile, WableError>
+    func updateUserProfile(profile: UserProfile, isPushAlarmAllowed: Bool) -> AnyPublisher<Void, WableError>
 }

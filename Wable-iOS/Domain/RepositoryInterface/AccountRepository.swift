@@ -10,7 +10,7 @@ import Combine
 import Foundation
 
 protocol AccountRepository {
-    func deleteAccount(reason: [String]) -> AnyPublisher<Void, Error>
-    func fetchNicknameDuplication(nickname: String) -> AnyPublisher<Void, Error>
-    func updateUserBadge(badge: Int) -> AnyPublisher<Void, Error>
+    func deleteAccount(reason: [String]) -> AnyPublisher<Void, WableError>
+    func fetchNicknameDuplication(nickname: String) -> AnyPublisher<Void, WableError>
+    func updateUserBadge(badge: Int) -> AnyPublisher<Void, WableError>
 }

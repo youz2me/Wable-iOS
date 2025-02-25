@@ -16,26 +16,26 @@ final class ProfileRepositoryImpl {
 }
 
 extension ProfileRepositoryImpl: ProfileRepository {
-    func fetchUserInfo() -> AnyPublisher<AccountInfo, any Error> {
+    func fetchUserInfo() -> AnyPublisher<AccountInfo, WableError> {
         return provider.request(
             .fetchUserInfo,
             for: DTO.Response.FetchAccountInfo.self
         )
         .map(ProfileMapper.toDomain)
-        .normalizeError()
+        .mapWableError()
     }
     
-    func fetchUserProfile(memberID: Int) -> AnyPublisher<UserProfile, any Error> {
+    func fetchUserProfile(memberID: Int) -> AnyPublisher<UserProfile, WableError> {
         provider.request(
             .fetchUserProfile(memberID: memberID),
             for: DTO.Response.FetchUserProfile.self
         )
         .map(ProfileMapper.toDomain)
-        .normalizeError()
+        .mapWableError()
     }
     
-    func updateUserProfile(profile: UserProfile, isPushAlarmAllowed: Bool) -> AnyPublisher<Void, any Error> {
-        return provider.requestPublisher(
+    func updateUserProfile(profile: UserProfile, isPushAlarmAllowed: Bool) -> AnyPublisher<Void, WableError> {
+        return provider.request(
             .updateUserProfile(
                 request: DTO.Request.UpdateUserProfile(
                     info: DTO.Request.ProfileInfo(
@@ -49,8 +49,10 @@ extension ProfileRepositoryImpl: ProfileRepository {
                     ),
                     file: nil
                 )
-            )
+            ),
+            for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
 }

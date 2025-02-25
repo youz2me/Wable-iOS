@@ -10,6 +10,6 @@ import Combine
 import Foundation
 
 protocol ContentLikedRepository {
-    func createContentLiked(contentID: Int, triggerType: String) -> AnyPublisher<Void, Error>
-    func deleteContentLiked(contentID: Int) -> AnyPublisher<Void, Error>
+    func createContentLiked(contentID: Int, triggerType: String) -> AnyPublisher<Void, WableError>
+    func deleteContentLiked(contentID: Int) -> AnyPublisher<Void, WableError>
 }

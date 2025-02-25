@@ -10,9 +10,9 @@ import Combine
 import Foundation
 
 protocol ContentRepository {
-    func createContent(title: String, text: String, image: Data?) -> AnyPublisher<Void, Error>
-    func deleteContent(contentID: Int) -> AnyPublisher<Void, Error>
-    func fetchContentInfo(contentID: Int, title: String) -> AnyPublisher<ContentInfo, Error>
-    func fetchContentList(cursor: Int) -> AnyPublisher<[Content], Error>
-    func fetchUserContentList(memberID: Int, cursor: Int) -> AnyPublisher<[UserContent], Error>
+    func createContent(title: String, text: String, image: Data?) -> AnyPublisher<Void, WableError>
+    func deleteContent(contentID: Int) -> AnyPublisher<Void, WableError>
+    func fetchContentInfo(contentID: Int, title: String) -> AnyPublisher<ContentInfo, WableError>
+    func fetchContentList(cursor: Int) -> AnyPublisher<[Content], WableError>
+    func fetchUserContentList(memberID: Int, cursor: Int) -> AnyPublisher<[UserContent], WableError>
 }

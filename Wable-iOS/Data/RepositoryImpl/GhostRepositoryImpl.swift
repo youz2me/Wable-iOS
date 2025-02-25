@@ -20,7 +20,7 @@ final class GhostRepositoryImpl: GhostRepository {
         alarmTriggerID: Int,
         targetMemberID: Int,
         reason: String
-    ) -> AnyPublisher<Void, Error> {
+    ) -> AnyPublisher<Void, WableError> {
         let request = DTO.Request.UpdateGhost(
             alarmTriggerType: alarmTriggerType,
             targetMemberID: targetMemberID,
@@ -32,7 +32,7 @@ final class GhostRepositoryImpl: GhostRepository {
             .ghostReduction(request: request),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
-        .eraseToAnyPublisher()
+        .asVoid()
+        .mapWableError()
     }
 }

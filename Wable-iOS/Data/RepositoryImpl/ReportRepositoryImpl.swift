@@ -17,7 +17,7 @@ final class ReportRepositoryImpl {
 }
 
 extension ReportRepositoryImpl: ReportRepository {
-    func createReport(nickname: String, text: String) -> AnyPublisher<Void, any Error> {
+    func createReport(nickname: String, text: String) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .createReport(
                 request: DTO.Request.CreateReport(
@@ -27,10 +27,11 @@ extension ReportRepositoryImpl: ReportRepository {
             ),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
     
-    func createBan(memberID: Int, triggerType: BanTriggerType, triggerID: Int) -> AnyPublisher<Void, any Error> {
+    func createBan(memberID: Int, triggerType: BanTriggerType, triggerID: Int) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .createBan(
                 request: DTO.Request.CreateBan(
@@ -41,7 +42,8 @@ extension ReportRepositoryImpl: ReportRepository {
             ),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
     
     

@@ -17,7 +17,7 @@ final class CommentLikedRepositoryImpl {
 }
 
 extension CommentLikedRepositoryImpl: CommentLikedRepository {
-    func createCommentLiked(commentID: Int, triggerType: String, notificationText: String) -> AnyPublisher<Void, any Error> {
+    func createCommentLiked(commentID: Int, triggerType: String, notificationText: String) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .createCommentLiked(
                 commentID: commentID,
@@ -28,14 +28,16 @@ extension CommentLikedRepositoryImpl: CommentLikedRepository {
             ),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
     
-    func deleteCommentLiked(commentID: Int) -> AnyPublisher<Void, any Error> {
+    func deleteCommentLiked(commentID: Int) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .deleteCommentLiked(commentID: commentID),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
 }

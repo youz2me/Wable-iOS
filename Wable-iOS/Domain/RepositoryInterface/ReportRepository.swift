@@ -10,6 +10,6 @@ import Combine
 import Foundation
 
 protocol ReportRepository {
-    func createReport(nickname: String, text: String) -> AnyPublisher<Void, Error>
-    func createBan(memberID: Int, triggerType: BanTriggerType, triggerID: Int) -> AnyPublisher<Void, Error>
+    func createReport(nickname: String, text: String) -> AnyPublisher<Void, WableError>
+    func createBan(memberID: Int, triggerType: BanTriggerType, triggerID: Int) -> AnyPublisher<Void, WableError>
 }

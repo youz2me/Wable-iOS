@@ -14,5 +14,5 @@ protocol GhostRepository {
         alarmTriggerID: Int,
         targetMemberID: Int,
         reason: String
-    ) -> AnyPublisher<Void, Error>
+    ) -> AnyPublisher<Void, WableError>
 }

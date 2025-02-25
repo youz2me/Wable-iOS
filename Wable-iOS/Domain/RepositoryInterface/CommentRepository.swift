@@ -10,8 +10,8 @@ import Combine
 import Foundation
 
 protocol CommentRepository {
-    func fetchUserCommentList(memberID: Int, cursor: Int) -> AnyPublisher<[UserComment], Error>
-    func fetchContentCommentList(contentID: Int, cursor: Int) -> AnyPublisher<[ContentComment], Error>
-    func deleteComment(commentID: Int) -> AnyPublisher<Void, Error>
-    func createComment(contentID: Int, text: String, parentID: Int?, parentMemberID: Int?) -> AnyPublisher<Void, Error>
+    func fetchUserCommentList(memberID: Int, cursor: Int) -> AnyPublisher<[UserComment], WableError>
+    func fetchContentCommentList(contentID: Int, cursor: Int) -> AnyPublisher<[ContentComment], WableError>
+    func deleteComment(commentID: Int) -> AnyPublisher<Void, WableError>
+    func createComment(contentID: Int, text: String, parentID: Int?, parentMemberID: Int?) -> AnyPublisher<Void, WableError>
 }

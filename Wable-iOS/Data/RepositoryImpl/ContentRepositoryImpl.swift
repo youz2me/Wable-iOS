@@ -17,7 +17,7 @@ final class ContentRepositoryImpl {
 }
 
 extension ContentRepositoryImpl: ContentRepository {
-    func createContent(title: String, text: String, image: Data?) -> AnyPublisher<Void, any Error> {
+    func createContent(title: String, text: String, image: Data?) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .createContent(
                 request: DTO.Request.CreateContent(
@@ -30,41 +30,43 @@ extension ContentRepositoryImpl: ContentRepository {
             ),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
     
-    func deleteContent(contentID: Int) -> AnyPublisher<Void, any Error> {
+    func deleteContent(contentID: Int) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .deleteContent(contentID: contentID),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
     
-    func fetchContentInfo(contentID: Int, title: String) -> AnyPublisher<ContentInfo, any Error> {
+    func fetchContentInfo(contentID: Int, title: String) -> AnyPublisher<ContentInfo, WableError> {
         provider.request(
             .fetchContentInfo(contentID: contentID),
             for: DTO.Response.FetchContent.self
         )
         .map { ContentMapper.toDomain($0, title) }
-        .normalizeError()
+        .mapWableError()
     }
     
-    func fetchContentList(cursor: Int) -> AnyPublisher<[Content], any Error> {
+    func fetchContentList(cursor: Int) -> AnyPublisher<[Content], WableError> {
         provider.request(
             .fetchContentList(cursor: cursor),
             for: [DTO.Response.FetchContents].self
         )
         .map(ContentMapper.toDomain)
-        .normalizeError()
+        .mapWableError()
     }
     
-    func fetchUserContentList(memberID: Int, cursor: Int) -> AnyPublisher<[UserContent], any Error> {
+    func fetchUserContentList(memberID: Int, cursor: Int) -> AnyPublisher<[UserContent], WableError> {
         provider.request(
             .fetchUserContentList(memberID: memberID, cursor: cursor),
             for: [DTO.Response.FetchUserContents].self
         )
         .map(ContentMapper.toDomain)
-        .normalizeError()
+        .mapWableError()
     }
 }

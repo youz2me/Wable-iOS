@@ -17,37 +17,40 @@ final class ViewitRepositoryImpl {
 }
 
 extension ViewitRepositoryImpl: ViewitRepository {
-    func deleteViewit(viewitID: Int) -> AnyPublisher<Void, any Error> {
+    func deleteViewit(viewitID: Int) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .deleteViewit(viewitID: viewitID),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
     
-    func deleteViewitLiked(viewitID: Int) -> AnyPublisher<Void, any Error> {
+    func deleteViewitLiked(viewitID: Int) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .deleteViewitLiked(viewitID: viewitID),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
     
-    func createViewitLiked(viewitID: Int) -> AnyPublisher<Void, any Error> {
+    func createViewitLiked(viewitID: Int) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .createViewitLiked(viewitID: viewitID),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
     
-    func fetchViewitList(cursor: Int) -> AnyPublisher<[Viewit], any Error> {
+    func fetchViewitList(cursor: Int) -> AnyPublisher<[Viewit], WableError> {
         return provider.request(
             .fetchViewitList(cursor: cursor),
             for: [DTO.Response.FetchViewits].self
         )
         .map(ViewitMapper.toDomain)
-        .normalizeError()
+        .mapWableError()
     }
     
     func createViewitPost(
@@ -55,7 +58,7 @@ extension ViewitRepositoryImpl: ViewitRepository {
         videoURL: URL,
         title: String,
         text: String
-    ) -> AnyPublisher<Void, any Error> {
+    ) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .createViewitPost(
                 request: DTO.Request.CreateViewitPost(
@@ -67,6 +70,7 @@ extension ViewitRepositoryImpl: ViewitRepository {
             ),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
 }

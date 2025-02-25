@@ -17,16 +17,16 @@ final class LoginRepositoryImpl {
 }
 
 extension LoginRepositoryImpl: LoginRepository {
-    func updateTokenStatus() -> AnyPublisher<Token, any Error> {
+    func updateTokenStatus() -> AnyPublisher<Token, WableError> {
         return provider.request(
             .fetchTokenStatus,
             for: DTO.Response.UpdateToken.self
         )
         .map(LoginMapper.toDomain)
-        .normalizeError()
+        .mapWableError()
     }
     
-    func fetchUserAuth(platform: String, userName: String) -> AnyPublisher<Account, any Error> {
+    func fetchUserAuth(platform: String, userName: String) -> AnyPublisher<Account, WableError> {
         return provider.request(
             .fetchUserAuth(
                 request: DTO.Request.CreateAccount(
@@ -37,6 +37,6 @@ extension LoginRepositoryImpl: LoginRepository {
             for: DTO.Response.CreateAccount.self
         )
         .map(LoginMapper.toDomain)
-        .normalizeError()
+        .mapWableError()
     }
 }

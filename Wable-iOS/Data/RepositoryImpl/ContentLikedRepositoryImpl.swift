@@ -17,7 +17,7 @@ final class ContentLikedRepositoryImpl {
 }
 
 extension ContentLikedRepositoryImpl: ContentLikedRepository {
-    func createContentLiked(contentID: Int, triggerType: String) -> AnyPublisher<Void, Error> {
+    func createContentLiked(contentID: Int, triggerType: String) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .createContentLiked(
                 contentID: contentID,
@@ -25,14 +25,16 @@ extension ContentLikedRepositoryImpl: ContentLikedRepository {
             ),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
     
-    func deleteContentLiked(contentID: Int) -> AnyPublisher<Void, Error> {
+    func deleteContentLiked(contentID: Int) -> AnyPublisher<Void, WableError> {
         return provider.request(
             .deleteContentLiked(contentID: contentID),
             for: DTO.Response.Empty.self
         )
-        .asVoidWithError()
+        .asVoid()
+        .mapWableError()
     }
 }
