@@ -45,6 +45,4 @@ extension ReportRepositoryImpl: ReportRepository {
         .asVoid()
         .mapWableError()
     }
-    
-    
 }
